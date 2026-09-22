@@ -11,6 +11,10 @@
     "zip": "bash zip.sh"
   },
   "workspaces": ["frontend", "studio"],
+  "overrides": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "private": true,
   "license": "MIT",
   "devDependencies": {
