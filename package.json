@@ -1,0 +1,30 @@
+{
+  "name": "create-rayso",
+  "version": "1.0.0",
+  "description": "CLI scaffolder for RAYSO.STUDIO Next.js + Sanity + Tailwind v4 templates",
+  "main": "bin/index.js",
+  "bin": {
+    "create-rayso": "bin/index.js"
+  },
+  "keywords": [
+    "create",
+    "nextjs",
+    "sanity",
+    "tailwind",
+    "template",
+    "rayso"
+  ],
+  "author": "RAYSO.STUDIO",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.15",
+    "ora": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module"
+}

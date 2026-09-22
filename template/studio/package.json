@@ -1,0 +1,23 @@
+{
+  "name": "rayso-template-studio",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "@sanity/vision": "^4.22.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^5.0.1",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}
