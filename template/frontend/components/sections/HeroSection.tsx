@@ -2,13 +2,14 @@
 // components/sections/HeroSection.tsx
 
 import Image from "next/image";
+import Link from "next/link";
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden bg-black">
       {/* Background image — swap src for your hero image or video */}
       <Image
-        src="/img/hero.jpg"
+        src="https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500"
         alt="Resort hero"
         fill
         priority
@@ -21,7 +22,7 @@ export default function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(10,4,6,0.3) 0%, rgba(10,4,6,0.15) 40%, rgba(10,4,6,0.6) 100%)",
+            "linear-gradient(to bottom, rgba(6, 4, 10, 0.3) 0%, rgba(10,4,6,0.15) 40%, rgba(10,4,6,0.6) 100%)",
         }}
       />
 
