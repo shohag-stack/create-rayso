@@ -54,6 +54,9 @@ const copySpinner = ora('Scaffolding project...').start();
 try {
   await fs.copy(TEMPLATE_DIR, targetDir);
 
+  const gitkeeps = await fs.glob('**/.gitkeep', { cwd: targetDir });
+  await Promise.all(gitkeeps.map(f => fs.remove(path.join(targetDir, f))));
+
   // Inject project name + description into root package.json
   const rootPkg = await fs.readJson(path.join(targetDir, 'package.json'));
   rootPkg.name = projectName;
