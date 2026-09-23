@@ -1,7 +1,14 @@
+// ── app/page.tsx ──────────────────────────────────────────────────────────────
+// app/page.tsx
+
+import { Navbar } from "@/components/layout/Navbar";
+import { HeroSection } from "@/components/sections/HeroSection";
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="heading-1">Your template starts here.</h1>
-    </main>
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
   );
 }
