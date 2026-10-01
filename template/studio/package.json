@@ -2,7 +2,7 @@
   "name": "rayso-template-studio",
   "private": true,
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "SEE LICENSE IN ../LICENSE.txt",
   "scripts": {
     "dev": "sanity dev",
     "build": "sanity build",

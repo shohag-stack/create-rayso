@@ -19,8 +19,9 @@ npm create rayso@latest my-template
 1. Asks for project name, description, and author
 2. Scaffolds the full folder structure
 3. Injects your project name into all `package.json` files
-4. Copies `.env.example` → `.env.local` in both frontend and studio
-5. Runs `npm install` automatically
+4. Fills in `LICENSE.txt` (commercial license) with the project name, year and author
+5. Copies `.env.example` → `.env.local` in both frontend and studio
+6. Runs `npm install` automatically
 
 ## After scaffolding
 

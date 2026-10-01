@@ -132,3 +132,9 @@ npm run deploy:studio
 | `npm run seed` | Import the demo content (replaces matching documents) |
 | `npm run deploy:studio` | Host the Studio on `<name>.sanity.studio` |
 | `npm run deploy:schema` | Upload the content model to Sanity (only needed for Sanity's AI and dashboard tools) |
+
+## License
+
+This template is sold under a commercial license: one purchase covers one
+website, for you or for one client. You can't resell or share the source
+code. Full terms are in `LICENSE.txt`.

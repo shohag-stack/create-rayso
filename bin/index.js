@@ -57,11 +57,32 @@ try {
   const gitkeeps = await fs.glob('**/.gitkeep', { cwd: targetDir });
   await Promise.all(gitkeeps.map(f => fs.remove(path.join(targetDir, f))));
 
+  // npm strips .gitignore from published packages, so the template ships it as "gitignore"
+  const gitignore = path.join(targetDir, 'gitignore');
+  if (fs.existsSync(gitignore)) {
+    await fs.move(gitignore, path.join(targetDir, '.gitignore'));
+  }
+
+  // Fill in the license placeholders
+  const licensePath = path.join(targetDir, 'LICENSE.txt');
+  if (fs.existsSync(licensePath)) {
+    const license = await fs.readFile(licensePath, 'utf8');
+    await fs.writeFile(
+      licensePath,
+      license
+        .replaceAll('{{TEMPLATE_NAME}}', projectName)
+        .replaceAll('{{YEAR}}', String(new Date().getFullYear()))
+        .replaceAll('{{AUTHOR}}', author)
+    );
+  }
+
   // Inject project name + description into root package.json
   const rootPkg = await fs.readJson(path.join(targetDir, 'package.json'));
   rootPkg.name = projectName;
   rootPkg.description = description;
   rootPkg.author = author;
+  rootPkg.license = 'SEE LICENSE IN LICENSE.txt';
+  rootPkg.private = true;
   await fs.writeJson(path.join(targetDir, 'package.json'), rootPkg, { spaces: 2 });
 
   // Inject into frontend/package.json
@@ -73,6 +94,7 @@ try {
   // Inject into studio/package.json
   const studioPkg = await fs.readJson(path.join(targetDir, 'studio', 'package.json'));
   studioPkg.name = `${projectName}-studio`;
+  studioPkg.license = 'SEE LICENSE IN ../LICENSE.txt';
   await fs.writeJson(path.join(targetDir, 'studio', 'package.json'), studioPkg, { spaces: 2 });
 
   // Create .env.local files from examples
