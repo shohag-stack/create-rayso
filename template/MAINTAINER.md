@@ -29,8 +29,10 @@ release-specific here, not in `CLAUDE.md` or `README.md` (both ship).
    README setup steps still match the code (env vars, scripts, routes).
 4. `npm run zip`. It exports the dataset to `seed/demo-content.tar.gz`
    (documents, images and videos), stages a clean copy without seller-only
-   files, aborts if an env file or the demo project ID would ship, and writes
-   the zip to the repo root.
+   files, aborts if an env file, an unfilled license or the demo project ID
+   would ship, and writes the zip to the repo root (it unpacks into a
+   `<name>/` folder). The export needs `npx sanity login` in `studio/` once;
+   `npm run zip -- --no-export` reuses the existing seed file.
 5. Check the zip: `unzip -l <zip>` contains `LICENSE.txt`, `README.md`, `CLAUDE.md`,
    `seed/demo-content.tar.gz`, both `.env.example` files; and no
    `MAINTAINER.md`, `zip.sh`, `.env.local`, `node_modules` or `.next`.
