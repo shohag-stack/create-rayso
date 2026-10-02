@@ -1,0 +1,12 @@
+{
+  "id": "blog-cards",
+  "category": "blog",
+  "title": "Blog, post cards",
+  "description": "A heading and a grid of blog post cards, three per row, each with a cover image and title. Category and date, a short summary and the author can be shown, and a button links to the blog.",
+  "tags": ["blog", "news", "posts", "articles", "resources"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton"], "animation": [] },
+  "references": ["post"],
+  "features": []
+}

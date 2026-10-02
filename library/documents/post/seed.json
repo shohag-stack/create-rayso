@@ -1,0 +1,248 @@
+[
+  {
+    "_id": "post-summer-menu",
+    "_type": "post",
+    "title": "Our summer menu is here: twelve dishes from the kitchen garden",
+    "slug": {
+      "_type": "slug",
+      "current": "summer-menu"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "Our summer menu is here: twelve dishes from the kitchen garden"
+    },
+    "excerpt": "Tomatoes, figs and herbs picked that morning. Here is what our chef is cooking this season and where every ingredient comes from.",
+    "category": "News",
+    "publishedAt": "2026-06-18",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "Tomatoes, figs and herbs picked that morning. Here is what our chef is cooking this season and where every ingredient comes from.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-islands-by-boat",
+    "_type": "post",
+    "title": "A day on the islands: the boat trip our guests book twice",
+    "slug": {
+      "_type": "slug",
+      "current": "islands-by-boat"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "A day on the islands: the boat trip our guests book twice"
+    },
+    "excerpt": "Leave after breakfast, swim in three coves and be back for sunset drinks. Everything you need to know before you go.",
+    "category": "Guides",
+    "publishedAt": "2026-06-11",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "Leave after breakfast, swim in three coves and be back for sunset drinks. Everything you need to know before you go.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-spa-reopens",
+    "_type": "post",
+    "title": "The garden spa reopens with four new treatment rooms",
+    "slug": {
+      "_type": "slug",
+      "current": "spa-reopens"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "The garden spa reopens with four new treatment rooms"
+    },
+    "excerpt": "After a quiet winter of building, the spa is open again with a salt room, a cold pool and treatments made with our own olive oil.",
+    "category": "News",
+    "publishedAt": "2026-06-01",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "After a quiet winter of building, the spa is open again with a salt room, a cold pool and treatments made with our own olive oil.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-slow-weekend",
+    "_type": "post",
+    "title": "How to spend a slow weekend at Meridian",
+    "slug": {
+      "_type": "slug",
+      "current": "slow-weekend"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "How to spend a slow weekend at Meridian"
+    },
+    "excerpt": "No timetable, no alarm. A guide to the best hours for the pool, the quietest corners of the garden and the walks our team loves.",
+    "category": "Guides",
+    "publishedAt": "2026-05-22",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "No timetable, no alarm. A guide to the best hours for the pool, the quietest corners of the garden and the walks our team loves.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-award-2026",
+    "_type": "post",
+    "title": "Meridian named one of Europe's best small hotels",
+    "slug": {
+      "_type": "slug",
+      "current": "award-2026"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "Meridian named one of Europe's best small hotels"
+    },
+    "excerpt": "The 2026 Travel Awards placed us among the top ten small hotels in Europe for service, food and calm.",
+    "category": "Press release",
+    "publishedAt": "2026-05-20",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "The 2026 Travel Awards placed us among the top ten small hotels in Europe for service, food and calm.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-electric-transfers",
+    "_type": "post",
+    "title": "All our airport transfers are now electric",
+    "slug": {
+      "_type": "slug",
+      "current": "electric-transfers"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "All our airport transfers are now electric"
+    },
+    "excerpt": "From this summer every car that collects guests from the airport runs on electricity, charged by the panels on our roof.",
+    "category": "Press release",
+    "publishedAt": "2026-05-02",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b1",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s1",
+            "text": "From this summer every car that collects guests from the airport runs on electricity, charged by the panels on our roof.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+]

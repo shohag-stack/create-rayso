@@ -1,0 +1,70 @@
+{
+  "left with line": {
+    "eyebrow": null,
+    "heading": "Resources",
+    "cta": null,
+    "align": "left",
+    "divider": true,
+    "imageShape": "wide",
+    "posts": [
+      {
+        "_type": "reference",
+        "_ref": "post-slow-weekend"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-award-2026"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-electric-transfers"
+      }
+    ]
+  },
+  "dark, full details": {
+    "eyebrow": null,
+    "heading": null,
+    "posts": [
+      {
+        "_type": "reference",
+        "_ref": "post-summer-menu"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-islands-by-boat"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-spa-reopens"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-slow-weekend"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-award-2026"
+      },
+      {
+        "_type": "reference",
+        "_ref": "post-electric-transfers"
+      }
+    ],
+    "limit": 6,
+    "imageBorder": true,
+    "showMeta": true,
+    "showExcerpt": true,
+    "showAuthor": true,
+    "cta": {
+      "_type": "cta",
+      "label": "View all posts",
+      "style": "secondary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/blog"
+      }
+    },
+    "tone": "dark"
+  }
+}

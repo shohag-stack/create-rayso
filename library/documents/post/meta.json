@@ -1,0 +1,6 @@
+{
+  "id": "post",
+  "title": "Blog posts",
+  "icon": "DocumentTextIcon",
+  "description": "A blog post or news item with a title, cover image, short summary, category, date, author and body text. Listed in blog sections."
+}

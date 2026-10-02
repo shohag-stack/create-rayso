@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Our news",
+  "heading": "What we're working on",
+  "posts": [
+    {
+      "_type": "reference",
+      "_ref": "post-summer-menu"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-islands-by-boat"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-spa-reopens"
+    }
+  ],
+  "limit": 3,
+  "cta": {
+    "_type": "cta",
+    "label": "Visit blog",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/blog"
+    }
+  },
+  "align": "center",
+  "imageShape": "landscape",
+  "tone": "page"
+}

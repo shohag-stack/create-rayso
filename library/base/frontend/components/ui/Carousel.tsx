@@ -5,14 +5,17 @@ import { useEffect, useRef, useState } from "react";
 
 // A row of cards that scrolls sideways (swipe, trackpad or the arrow buttons). Cards start at the
 // content edge and run off the right of the screen. Give each child "shrink-0 snap-start" and a width.
+// arrows "header": the arrows sit at the right of the `header` row above the cards.
 export function Carousel({
   label,
   arrows = "below",
+  header,
   className = "",
   children,
 }: {
   label: string;
-  arrows?: "above" | "below" | "side" | "none";
+  arrows?: "above" | "below" | "side" | "header" | "none";
+  header?: React.ReactNode;
   className?: string;
   children: React.ReactNode;
 }) {
@@ -40,20 +43,27 @@ export function Carousel({
   };
 
   const button = "flex size-12 items-center justify-center rounded-full border border-current/20 transition hover:bg-current/10 disabled:opacity-30";
-  const buttons = (
-    <div className={`flex gap-3 ${arrows === "above" ? "justify-center" : "container-site"}`}>
+  const arrowButtons = (
+    <>
       <button type="button" onClick={() => scroll(-1)} disabled={edges.start} aria-label="Previous" className={button}>
         <ArrowLeft aria-hidden className="size-5" />
       </button>
       <button type="button" onClick={() => scroll(1)} disabled={edges.end} aria-label="Next" className={button}>
         <ArrowRight aria-hidden className="size-5" />
       </button>
-    </div>
+    </>
   );
+  const buttons = <div className={`flex gap-3 ${arrows === "above" ? "justify-center" : "container-site"}`}>{arrowButtons}</div>;
 
   return (
     <div className={`relative ${className}`}>
       {arrows === "above" && <div className="mb-10">{buttons}</div>}
+      {(header || arrows === "header") && (
+        <div className="container-site mb-10 flex items-end justify-between gap-6">
+          <div className="min-w-0">{header}</div>
+          {arrows === "header" && <div className="hidden shrink-0 gap-3 md:flex">{arrowButtons}</div>}
+        </div>
+      )}
       <div
         ref={track}
         role="region"

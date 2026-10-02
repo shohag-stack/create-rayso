@@ -1,0 +1,12 @@
+{
+  "id": "blog-carousel",
+  "category": "blog",
+  "title": "Blog, photo carousel",
+  "description": "A heading with a view-all link and arrows, then tall post cards that scroll sideways, each a full photo with the category at the top and the title at the bottom.",
+  "tags": ["blog", "news", "press", "carousel", "posts"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["Carousel"], "animation": [] },
+  "references": ["post"],
+  "features": []
+}

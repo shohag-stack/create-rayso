@@ -68,6 +68,10 @@ links, wordmark, bottom bar), the `navLink`, `navGroup`, `linkColumn` and
   or currencies); each plan lists one price per option, in the same order, and
   `PlanPrice` shows the picked one. Sections that use `PlanPrice` wrap
   themselves in `PriceSwitchProvider`.
+- Blog sections use the `post` document. `pickedPosts("posts", n)` in
+  `@/(core)/fetch/documents/post` returns the picked posts or the newest `n`;
+  `postHref` links to the post's own link or `/blog/<slug>` (the post page
+  itself is not in the library yet).
 
 Names come from the folder name (`hero-fullscreen-image`), and
 `npm run check:library` fails if a file doesn't use them:
