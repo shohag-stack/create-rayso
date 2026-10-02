@@ -1,0 +1,164 @@
+{
+  "eyebrow": "FAQs",
+  "heading": "Here to help",
+  "items": [
+    {
+      "_type": "faqItem",
+      "question": "What exactly is included in my stay?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Breakfast, the spa pools, morning yoga and bikes to explore the coast are part of every stay.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Dinner, treatments and boat trips can be added when you book, or at any time from the front desk, so you can spend less time planning and more time doing nothing at all.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "When are check-in and check-out?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Rooms are ready from 3 pm and we ask you to leave by 11 am. Early arrivals can use the spa and the pool while we prepare your room.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "Can I bring my dog?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Yes. Four garden rooms welcome dogs for a small nightly fee. Let us know when you book and we will have a bed and a bowl waiting.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "Is the hotel suitable for children?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Children of all ages are welcome. Family suites sleep four, and the kids' club runs every morning in July and August.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "Do you have parking?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Free parking is on site, with four chargers for electric cars.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "How do I change or cancel a booking?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [
+            {
+              "_type": "link",
+              "_key": "l0",
+              "href": "mailto:stay@meridian.example"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Flexible rates can be changed or cancelled free of charge up to 7 days before arrival. Write to ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "text": "stay@meridian.example",
+              "marks": [
+                "l0"
+              ]
+            },
+            {
+              "_type": "span",
+              "text": " with your booking number.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqItem",
+      "question": "Do you offer airport transfers?",
+      "answer": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "We collect guests from the airport in our own cars. The drive takes about 40 minutes and can be booked up to 48 hours before you land.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "openFirst": true,
+  "tone": "page"
+}

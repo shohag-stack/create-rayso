@@ -65,7 +65,10 @@ function studioSchemaIndex(documents) {
 import { page } from "./documents/page";
 import { siteSettings } from "./documents/siteSettings";
 ${documents.map((d) => `import { ${d.typeName} } from "./documents/${d.id}";`).join('\n')}
+import { brandLogo } from "./objects/brandLogo";
 import { cta } from "./objects/cta";
+import { faqGroup } from "./objects/faqGroup";
+import { faqItem } from "./objects/faqItem";
 import { imageWithAlt } from "./objects/imageWithAlt";
 import { link } from "./objects/link";
 import { linkColumn } from "./objects/linkColumn";
@@ -75,7 +78,7 @@ import { seo } from "./objects/seo";
 import { socialLink } from "./objects/socialLink";
 import { sectionTypes } from "./sections";
 
-export const schemaTypes = [page, siteSettings, ${documents.map((d) => `${d.typeName}, `).join('')}imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, ...sectionTypes];
+export const schemaTypes = [page, siteSettings, ${documents.map((d) => `${d.typeName}, `).join('')}imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, faqItem, faqGroup, brandLogo, ...sectionTypes];
 `;
 }
 

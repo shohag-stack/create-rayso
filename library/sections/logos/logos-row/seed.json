@@ -1,0 +1,27 @@
+{
+  "heading": "Meridian is trusted by 1,800+ travel companies",
+  "brands": [
+    {
+      "_type": "brandLogo",
+      "name": "Northwind"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Halcyon"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Kestrel"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Fernhill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Atlas"
+    }
+  ],
+  "mono": true,
+  "tone": "page"
+}

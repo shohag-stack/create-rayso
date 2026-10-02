@@ -1,4 +1,5 @@
 // Shapes returned by the shared GROQ fragments in (core)/fetch/fragments.ts
+import type { PortableTextBlock } from "@portabletext/react";
 
 export interface SanityImage {
   alt?: string;
@@ -93,3 +94,26 @@ export interface Person {
   company?: string;
   photo?: SanityImage;
 }
+
+export interface FaqItem {
+  _key?: string;
+  question: string;
+  answer?: PortableTextBlock[];
+}
+
+export interface FaqGroup {
+  _key?: string;
+  title?: string;
+  items?: FaqItem[];
+}
+
+// A client, partner or integration
+export interface BrandLogo {
+  _key?: string;
+  name: string;
+  logo?: SanityImage;
+  link?: SanityLink;
+}
+
+// A panel colour from the theme (studio/schemaTypes/fields/section.ts)
+export type Tint = "soft" | "accent" | "alt" | "dark";

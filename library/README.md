@@ -51,6 +51,19 @@ panel, scroll-aware shell), `components/ui/footer/` (link columns, social
 links, wordmark, bottom bar), the `navLink`, `navGroup`, `linkColumn` and
 `socialLink` objects, and `studio/schemaTypes/fields/navbar.ts` and `footer.ts`.
 
+## Shared pieces for FAQs, features and logos
+
+- FAQs use the `faqItem` (question and a short rich-text answer) and `faqGroup`
+  objects, `components/ui/faq/FaqItem.tsx` (a native `<details>`; the height
+  animation is in `globals.css`) and `components/ui/RichText.tsx`.
+- Logo sections use the `brandLogo` object (name, optional logo, optional
+  link) and `brandsField` / `monoLogosField` from `fields/section.ts`.
+  `components/ui/logos/BrandMark.tsx` draws a logo, or the name as a wordmark
+  when no logo is uploaded; `BrandBadge.tsx` fills a round or square badge.
+- `tintField` and `components/ui/tint.ts` give editors four panel colours from
+  the theme (soft accent, accent, light panel, dark). `iconField` and
+  `components/ui/IconByName.tsx` give them a small built-in icon set.
+
 Names come from the folder name (`hero-fullscreen-image`), and
 `npm run check:library` fails if a file doesn't use them:
 

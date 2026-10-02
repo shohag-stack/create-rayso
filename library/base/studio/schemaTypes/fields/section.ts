@@ -37,3 +37,47 @@ export const ratingSummaryField = defineField({
     defineField({ name: "badges", type: "array", description: "Optional award or review-site badges.", of: [defineArrayMember({ type: "imageWithAlt" })], validation: (rule) => rule.max(4) }),
   ],
 });
+
+// A panel colour picked from the theme. Used by feature cards and logo tiles.
+export const tintOptions = [
+  { title: "Soft accent", value: "soft" },
+  { title: "Accent", value: "accent" },
+  { title: "Light panel", value: "alt" },
+  { title: "Dark", value: "dark" },
+];
+
+export const tintField = (name = "tint", title = "Colour") =>
+  defineField({ name, title, type: "string", options: { list: tintOptions, layout: "radio", direction: "horizontal" }, initialValue: "soft" });
+
+// Icons editors can pick without uploading one. Keep in step with frontend/components/ui/IconByName.tsx.
+export const iconOptions = [
+  "search", "sparkles", "scan", "zap", "shield", "heart", "star", "leaf", "globe", "clock", "users", "chart",
+  "calendar", "map", "chat", "lock", "gift", "sun", "wave", "coffee",
+];
+
+export const iconField = defineField({
+  name: "icon",
+  type: "string",
+  description: "Optional icon from the built-in set.",
+  options: { list: iconOptions },
+});
+
+// The logo list the logo sections share
+export const brandsField = (group?: string, description = "Company logos. Without an uploaded logo the name is shown as text.") =>
+  defineField({
+    name: "brands",
+    title: "Logos",
+    type: "array",
+    group,
+    description,
+    of: [defineArrayMember({ type: "brandLogo" })],
+    validation: (rule) => rule.required().min(1),
+  });
+
+export const monoLogosField = defineField({
+  name: "mono",
+  title: "One-colour logos",
+  type: "boolean",
+  description: "Draws every logo in the text colour so logos with different colours look like one set.",
+  initialValue: true,
+});

@@ -75,3 +75,24 @@ export const sectionHeadingFields = /* groq */ `
 export const ratingSummaryFields = /* groq */ `
   rating{ score, label, badges[]{ _key, ${imageFields} } }
 `;
+
+// Objects from studio/schemaTypes/objects/faqItem.ts and faqGroup.ts
+export const faqItemFields = /* groq */ `
+  _key,
+  question,
+  answer
+`;
+
+export const faqGroupFields = /* groq */ `
+  _key,
+  title,
+  items[]{ ${faqItemFields} }
+`;
+
+// studio/schemaTypes/objects/brandLogo.ts
+export const brandLogoFields = /* groq */ `
+  _key,
+  name,
+  logo{ ${imageFields} },
+  link{ ${linkFields} }
+`;

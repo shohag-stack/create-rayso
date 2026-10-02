@@ -1,0 +1,25 @@
+{
+  "id": "logos-chips",
+  "category": "logos",
+  "title": "Logos, name chips",
+  "description": "A centred heading and wrapping rows of small chips, each with a square logo and the company name, for long partner or integration lists.",
+  "tags": [
+    "logos",
+    "partners",
+    "integrations",
+    "chips",
+    "list"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandBadge"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

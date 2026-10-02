@@ -1,0 +1,70 @@
+{
+  "eyebrow": "Guest stories",
+  "heading": "Chosen by people who travel well.",
+  "headingAccent": "Agencies, airlines and clubs who send their guests to us year after year.",
+  "cards": [
+    {
+      "_type": "logoCard",
+      "name": "Northwind",
+      "tint": "dark",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    },
+    {
+      "_type": "logoCard",
+      "name": "Halcyon",
+      "tint": "soft",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    },
+    {
+      "_type": "logoCard",
+      "name": "Kestrel",
+      "tint": "accent",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    },
+    {
+      "_type": "logoCard",
+      "name": "Fernhill",
+      "tint": "alt",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    },
+    {
+      "_type": "logoCard",
+      "name": "Atlas",
+      "tint": "dark",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    },
+    {
+      "_type": "logoCard",
+      "name": "Marlow",
+      "tint": "soft",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/stories"
+      }
+    }
+  ],
+  "linkLabel": "View case",
+  "mono": true,
+  "tone": "page"
+}

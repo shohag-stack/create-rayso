@@ -1,0 +1,62 @@
+{
+  "eyebrow": "Partners",
+  "heading": "Works with the places\nyou already love",
+  "brands": [
+    {
+      "_type": "brandLogo",
+      "name": "Juniper"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Solace"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Vantage"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Quill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Osprey"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Lumen"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Cobalt"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Larkspur"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Meadow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Tidewater"
+    }
+  ],
+  "highlight": {
+    "_type": "brandLogo",
+    "name": "Meridian"
+  },
+  "body": "Book a table in town, a boat to the islands or a round of golf, and our partners will have it ready when you arrive.",
+  "cta": {
+    "_type": "cta",
+    "label": "See all partners",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/partners"
+    }
+  },
+  "tone": "page"
+}

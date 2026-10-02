@@ -59,3 +59,19 @@
   @apply border-on-media/20 bg-on-media/15 text-on-media backdrop-blur-md;
   &:hover { @apply -translate-y-0.5 bg-on-media/25; }
 }
+
+/* FAQ accordions (components/ui/faq/FaqItem.tsx): animate the height where the browser can */
+.accordion {
+  interpolate-size: allow-keywords;
+}
+.accordion::details-content {
+  block-size: 0;
+  overflow-y: clip;
+  transition: block-size 0.35s var(--ease-smooth), content-visibility 0.35s allow-discrete;
+}
+.accordion[open]::details-content {
+  block-size: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion::details-content { transition: none; }
+}

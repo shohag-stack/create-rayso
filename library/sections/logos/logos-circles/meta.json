@@ -1,0 +1,27 @@
+{
+  "id": "logos-circles",
+  "category": "logos",
+  "title": "Logos, circles around yours",
+  "description": "A boxed label and a large centred heading, a row of round logos running off both edges with your own logo in a large dark circle in the middle, then text and a button.",
+  "tags": [
+    "logos",
+    "integrations",
+    "partners",
+    "circles",
+    "apps"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandBadge",
+      "BrandMark",
+      "CtaButton"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

@@ -1,0 +1,11 @@
+{
+  "left, no pictures": {
+    "align": "left",
+    "features": [
+      { "_type": "feature", "icon": "leaf", "title": "Grown here", "body": "Most of what we cook comes from the garden or from farms within an hour of the hotel.", "tint": "soft" },
+      { "_type": "feature", "icon": "clock", "title": "No timetable", "body": "Breakfast until noon, late check-out on request and the pools open until midnight.", "tint": "soft" },
+      { "_type": "feature", "icon": "heart", "title": "Looked after", "body": "One host looks after you from your first email to the drive back to the airport.", "tint": "soft" },
+      { "_type": "feature", "icon": "map", "title": "Off the map", "body": "Walks, boats and bikes to the places our team goes on their days off.", "tint": "soft" }
+    ]
+  }
+}

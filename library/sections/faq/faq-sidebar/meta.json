@@ -1,0 +1,12 @@
+{
+  "id": "faq-sidebar",
+  "category": "faq",
+  "title": "FAQ, side heading",
+  "description": "A heading, short text and buttons on the left that stay in view, and on the right questions in labelled groups with thin lines and large type.",
+  "tags": ["faq", "questions", "accordion", "sidebar", "groups"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "FaqItem", "RichText"], "animation": [] },
+  "references": [],
+  "features": []
+}
