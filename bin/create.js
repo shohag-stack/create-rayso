@@ -26,6 +26,9 @@ ${chalk.bold('npm create rayso@latest <niche> [folder] -- [options]')}
   --zip               Also make the buyer zip
   --no-install        Only write the files
   --no-start          Don't start the preview
+  --mix               Pick sections, their versions and the theme at random (even for a niche
+                      with a file). Prints a code to build the same mix again
+  --seed <code>       With --mix: rebuild the mix with this code
   --save-niche        For a niche with no file, also save the picked sections to library/niches/<niche>.json
                       (every template gets its recipe as niche.json either way)
 `;
@@ -43,6 +46,8 @@ const { values: opts, positionals } = parseArgs({
     'no-install': { type: 'boolean' },
     'no-start': { type: 'boolean' },
     'save-niche': { type: 'boolean' },
+    mix: { type: 'boolean' },
+    seed: { type: 'string' },
   },
 });
 
@@ -79,11 +84,23 @@ async function createFromNiche(nicheId, folder) {
   const { sections, documents, errors } = await loadLibrary();
   if (errors.length) fail('The section library has problems (npm run check:library):\n' + errors.map((e) => `  - ${e}`).join('\n'));
 
-  let niche = await loadNiche(nicheId);
+  const themeIds = (await fs.readdir(path.join(LIBRARY_DIR, 'themes'))).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
+  if (opts.seed && !opts.mix) fail('--seed only works together with --mix');
+  if (opts.seed && !/^\d+$/.test(opts.seed)) fail(`--seed "${opts.seed}": use the number --mix printed`);
+  const mix = opts.mix ? (opts.seed ? Number(opts.seed) : Math.floor(Math.random() * 1_000_000)) : undefined;
+
+  let niche = opts.mix ? null : await loadNiche(nicheId);
   if (!niche) {
-    niche = draftNiche(nicheId, sections, opts.theme);
-    console.log(chalk.yellow(`  No library/niches/${nicheId}.json yet, so the sections were picked from the library:`));
-    console.log(chalk.gray(`  ${niche.pages[0].sections.join(', ')}\n`));
+    niche = draftNiche(nicheId, sections, opts.theme, { mix, themes: themeIds });
+    const label = (e) => (typeof e === 'string' ? e : e.variant ? `${e.id} (${e.variant})` : e.id);
+    console.log(
+      chalk.yellow(
+        mix === undefined
+          ? `  No library/niches/${nicheId}.json yet, so the sections were picked from the library:`
+          : `  Mix ${mix}: sections, versions and the "${niche.theme}" theme picked at random. Build it again with --mix --seed ${mix}`
+      )
+    );
+    console.log(chalk.gray(`  Home: ${niche.pages[0].sections.map(label).join(', ')}\n`));
     if (opts['save-niche']) {
       const file = path.join(LIBRARY_DIR, 'niches', `${nicheId}.json`);
       await fs.outputJson(file, niche, { spaces: 2 });
@@ -91,7 +108,6 @@ async function createFromNiche(nicheId, folder) {
     }
   }
   if (opts.theme) niche = { ...niche, theme: opts.theme };
-  const themeIds = (await fs.readdir(path.join(LIBRARY_DIR, 'themes'))).map((f) => f.replace(/\.json$/, ''));
   const problems = nicheErrors(niche, sections, themeIds);
   if (problems.length) fail(`The ${nicheId} niche has problems:\n` + problems.map((e) => `  - ${e}`).join('\n'));
 

@@ -114,8 +114,11 @@ only the sections the niche uses, installs it and starts the site. Until a
 Sanity project is connected the site shows the demo content from
 `frontend/(core)/demo/content.json`, with a small notice. A name with no niche
 file gets a home page with one fitting section per category (by `niches` in
-`meta.json`); Every template gets the recipe it was built from as `niche.json` (left out of the zip); `--save-niche` also writes a drafted one to `niches/`. Options go after `--`:
-`--list`, `--name`, `--author`, `--theme`, `--project-id`, `--zip`,
+`meta.json`); Every template gets the recipe it was built from as `niche.json` (left out of the zip); `--save-niche` also writes a drafted one to `niches/`. `--mix` drafts at random instead (even
+when a niche file exists): sections, one of their versions (keeping only the
+version's look, not its demo text) and the theme, from a seed it prints;
+`--mix --seed <code>` builds the same mix again. Options go after `--`:
+`--list`, `--name`, `--author`, `--theme`, `--project-id`, `--zip`, `--mix`, `--seed`,
 `--no-install`, `--no-start`. With no niche the command runs the original
 scaffold (`bin/index.js`).
 
