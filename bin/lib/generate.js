@@ -21,6 +21,14 @@ function sectionTargets(s) {
   ];
 }
 
+function documentTargets(d) {
+  return [
+    ['schema.ts', `studio/schemaTypes/documents/${d.id}.ts`],
+    ['query.ts', `frontend/(core)/fetch/documents/${d.id}.ts`],
+    ['types.ts', `frontend/types/documents/${d.id}.ts`],
+  ];
+}
+
 // ── Registries ────────────────────────────────────────────────────────────────
 
 function studioSectionsIndex(sections) {
@@ -52,9 +60,11 @@ ${categories
 `;
 }
 
-function studioSchemaIndex() {
-  return `import { page } from "./documents/page";
+function studioSchemaIndex(documents) {
+  return `// ${GENERATED}
+import { page } from "./documents/page";
 import { siteSettings } from "./documents/siteSettings";
+${documents.map((d) => `import { ${d.typeName} } from "./documents/${d.id}";`).join('\n')}
 import { cta } from "./objects/cta";
 import { imageWithAlt } from "./objects/imageWithAlt";
 import { link } from "./objects/link";
@@ -65,7 +75,19 @@ import { seo } from "./objects/seo";
 import { socialLink } from "./objects/socialLink";
 import { sectionTypes } from "./sections";
 
-export const schemaTypes = [page, siteSettings, imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, ...sectionTypes];
+export const schemaTypes = [page, siteSettings, ${documents.map((d) => `${d.typeName}, `).join('')}imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, ...sectionTypes];
+`;
+}
+
+function documentListsFile(documents) {
+  const icons = [...new Set(documents.map((d) => d.icon))].sort();
+  return `// ${GENERATED}
+import type { ComponentType } from "react";
+${icons.length ? `import { ${icons.join(', ')} } from "@sanity/icons";\n` : ''}
+// Sidebar lists for the document types the sections use
+export const documentLists: { type: string; title: string; icon: ComponentType }[] = [
+${documents.map((d) => `  { type: "${d.typeName}", title: "${d.title}", icon: ${d.icon} },`).join('\n')}
+];
 `;
 }
 
@@ -200,15 +222,17 @@ function pageDocuments(pages, sectionsById) {
 }
 
 // Seed documents → the shape the GROQ queries return, for previews without a Sanity project
-function toQueryShape(value, slugs) {
-  if (Array.isArray(value)) return value.map((v) => toQueryShape(v, slugs));
+function toQueryShape(value, slugs, docs = {}) {
+  if (Array.isArray(value)) return value.map((v) => toQueryShape(v, slugs, docs));
   if (!value || typeof value !== 'object') return value;
+  // A reference to a seeded document becomes the document, like ->{ ... } in GROQ
+  if (value._type === 'reference' && docs[value._ref]) return toQueryShape(docs[value._ref], slugs, docs);
   const out = {};
   for (const [k, v] of Object.entries(value)) {
     if (k === '_sanityAsset') out.asset = { url: v.replace(/^(image|file)@/, '') };
     else if (k === 'anchor' && v?.current) out.anchor = v.current;
     else if (k === 'page' && v?._ref) Object.assign(out, { pageId: v._ref, slug: slugs[v._ref] });
-    else out[k] = toQueryShape(v, slugs);
+    else out[k] = toQueryShape(v, slugs, docs);
   }
   return out;
 }
@@ -242,6 +266,7 @@ async function removeGitkeeps(dir) {
  * @param {object} o
  * @param {string} o.targetDir
  * @param {object[]} o.sections   loaded library sections (loadSections)
+ * @param {object[]} [o.documents] loaded library document types (loadLibrary); the ones the sections reference are included
  * @param {object} o.theme        loaded theme (loadTheme)
  * @param {{id: string, title: string, slug?: string, menuColor?: string, sections: string[]}[]} o.pages
  * @param {string} o.siteName
@@ -249,7 +274,7 @@ async function removeGitkeeps(dir) {
  * @param {string} [o.footer]    footer section id for Site settings (default: the first footer section)
  * @param {boolean} [o.preview]   also write a /library page rendering every section from seed content
  */
-export async function generateTemplate({ targetDir, sections, theme, pages, siteName, navbar: navbarId, footer: footerId, preview = false, libraryDir = LIBRARY_DIR }) {
+export async function generateTemplate({ targetDir, sections, documents: allDocuments = [], theme, pages, siteName, navbar: navbarId, footer: footerId, preview = false, libraryDir = LIBRARY_DIR }) {
   keyCounter = 0;
   const sectionsById = new Map(sections.map((s) => [s.id, s]));
   for (const p of pages) {
@@ -261,6 +286,11 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   if (navbarId && sectionsById.get(navbarId)?.category !== 'navbar') throw new Error(`"${navbarId}" is not a navbar section`);
   if (footerId && sectionsById.get(footerId)?.category !== 'footer') throw new Error(`"${footerId}" is not a footer section`);
 
+  const used = new Set(sections.flatMap((s) => s.references ?? []));
+  const documents = allDocuments.filter((d) => used.has(d.id));
+  const missingDocs = [...used].filter((id) => !documents.some((d) => d.id === id));
+  if (missingDocs.length) throw new Error(`Sections reference unknown document types: ${missingDocs.join(', ')}`);
+
   // 1. Base template
   await fs.copy(path.join(libraryDir, 'base'), targetDir);
   await removeGitkeeps(targetDir);
@@ -270,11 +300,15 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   for (const s of sections) {
     for (const [from, to] of sectionTargets(s)) await fs.copy(path.join(s.dir, from), path.join(targetDir, to));
   }
+  for (const d of documents) {
+    for (const [from, to] of documentTargets(d)) await fs.copy(path.join(d.dir, from), path.join(targetDir, to));
+  }
 
   // 3. Registries
   const write = (rel, content) => fs.outputFile(path.join(targetDir, rel), content);
   await write('studio/schemaTypes/sections/index.ts', studioSectionsIndex(sections));
-  await write('studio/schemaTypes/index.ts', studioSchemaIndex());
+  await write('studio/schemaTypes/index.ts', studioSchemaIndex(documents));
+  await write('studio/documentLists.ts', documentListsFile(documents));
   await write('frontend/(core)/fetch/page.ts', pageQuery(sections));
   await write('frontend/types/sections.ts', sectionTypesFile(sections));
   await write('frontend/components/sections/SectionRenderer.tsx', sectionRenderer(sections));
@@ -289,7 +323,8 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   const navbar = siteSection(pick('navbar', navbarId));
   const footer = siteSection(pick('footer', footerId));
   const settings = { _id: 'siteSettings', _type: 'siteSettings', siteName, ...(navbar ? { navbar } : {}), ...(footer ? { footer } : {}) };
-  const docs = [settings, ...pageDocuments(pages, sectionsById)];
+  const seededDocs = documents.flatMap((d) => d.seed.map(withKeys));
+  const docs = [settings, ...seededDocs, ...pageDocuments(pages, sectionsById)];
   await write('seed/demo-content.ndjson', docs.map((d) => JSON.stringify(d)).join('\n') + '\n');
 
   // 6. CLAUDE.md inventory
@@ -298,6 +333,7 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   // 7. Library preview (playground only)
   if (preview) {
     const slugs = Object.fromEntries(pages.map((p) => [p.id, p.slug ?? p.id]));
+    const docsById = Object.fromEntries(seededDocs.map((d) => [d._id, d]));
     const withoutNulls = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null));
     const items = sections.flatMap((s) =>
       [['default', s.seed], ...Object.entries(s.variants).map(([name, v]) => [name, withoutNulls({ ...s.seed, ...v })])].map(
@@ -305,7 +341,7 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
           id: variant === 'default' ? s.id : `${s.id}--${variant.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`,
           category: s.category,
           title: variant === 'default' ? s.title : `${s.title} (${variant})`,
-          section: toQueryShape({ _key: `${s.id}-${variant}`, _type: s.typeName, ...withKeys(content) }, slugs),
+          section: toQueryShape({ _key: `${s.id}-${variant}`, _type: s.typeName, ...withKeys(content) }, slugs, docsById),
         })
       )
     );

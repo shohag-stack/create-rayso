@@ -4,14 +4,14 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { SITE_CATEGORIES, generateTemplate } from '../bin/lib/generate.js';
-import { loadSections, loadTheme } from '../bin/lib/library.js';
+import { loadLibrary, loadTheme } from '../bin/lib/library.js';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const targetDir = path.join(root, 'playground');
 const themeArg = process.argv.indexOf('--theme');
 const themeId = themeArg > -1 ? process.argv[themeArg + 1] : 'resort';
 
-const { sections, errors } = await loadSections();
+const { sections, documents, errors } = await loadLibrary();
 if (errors.length) {
   console.error('✖ Fix the library first (npm run check:library):\n' + errors.map((e) => `  - ${e}`).join('\n'));
   process.exit(1);
@@ -27,6 +27,7 @@ if (fs.existsSync(targetDir)) {
 await generateTemplate({
   targetDir,
   sections,
+  documents,
   theme: await loadTheme(themeId),
   siteName: 'RAYSO Playground',
   pages: [{ id: 'home', title: 'Home', sections: sections.filter((s) => !SITE_CATEGORIES.includes(s.category)).map((s) => s.id) }],

@@ -70,3 +70,26 @@ export type NavItem = (NavLink & { _type?: "navLink" }) | NavGroup;
 
 // Set by the page (its "Menu text colour"), not by the menu itself
 export type MenuColor = "light" | "dark";
+
+export interface SectionHeading {
+  eyebrow?: string;
+  heading?: string;
+  headingAccent?: string;
+  body?: string;
+}
+
+export type SectionTone = "page" | "tinted" | "dark";
+
+export interface RatingSummary {
+  score?: number;
+  label?: string;
+  badges?: (SanityImage & { _key?: string })[];
+}
+
+// Who said something: testimonials, team members, quotes
+export interface Person {
+  name: string;
+  role?: string;
+  company?: string;
+  photo?: SanityImage;
+}

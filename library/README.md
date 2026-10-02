@@ -9,6 +9,7 @@ library/
                (Next.js frontend, Sanity studio, page + siteSettings schemas,
                shared fields, CLAUDE.md, README, zip and seed scripts)
   sections/    one folder per section: sections/<category>/<id>/
+  documents/   document types sections pick from (testimonials, ...): documents/<id>/
   themes/      niche themes: colours, fonts, radii (<id>.json)
 ```
 
@@ -24,6 +25,18 @@ sections/hero/hero-fullscreen-image/
   seed.json       demo content, imported into Sanity and shown in the playground
   variants.json   optional: extra playground previews, { "<name>": { fields that differ, null removes one } }
 ```
+
+## Document types
+
+Content used in more than one place (testimonials, later team members,
+projects) is a Sanity document, not section fields. `documents/<id>/` holds
+`schema.ts`, `query.ts` (`<id>Fields`), `types.ts` (`<Id>Data`), `meta.json`
+(`id`, `title` for the Studio sidebar, `icon` from `@sanity/icons`) and
+`seed.json` (an array of documents with fixed `_id`s). A section lists the
+types it uses in `meta.json` `references`; the generator copies only those,
+adds them to the Studio sidebar, seeds them, and resolves `{ "_type":
+"reference", "_ref": "<_id>" }` in section seeds for the playground. Sections
+pick documents with an array of references; empty shows the newest.
 
 ## Menus and footers
 

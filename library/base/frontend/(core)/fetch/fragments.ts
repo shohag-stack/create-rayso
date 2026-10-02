@@ -63,3 +63,15 @@ export const navItemFields = /* groq */ `
   link{ ${linkFields} },
   links[]{ ${navLinkFields} }
 `;
+
+// Fields from studio/schemaTypes/fields/section.ts
+export const sectionHeadingFields = /* groq */ `
+  eyebrow,
+  heading,
+  headingAccent,
+  body
+`;
+
+export const ratingSummaryFields = /* groq */ `
+  rating{ score, label, badges[]{ _key, ${imageFields} } }
+`;

@@ -1,0 +1,36 @@
+{
+  "eyebrow": "Guest stories",
+  "heading": "Don't just take",
+  "headingAccent": "our word for it",
+  "body": "What guests say after a stay at Meridian.",
+  "testimonials": [
+    {
+      "_type": "reference",
+      "_ref": "testimonial-amelia"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-jonas"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-priya"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-marco"
+    }
+  ],
+  "rating": {
+    "score": 4.8,
+    "label": "500+ reviews"
+  },
+  "cardStyle": "filled",
+  "quoteSize": "normal",
+  "photoStyle": "avatar",
+  "showDate": true,
+  "align": "center",
+  "arrows": "side",
+  "ratingPosition": "below",
+  "tone": "page"
+}

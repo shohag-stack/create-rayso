@@ -1,0 +1,32 @@
+{
+  "dark, one framed quote": {
+    "eyebrow": null,
+    "heading": "What our guests",
+    "headingAccent": "are saying",
+    "link": null,
+    "testimonials": [
+      {
+        "_type": "reference",
+        "_ref": "testimonial-amelia"
+      }
+    ],
+    "panelStyle": "framed",
+    "showStats": false,
+    "tone": "dark"
+  },
+  "big number beside the quote": {
+    "eyebrow": null,
+    "heading": null,
+    "link": null,
+    "testimonials": [
+      {
+        "_type": "reference",
+        "_ref": "testimonial-jonas"
+      }
+    ],
+    "media": "stat",
+    "alternate": false,
+    "quoteMark": false,
+    "tone": "tinted"
+  }
+}

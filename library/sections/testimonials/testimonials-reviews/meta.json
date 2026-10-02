@@ -1,0 +1,12 @@
+{
+  "id": "testimonials-reviews",
+  "category": "testimonials",
+  "title": "Testimonials, review cards",
+  "description": "A panel with the average star rating, a heading and a button, an optional photo on the right, and a row of up to three short review cards with stars and read-more links.",
+  "tags": ["testimonials", "reviews", "rating", "stars", "product"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "Stars"], "animation": [] },
+  "references": ["testimonial"],
+  "features": []
+}
