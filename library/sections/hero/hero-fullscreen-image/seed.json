@@ -1,0 +1,15 @@
+{
+  "eyebrow": "Maldives, Indian Ocean",
+  "heading": "Where stillness\nmeets the sea.",
+  "body": "Private villas, overwater bungalows, and curated experiences for those who seek something beyond ordinary.",
+  "ctas": [
+    { "_type": "cta", "label": "Explore rooms", "style": "primary", "link": { "_type": "link", "kind": "url", "url": "/rooms" } }
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Overwater villas at sunset"
+  },
+  "overlay": "medium",
+  "showScrollHint": true
+}

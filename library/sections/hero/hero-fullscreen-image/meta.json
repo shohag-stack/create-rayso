@@ -1,0 +1,12 @@
+{
+  "id": "hero-fullscreen-image",
+  "category": "hero",
+  "title": "Hero, full-screen image",
+  "description": "Full-height photo with a dark overlay, heading, short text, up to two buttons and an optional scroll hint.",
+  "tags": ["image", "dark", "full-bleed"],
+  "niches": ["*"],
+  "isPageTop": true,
+  "uses": { "ui": ["CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

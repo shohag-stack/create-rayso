@@ -26,5 +26,9 @@
   "engines": {
     "node": ">=18"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "check:library": "node scripts/check-library.mjs",
+    "playground": "node scripts/playground.mjs"
+  }
 }

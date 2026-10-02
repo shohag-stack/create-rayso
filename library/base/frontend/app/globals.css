@@ -1,0 +1,48 @@
+@import "tailwindcss";
+/* Brand values (colours, fonts, radii) come from the niche theme */
+@import "./theme.css";
+
+/* Tokens that are the same in every theme */
+@theme {
+  --spacing-navbar: 90px;
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-soft: cubic-bezier(0, 0, 0.2, 1);
+  --animate-scroll-line: scroll-line 1.8s ease-in-out infinite;
+
+  @keyframes scroll-line {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(350%); }
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-fg-muted);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-fg);
+    font-family: var(--font-heading);
+  }
+}
+
+/* Content width shared by every section */
+@utility container-site { @apply mx-auto w-full max-w-7xl px-4 md:px-8; }
+/* Outer spacing for sections on the page background (margins collapse) */
+@utility section-gap { @apply my-20 md:my-28; }
+
+@utility eyebrow { @apply text-xs font-semibold tracking-[0.2em] uppercase; }
+
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-button border border-transparent px-8 py-3 text-xs font-semibold tracking-wider whitespace-nowrap uppercase no-underline transition-all duration-200 select-none;
+}
+@utility btn-primary {
+  @apply bg-accent text-accent-fg;
+  &:hover { @apply -translate-y-0.5 bg-accent-hover; }
+}
+@utility btn-secondary {
+  @apply border-current bg-transparent;
+  &:hover { @apply -translate-y-0.5; }
+}

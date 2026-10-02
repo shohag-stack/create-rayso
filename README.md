@@ -38,6 +38,13 @@ npm run dev
 - Frontend → http://localhost:3000
 - Studio   → http://localhost:3333
 
+## Section library (in progress)
+
+`library/` holds reusable sections and a new base template; `npm run playground`
+generates a project with every section and previews them at `/library`. The
+CLI above still uses the original `template/` scaffold. See
+[library/README.md](library/README.md).
+
 ## Publishing to npm
 
 ```bash
