@@ -15,7 +15,7 @@ import { draftNiche, loadNiche, loadNiches, nicheErrors, nicheSections } from '.
 const HELP = `
 ${chalk.bold('npm create rayso@latest <niche> [folder] -- [options]')}
 
-  Builds a template for <niche> (e.g. resort), installs it and opens the preview.
+  Builds a template for <niche> (starter, or any name like dental), installs it and opens the preview.
   With no niche it runs the original scaffold.
 
   --list              Show the niches in the library

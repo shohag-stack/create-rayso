@@ -126,7 +126,7 @@ A page whose first section isn't `isPageTop` starts below the menu.
 | Command | What it does |
 |---|---|
 | `npm run check:library` | Validates every section folder |
-| `node bin/create.js resort --no-start` | Builds `resort-template/` from `niches/resort.json` (what `npm create rayso@latest resort` runs) |
+| `node bin/create.js starter --no-start` | Builds `starter-template/` from `niches/starter.json` (what `npm create rayso@latest starter` runs) |
 | `npm run playground` | Generates `playground/` with every section and the resort theme |
 | `cd playground && npm install && npm run dev:frontend` | Shows every section at <http://localhost:3000/library>, no Sanity project needed |
 
