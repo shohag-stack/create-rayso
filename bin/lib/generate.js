@@ -236,6 +236,7 @@ function toQueryShape(value, slugs, docs = {}) {
   for (const [k, v] of Object.entries(value)) {
     if (k === '_sanityAsset') out.asset = { url: v.replace(/^(image|file)@/, '') };
     else if (k === 'anchor' && v?.current) out.anchor = v.current;
+    else if (k === 'slug' && v?.current) out.slug = v.current;
     else if (k === 'page' && v?._ref) Object.assign(out, { pageId: v._ref, slug: slugs[v._ref] });
     else out[k] = toQueryShape(v, slugs, docs);
   }
