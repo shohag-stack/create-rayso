@@ -1,6 +1,6 @@
 {
   "name": "create-rayso",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "CLI scaffolder for RAYSO.STUDIO Next.js + Sanity + Tailwind v4 templates",
   "main": "bin/create.js",
   "bin": {
