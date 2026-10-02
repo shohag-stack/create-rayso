@@ -1,0 +1,115 @@
+{
+  "heading": "Slow days by the sea,",
+  "headingAccent": "booked in a minute",
+  "accentStyle": "italic",
+  "ctas": [
+    {
+      "_type": "cta",
+      "label": "Book your stay",
+      "style": "primary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "columns": [
+    {
+      "_type": "linkColumn",
+      "heading": "Hotel",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Call us",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/call-us"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Careers",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/careers"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Journal",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/journal"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "linkColumn",
+      "heading": "Socials",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Instagram",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/instagram"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "X",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/x"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "LinkedIn",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/linkedin"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "linkColumn",
+      "heading": "Legal",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Privacy policy",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/privacy-policy"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Terms of service",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/terms-of-service"
+          }
+        }
+      ]
+    }
+  ],
+  "copyright": "© {year} Meridian Hotels. All rights reserved.",
+  "wordmark": "Meridian",
+  "frame": "card",
+  "ctaPosition": "left",
+  "tone": "gradient",
+  "credit": "Made by the sea in Porto Vecchio."
+}

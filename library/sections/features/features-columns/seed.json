@@ -1,0 +1,32 @@
+{
+  "heading": "Slow mornings.\nLong, easy evenings.",
+  "body": "Everything at Meridian is planned so you don't have to. Three things guests love most, ready from the moment you arrive.",
+  "features": [
+    {
+      "_type": "feature",
+      "icon": "sun",
+      "title": "Wake",
+      "body": "Breakfast on the terrace until noon, with bread baked in our own oven.",
+      "tint": "soft",
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Breakfast table in the sun" }
+    },
+    {
+      "_type": "feature",
+      "icon": "wave",
+      "title": "Swim",
+      "body": "Heated pools, a quiet cove and boats to the islands every afternoon.",
+      "tint": "alt",
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Pool by the sea" }
+    },
+    {
+      "_type": "feature",
+      "icon": "sparkles",
+      "title": "Unwind",
+      "body": "Treatments in the garden spa, then dinner under the olive trees.",
+      "tint": "accent",
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Spa room with candles" }
+    }
+  ],
+  "align": "center",
+  "tone": "page"
+}

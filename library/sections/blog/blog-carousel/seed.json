@@ -1,0 +1,40 @@
+{
+  "heading": "Latest news",
+  "viewAll": {
+    "_type": "cta",
+    "label": "View all",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/blog"
+    }
+  },
+  "posts": [
+    {
+      "_type": "reference",
+      "_ref": "post-summer-menu"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-islands-by-boat"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-spa-reopens"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-slow-weekend"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-award-2026"
+    },
+    {
+      "_type": "reference",
+      "_ref": "post-electric-transfers"
+    }
+  ],
+  "tone": "page"
+}

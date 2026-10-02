@@ -1,0 +1,25 @@
+{
+  "id": "logos-row",
+  "category": "logos",
+  "title": "Logos, one row",
+  "description": "A short centred line and one row of client or partner logos that wraps on small screens.",
+  "tags": [
+    "logos",
+    "clients",
+    "trust",
+    "social proof",
+    "brands"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandMark"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

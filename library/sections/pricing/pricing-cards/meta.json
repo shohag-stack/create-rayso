@@ -1,0 +1,12 @@
+{
+  "id": "pricing-cards",
+  "category": "pricing",
+  "title": "Pricing, plan cards",
+  "description": "A heading, an optional monthly/yearly or currency switch, and one to four plan cards with price, features and a button. Cards can be outlined, filled or have a tinted top; the highlighted plan gets an accent border, an accent card or a banner. Optional smaller extra plans and a note underneath.",
+  "tags": ["pricing", "plans", "tiers", "subscription", "billing toggle"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["PriceSwitch", "PlanFeatures", "PlanCtas", "SectionHeading", "CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

@@ -1,0 +1,81 @@
+{
+  "eyebrow": "Made for stays big and small",
+  "heading": "Join for free",
+  "plans": [
+    {
+      "_type": "pricingPlan",
+      "name": "Guest",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "Free",
+          "period": "forever"
+        }
+      ],
+      "description": "Member rates on rooms. Late check-out when free."
+    },
+    {
+      "_type": "pricingPlan",
+      "name": "Regular monthly",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€49.90",
+          "period": "month"
+        }
+      ],
+      "description": "Breakfast included, 10% off every stay."
+    },
+    {
+      "_type": "pricingPlan",
+      "name": "Regular yearly",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€529.90",
+          "period": "year"
+        }
+      ],
+      "description": "Breakfast included, 10% off every stay."
+    }
+  ],
+  "offers": [
+    {
+      "_type": "pricingOffer",
+      "heading": "Proudly in partnership with the Coastal Walking Club.",
+      "body": "Club members receive 30% off a yearly Meridian membership.",
+      "cta": {
+        "_type": "cta",
+        "label": "Visit the club website",
+        "style": "light",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/partners"
+        }
+      },
+      "brand": {
+        "_type": "brandLogo",
+        "name": "Northwind"
+      },
+      "tint": "accent"
+    },
+    {
+      "_type": "pricingOffer",
+      "heading": "Students stay free for their first weekend.",
+      "body": "Currently enrolled students get a free weekend in the low season. Get in touch to find out more.",
+      "cta": {
+        "_type": "cta",
+        "label": "Contact us",
+        "style": "light",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      },
+      "tint": "dark"
+    }
+  ],
+  "tone": "dark"
+}

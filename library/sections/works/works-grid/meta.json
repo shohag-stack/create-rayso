@@ -1,0 +1,12 @@
+{
+  "id": "works-grid",
+  "category": "works",
+  "title": "Works, project grid",
+  "description": "A heading and a grid of projects in two or three columns. Each card has a large image, the title and the category and year; each opens the project's own page.",
+  "tags": ["works", "projects", "portfolio", "case studies", "gallery"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton"], "animation": [] },
+  "references": ["work"],
+  "features": []
+}

@@ -1,0 +1,86 @@
+{
+  "heading": "Meridian works with leading travel and hospitality partners",
+  "brands": [
+    {
+      "_type": "brandLogo",
+      "name": "Northwind"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Halcyon"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Kestrel"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Fernhill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Atlas"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Marlow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Juniper"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Solace"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Vantage"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Quill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Osprey"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Lumen"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Cobalt"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Larkspur"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Meadow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Tidewater"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Briar"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Corvid"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Saltmarsh"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Wren"
+    }
+  ],
+  "tone": "page"
+}

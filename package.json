@@ -2,9 +2,9 @@
   "name": "create-rayso",
   "version": "1.0.7",
   "description": "CLI scaffolder for RAYSO.STUDIO Next.js + Sanity + Tailwind v4 templates",
-  "main": "bin/index.js",
+  "main": "bin/create.js",
   "bin": {
-    "create-rayso": "bin/index.js"
+    "create-rayso": "bin/create.js"
   },
   "keywords": [
     "create",
@@ -26,5 +26,9 @@
   "engines": {
     "node": ">=18"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "check:library": "node scripts/check-library.mjs",
+    "playground": "node scripts/playground.mjs"
+  }
 }

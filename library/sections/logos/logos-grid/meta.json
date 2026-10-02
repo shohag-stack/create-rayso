@@ -1,0 +1,25 @@
+{
+  "id": "logos-grid",
+  "category": "logos",
+  "title": "Logos, grid",
+  "description": "An optional heading with a lighter second half, then logos in a grid of lined cells. Cells can be square or short, lines solid or dashed, and a wide cell can hold a label.",
+  "tags": [
+    "logos",
+    "partners",
+    "integrations",
+    "grid",
+    "trust"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandMark"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

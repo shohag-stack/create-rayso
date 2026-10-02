@@ -1,0 +1,12 @@
+{
+  "id": "features-columns",
+  "category": "features",
+  "title": "Features, columns with pictures",
+  "description": "A centred heading and text, then two to four features side by side, each with an icon in a coloured box, a title, a line of text and a picture in a matching coloured card.",
+  "tags": ["features", "columns", "icons", "benefits", "product"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["IconByName", "SectionHeading"], "animation": [] },
+  "references": [],
+  "features": []
+}

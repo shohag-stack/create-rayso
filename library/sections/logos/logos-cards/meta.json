@@ -1,0 +1,25 @@
+{
+  "id": "logos-cards",
+  "category": "logos",
+  "title": "Logos, coloured cards",
+  "description": "A heading with a lighter second line, then large cards in theme colours, each with one client logo and a small link label; linked cards tilt a little on hover.",
+  "tags": [
+    "logos",
+    "clients",
+    "case studies",
+    "cards",
+    "trust"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandMark"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

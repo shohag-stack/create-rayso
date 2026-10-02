@@ -1,0 +1,200 @@
+{
+  "heading": "Frequently asked questions",
+  "body": "Write to stay@meridian.example if you have any other questions.",
+  "groups": [
+    {
+      "_type": "faqGroup",
+      "title": "Your stay",
+      "items": [
+        {
+          "_type": "faqItem",
+          "question": "What is included in the room rate?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Breakfast on the terrace, the spa pools, morning yoga and bikes to explore the coast. ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "text": "Everything else is up to you.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "text": " Dinner, treatments and boat trips can be added when you book or at any time during your stay.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "When are check-in and check-out?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Rooms are ready from 3 pm and we ask you to leave by 11 am. Early arrivals can use the spa and the pool while we prepare your room.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "Can I bring my dog?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Yes. Four garden rooms welcome dogs for a small nightly fee. Let us know when you book and we will have a bed and a bowl waiting.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "Is the hotel suitable for children?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Children of all ages are welcome. Family suites sleep four, and the kids' club runs every morning in July and August.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "Do you have parking?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Free parking is on site, with four chargers for electric cars.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "faqGroup",
+      "title": "Booking & travel",
+      "items": [
+        {
+          "_type": "faqItem",
+          "question": "How do I change or cancel a booking?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "l0",
+                  "href": "mailto:stay@meridian.example"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Flexible rates can be changed or cancelled free of charge up to 7 days before arrival. Write to ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "text": "stay@meridian.example",
+                  "marks": [
+                    "l0"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "text": " with your booking number.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "Do you offer airport transfers?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "We collect guests from the airport in our own cars. The drive takes about 40 minutes and can be booked up to 48 hours before you land.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "faqItem",
+          "question": "Can I pay with a gift card?",
+          "answer": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Gift cards can be used for rooms, dining and spa treatments. Enter the code at checkout or bring it with you.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Sunlit terrace by the sea"
+  },
+  "imageSide": "left",
+  "openFirst": true,
+  "groupMarker": true
+}

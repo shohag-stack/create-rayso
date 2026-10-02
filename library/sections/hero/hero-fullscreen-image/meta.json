@@ -1,0 +1,26 @@
+{
+  "id": "hero-fullscreen-image",
+  "category": "hero",
+  "title": "Hero, full-screen image",
+  "description": "Full-screen photo or video with the text on the left, at the top or bottom. Options: darkening, large lead text, up to two buttons, floating status cards, scroll hint.",
+  "tags": [
+    "image",
+    "video",
+    "full-bleed",
+    "left-aligned",
+    "status-cards"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": true,
+  "uses": {
+    "ui": [
+      "BackgroundMedia",
+      "CtaButton"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

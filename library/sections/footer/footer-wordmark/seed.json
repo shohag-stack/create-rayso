@@ -1,0 +1,155 @@
+{
+  "wordmark": "Meridian",
+  "wordmarkPosition": "middle",
+  "wordmarkColor": "accent",
+  "tagline": "Made for slow mornings and long dinners",
+  "topLinks": [
+    {
+      "_type": "navLink",
+      "label": "Rooms",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/rooms"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Spa",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/spa"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Dining",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/dining"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Events",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/events"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Journal",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/journal"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Contact",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "socialLinks": [
+    {
+      "_type": "socialLink",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/meridian"
+    },
+    {
+      "_type": "socialLink",
+      "platform": "instagram",
+      "url": "https://instagram.com/meridian"
+    },
+    {
+      "_type": "socialLink",
+      "platform": "facebook",
+      "url": "https://facebook.com/meridian"
+    },
+    {
+      "_type": "socialLink",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/meridian"
+    }
+  ],
+  "legalLinks": [
+    {
+      "_type": "navLink",
+      "label": "Privacy policy",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/privacy"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Terms of service",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/terms"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Cookie policy",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/cookies"
+      }
+    }
+  ],
+  "copyright": "© {year} Meridian Hotels. All rights reserved.",
+  "linkStyle": "normal",
+  "dividers": true,
+  "tone": "light",
+  "secondaryLinks": [
+    {
+      "_type": "navLink",
+      "label": "Weddings",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/weddings"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Retreats",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/retreats"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Gift cards",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/gift-cards"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Offers",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/offers"
+      }
+    }
+  ]
+}

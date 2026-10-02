@@ -1,0 +1,77 @@
+{{TEMPLATE_NAME}} - Commercial License
+Copyright (c) {{YEAR}} {{AUTHOR}}. All rights reserved.
+
+This license applies to the {{TEMPLATE_NAME}} template ("the Template"): its
+source code, design, Sanity schemas, documentation and demo content. By
+downloading or using the Template you agree to these terms. If you don't
+agree, don't use the Template.
+
+1. WHAT YOU GET
+
+Each purchase grants you a non-exclusive, non-transferable license to use the
+Template to build ONE End Product, for yourself or for one client.
+
+An "End Product" is a single website or web application (one domain, plus its
+staging and development copies) that is built with the Template and is
+meaningfully different from the Template itself.
+
+For each additional End Product, you need another license.
+
+2. YOU MAY
+
+- Modify the Template as much as you like.
+- Use it for personal or commercial End Products, including sites that make
+  money (ads, shop, paid services).
+- Build an End Product for a client and charge for your work. The client may
+  own and run that End Product. Your license moves to the client with it.
+- Keep the source code in a private repository and share it with people
+  working on the End Product.
+
+3. YOU MAY NOT
+
+- Resell, sublicense, share or give away the Template or any part of its
+  source code, whether modified or not.
+- Offer the Template, or anything derived from it, as a template, theme,
+  starter kit, boilerplate or UI kit, whether free or paid.
+- Put the source code in a public repository, or anywhere else people can
+  download it.
+- Use the Template to build a website builder, or any service that lets other
+  people create sites from it.
+- Claim the Template, or its design, as your own original work.
+- Remove this license file from your copy of the source code.
+
+4. DEMO CONTENT AND THIRD-PARTY ASSETS
+
+The demo text, images and videos are included so you can see how the Template
+works. Replace them with your own before you launch, unless the store page
+says a particular asset may be reused.
+
+Fonts, icons, libraries and other third-party packages are covered by their
+own licenses, not by this one (see each package's license in node_modules or
+on its website). Some fonts may need their own license for commercial use.
+
+5. UPDATES AND SUPPORT
+
+Updates and support are provided as described on the store page at the time
+of purchase. This license does not promise future updates.
+
+6. TERMINATION
+
+If you break these terms, this license ends straight away. You must then stop
+using the Template and delete every copy you have. End Products that were
+launched legally before the breach, and that still follow sections 3 and 4,
+may stay online.
+
+7. NO WARRANTY
+
+THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL {{AUTHOR}} BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE
+TEMPLATE OR ITS USE. THIS LIMITATION APPLIES TO THE EXTENT THE LAW ALLOWS.
+
+8. QUESTIONS
+
+If you want to use the Template in a way this license doesn't cover (several
+sites, an agency license, a SaaS product), contact {{AUTHOR}} through the
+store you bought it from before you start.

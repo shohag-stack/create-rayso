@@ -1,0 +1,54 @@
+{
+  "dark, dashed with label": {
+    "eyebrow": null,
+    "heading": null,
+    "headingAccent": null,
+    "label": "Trusted by 50+ companies",
+    "brands": [
+      {
+        "_type": "brandLogo",
+        "name": "Atlas"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Marlow"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Juniper"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Solace"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Vantage"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Quill"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Osprey"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Lumen"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Cobalt"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Larkspur"
+      }
+    ],
+    "cells": "short",
+    "lines": "dashed",
+    "fullWidth": false,
+    "tone": "dark"
+  }
+}

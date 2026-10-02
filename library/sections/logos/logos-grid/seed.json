@@ -1,0 +1,85 @@
+{
+  "eyebrow": "Our travel partners",
+  "heading": "Easy to reach.",
+  "headingAccent": "Our partners bring you here by air, sea and rail, and look after every detail on the way.",
+  "brands": [
+    {
+      "_type": "brandLogo",
+      "name": "Northwind"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Halcyon"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Kestrel"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Fernhill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Atlas"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Marlow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Juniper"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Solace"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Vantage"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Quill"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Osprey"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Lumen"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Cobalt"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Larkspur"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Meadow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Tidewater"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Briar"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Corvid"
+    }
+  ],
+  "columns": "6",
+  "cells": "square",
+  "lines": "solid",
+  "fullWidth": true,
+  "mono": true,
+  "tone": "page"
+}

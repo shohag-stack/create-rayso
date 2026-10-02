@@ -1,0 +1,32 @@
+{
+  "dark": {
+    "tone": "dark",
+    "heading": "Booked through the agencies you already use",
+    "brands": [
+      {
+        "_type": "brandLogo",
+        "name": "Marlow"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Juniper"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Solace"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Vantage"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Quill"
+      },
+      {
+        "_type": "brandLogo",
+        "name": "Osprey"
+      }
+    ]
+  }
+}

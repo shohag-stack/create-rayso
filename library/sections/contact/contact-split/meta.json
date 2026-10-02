@@ -1,0 +1,12 @@
+{
+  "id": "contact-split",
+  "category": "contact",
+  "title": "Contact, details and form",
+  "description": "Contact details (email, phone, address, hours) beside a working contact form with name, email, optional phone and message. Messages are emailed with Resend.",
+  "tags": ["contact", "form", "enquiry", "address", "email", "booking"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["ContactForm"], "animation": [] },
+  "references": [],
+  "features": ["contact-form"]
+}

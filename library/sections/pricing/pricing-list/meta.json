@@ -1,0 +1,12 @@
+{
+  "id": "pricing-list",
+  "category": "pricing",
+  "title": "Pricing, plan rows and offers",
+  "description": "A small label over a line, a heading, plans as full-width outlined rows with the name on the left and the price on the right, then up to two coloured offer panels with a button and an optional partner logo.",
+  "tags": ["pricing", "plans", "list", "offers", "discount"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["BrandMark", "CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

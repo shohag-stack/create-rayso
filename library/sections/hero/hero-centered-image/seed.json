@@ -1,0 +1,15 @@
+{
+  "heading": "You're a doctor.",
+  "headingAccent": "Not an admin desk.",
+  "body": "Let us handle bookings, reminders and paperwork.",
+  "note": "Booked 8 check-ups this morning",
+  "emailCapture": { "placeholder": "Your email", "buttonLabel": "Get started", "link": { "_type": "link", "kind": "url", "url": "/contact" } },
+  "image": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Sunlit trees in front of a clinic"
+  },
+  "frame": "full",
+  "headingSize": "large",
+  "overlay": "light"
+}

@@ -1,0 +1,37 @@
+{
+  "rating": {
+    "score": 4.9,
+    "label": "126"
+  },
+  "heading": "Guests put their\nphones down.",
+  "cta": {
+    "_type": "cta",
+    "label": "See all reviews",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/reviews"
+    }
+  },
+  "testimonials": [
+    {
+      "_type": "reference",
+      "_ref": "testimonial-amelia"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-priya"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-marco"
+    }
+  ],
+  "readMoreLabel": "Read all",
+  "image": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Sunlit terrace by the sea"
+  }
+}

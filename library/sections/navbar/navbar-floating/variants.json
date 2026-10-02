@@ -1,0 +1,107 @@
+{
+  "logo centre, light card, small capitals": {
+    "menuColor": "dark",
+    "links": [
+      {
+        "_type": "navLink",
+        "label": "About",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/about"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Rooms",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/rooms"
+        }
+      }
+    ],
+    "rightLinks": [
+      {
+        "_type": "navLink",
+        "label": "Spa",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/spa"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Contact",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    ],
+    "ctas": null,
+    "layout": "logo-center",
+    "tone": "light",
+    "shape": "card",
+    "caps": true
+  },
+  "wide accent bar": {
+    "links": [
+      {
+        "_type": "navLink",
+        "label": "Stay",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/stay"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "About",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/about"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Journal",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/journal"
+        }
+      }
+    ],
+    "rightLinks": [
+      {
+        "_type": "navLink",
+        "label": "My booking",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/my-booking"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Gift cards",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/gift-cards"
+        }
+      }
+    ],
+    "ctas": null,
+    "layout": "logo-center",
+    "width": "wide",
+    "tone": "accent",
+    "shape": "card",
+    "caps": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "resort",
+  "name": "Resort (Meridian)",
+  "fonts": {
+    "heading": { "google": "Playfair_Display", "fallback": "serif" },
+    "body": { "google": "Inter", "fallback": "sans-serif" }
+  },
+  "colors": {
+    "surface": "#F4E9EE",
+    "surface-alt": "#FFFFFF",
+    "surface-inverse": "#49031E",
+    "fg": "#49031E",
+    "fg-muted": "#7A5262",
+    "fg-inverse": "#FFFFFF",
+    "accent": "#C9034F",
+    "accent-hover": "#99023C",
+    "accent-fg": "#FFFFFF",
+    "border": "#D6C2CA"
+  },
+  "radius": {
+    "card": "0px",
+    "button": "0.5rem"
+  }
+}

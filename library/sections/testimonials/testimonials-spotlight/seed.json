@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Stories",
+  "heading": "Trusted by the people\nwho send us their guests",
+  "link": {
+    "_type": "navLink",
+    "label": "All stories",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/stories"
+    }
+  },
+  "testimonials": [
+    {
+      "_type": "reference",
+      "_ref": "testimonial-jonas"
+    },
+    {
+      "_type": "reference",
+      "_ref": "testimonial-marco"
+    }
+  ],
+  "media": "photo",
+  "alternate": true,
+  "panelStyle": "tinted",
+  "showStats": true,
+  "showLogo": true,
+  "quoteMark": true,
+  "readMoreLabel": "Read more",
+  "align": "left",
+  "tone": "page"
+}

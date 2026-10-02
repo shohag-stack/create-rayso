@@ -1,0 +1,12 @@
+{
+  "id": "faq-split",
+  "category": "faq",
+  "title": "FAQ, photo and grouped list",
+  "description": "A photo filling one half that stays in view, and on the other half a small heading, a note and questions in labelled groups that open with a plus.",
+  "tags": ["faq", "questions", "accordion", "split", "photo"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["FaqItem", "RichText"], "animation": [] },
+  "references": [],
+  "features": []
+}

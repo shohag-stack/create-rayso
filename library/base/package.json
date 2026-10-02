@@ -1,0 +1,29 @@
+{
+  "name": "rayso-template",
+  "version": "1.0.0",
+  "description": "A premium Next.js template by RAYSO.STUDIO",
+  "author": "RAYSO.STUDIO",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:studio": "cd studio && npm run dev",
+    "build": "cd frontend && npm run build",
+    "seed": "node scripts/seed.mjs",
+    "deploy:studio": "cd studio && sanity deploy",
+    "deploy:schema": "cd studio && sanity manifest extract && sanity schema deploy",
+    "zip": "bash zip.sh"
+  },
+  "workspaces": [
+    "frontend",
+    "studio"
+  ],
+  "overrides": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

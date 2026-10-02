@@ -1,0 +1,25 @@
+{
+  "id": "logos-tiles",
+  "category": "logos",
+  "title": "Logos, coloured tiles",
+  "description": "A heading on the left; on the right a paragraph, a small list of the partner names, logos on large coloured tiles two per row and a small note underneath. Dark by default.",
+  "tags": [
+    "logos",
+    "partners",
+    "sponsors",
+    "tiles",
+    "trust"
+  ],
+  "niches": [
+    "*"
+  ],
+  "isPageTop": false,
+  "uses": {
+    "ui": [
+      "BrandMark"
+    ],
+    "animation": []
+  },
+  "references": [],
+  "features": []
+}

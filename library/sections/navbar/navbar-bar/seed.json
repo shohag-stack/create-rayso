@@ -1,0 +1,85 @@
+{
+  "brandName": "Meridian",
+  "badge": "By the sea since 1962",
+  "links": [
+    {
+      "_type": "navLink",
+      "label": "Rooms",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/rooms"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Spa",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/spa"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Dining",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/dining"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Offers",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/offers"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Journal",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/journal"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "About",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/about"
+      }
+    }
+  ],
+  "ctas": [
+    {
+      "_type": "cta",
+      "label": "Log in",
+      "style": "glass",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/login"
+      }
+    },
+    {
+      "_type": "cta",
+      "label": "Book a stay",
+      "style": "primary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "linkAlign": "center",
+  "linkStyle": "plain",
+  "position": "fixed"
+}

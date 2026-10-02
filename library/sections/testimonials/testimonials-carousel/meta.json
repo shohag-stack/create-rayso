@@ -1,0 +1,12 @@
+{
+  "id": "testimonials-carousel",
+  "category": "testimonials",
+  "title": "Testimonials, carousel",
+  "description": "Heading, then a row of testimonial cards that scrolls sideways with arrow buttons. Options: filled, outlined or colourful cards, large quotes, round or square photos, logos, dates, stars, a rating summary with badges.",
+  "tags": ["testimonials", "carousel", "reviews", "rating"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["Carousel", "RatingSummary", "SectionHeading", "Stars", "testimonial/Author", "testimonial/Logo"], "animation": [] },
+  "references": ["testimonial"],
+  "features": []
+}

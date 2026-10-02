@@ -1,0 +1,12 @@
+{
+  "id": "footer-columns",
+  "category": "footer",
+  "title": "Footer, link columns",
+  "description": "Brand block (logo, tagline, address, newsletter sign-up, badges) beside or above columns of links, then copyright, legal links and socials. Options: divided columns, giant faded or solid wordmark, light, dark, accent or gradient colours.",
+  "tags": ["footer", "columns", "newsletter", "badges", "wordmark", "social"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["EmailCaptureForm", "footer/BottomBar", "footer/LinkColumns", "footer/SocialLinks", "footer/Wordmark"], "animation": [] },
+  "references": [],
+  "features": []
+}

@@ -1,0 +1,39 @@
+{
+  "heading": "Made possible by",
+  "body": "Our season is made possible by seven partners who share how they look after their guests. Each one worked with us on the rooms, the menus and the trips we offer.",
+  "brands": [
+    {
+      "_type": "brandLogo",
+      "name": "Osprey"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Lumen"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Cobalt"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Larkspur"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Meadow"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Tidewater"
+    },
+    {
+      "_type": "brandLogo",
+      "name": "Briar"
+    }
+  ],
+  "note": "Interested in partnering with us? Write to partners@meridian.example.",
+  "showNames": true,
+  "tileTint": "soft",
+  "mono": true,
+  "tone": "dark"
+}

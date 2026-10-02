@@ -1,0 +1,103 @@
+{
+  "eyebrow": "Pricing",
+  "heading": "ONE PRICE. EVERYTHING INCLUDED",
+  "price": {
+    "_type": "planPrice",
+    "amount": "€249",
+    "period": "/ night",
+    "note": "+ your chosen extras (spa, dinner, boats), added when you book or during your stay"
+  },
+  "body": "Breakfast, the pools, yoga and bikes are in the price. You decide what else to add, and when.",
+  "cta": {
+    "_type": "cta",
+    "label": "Book now",
+    "style": "primary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/book"
+    },
+    "showArrow": true
+  },
+  "image": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Sunlit terrace by the sea"
+  },
+  "guarantee": {
+    "title": "Free cancellation up to 7 days before",
+    "body": "Plans change? Get your deposit back in full.",
+    "badge": "No hidden fees"
+  },
+  "columns": [
+    "Meridian",
+    "City hotel",
+    "Rental"
+  ],
+  "rows": [
+    {
+      "_type": "compareRow",
+      "label": "Breakfast included",
+      "values": [
+        "yes",
+        "no",
+        "no"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "Spa and pools",
+      "values": [
+        "yes",
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "Quiet, adults-only areas",
+      "values": [
+        "yes",
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "A host who plans your days",
+      "values": [
+        "yes",
+        "no",
+        "no"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "Kitchen to cook in",
+      "values": [
+        "no",
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "Free cancellation",
+      "values": [
+        "yes",
+        "no",
+        "no"
+      ]
+    },
+    {
+      "_type": "compareRow",
+      "label": "Check-in",
+      "values": [
+        "24 h",
+        "24 h",
+        "3–7 pm"
+      ]
+    }
+  ],
+  "tone": "page"
+}

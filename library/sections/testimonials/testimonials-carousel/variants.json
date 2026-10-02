@@ -1,0 +1,46 @@
+{
+  "colourful, large quotes, dark": {
+    "eyebrow": "It looks like this",
+    "heading": "When a stay becomes a habit,\neverything slows down.",
+    "headingAccent": null,
+    "body": null,
+    "rating": null,
+    "showDate": false,
+    "cardStyle": "colourful",
+    "quoteSize": "large",
+    "photoStyle": "none",
+    "arrows": "above",
+    "tone": "dark"
+  },
+  "outlined, square portraits, logos": {
+    "eyebrow": null,
+    "heading": "Helping busy people\nthrough slow days",
+    "headingAccent": null,
+    "body": null,
+    "rating": null,
+    "showDate": false,
+    "cardStyle": "outlined",
+    "quoteSize": "large",
+    "photoStyle": "portrait",
+    "showLogo": true,
+    "arrows": "below",
+    "tone": "dark"
+  },
+  "left heading, rating, divided cards": {
+    "eyebrow": "Guests love us",
+    "heading": "Preferred by people\nwho travel slowly",
+    "headingAccent": null,
+    "body": null,
+    "showDate": false,
+    "rating": {
+      "score": 4.5
+    },
+    "showStars": false,
+    "cardStyle": "outlined",
+    "footerDivider": true,
+    "align": "left",
+    "arrows": "below",
+    "ratingPosition": "header",
+    "tone": "dark"
+  }
+}

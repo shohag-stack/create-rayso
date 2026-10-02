@@ -1,0 +1,44 @@
+{
+  "full-width bar, text button": {
+    "brandName": "Meridian Bay",
+    "spacedBrandName": true,
+    "label": null,
+    "barCta": null,
+    "note": "Free breakfast on stays of three nights or more",
+    "quickLinks": [
+      {
+        "_type": "navLink",
+        "label": "Gift cards",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/gift-cards"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Book",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/book"
+        }
+      }
+    ],
+    "menuLabel": "Menu",
+    "ctas": [
+      {
+        "_type": "cta",
+        "label": "Book a stay",
+        "style": "primary",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    ],
+    "layout": "bar",
+    "tone": "light"
+  }
+}

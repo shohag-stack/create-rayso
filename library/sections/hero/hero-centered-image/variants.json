@@ -1,0 +1,16 @@
+{
+  "inset frame, buttons": {
+    "headingAccent": null,
+    "heading": "All your locations,\ntogether at last.",
+    "headingSize": "medium",
+    "body": "A thoughtfully designed system for managing every place you work.",
+    "note": null,
+    "emailCapture": null,
+    "frame": "inset",
+    "overlay": "medium",
+    "ctas": [
+      { "_type": "cta", "label": "Create a free account", "style": "glass", "link": { "_type": "link", "kind": "url", "url": "/contact" } },
+      { "_type": "cta", "label": "Book a demo", "style": "glass", "link": { "_type": "link", "kind": "url", "url": "/contact" } }
+    ]
+  }
+}

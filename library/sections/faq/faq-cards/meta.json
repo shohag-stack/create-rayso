@@ -1,0 +1,12 @@
+{
+  "id": "faq-cards",
+  "category": "faq",
+  "title": "FAQ, centred cards",
+  "description": "A small boxed label, a large centred heading and a narrow column of questions, each in its own soft card with a plus button that turns into a cross.",
+  "tags": ["faq", "questions", "accordion", "cards", "centred"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["FaqItem", "RichText"], "animation": [] },
+  "references": [],
+  "features": []
+}

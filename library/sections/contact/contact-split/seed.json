@@ -1,0 +1,17 @@
+{
+  "eyebrow": "Contact",
+  "heading": "Plan your stay",
+  "body": "Tell us your dates and who is coming. A real person answers every message within a day.",
+  "details": [
+    { "_type": "contactDetail", "label": "Email", "text": "stay@meridian.example", "url": "mailto:stay@meridian.example" },
+    { "_type": "contactDetail", "label": "Phone", "text": "+960 555 0142", "url": "tel:+9605550142" },
+    { "_type": "contactDetail", "label": "Address", "text": "Meridian Resort\nNorth Malé Atoll\nMaldives" },
+    { "_type": "contactDetail", "label": "Front desk", "text": "Open every day\n7am to 11pm" }
+  ],
+  "showPhone": true,
+  "messagePlaceholder": "Dates, number of guests, anything else we should know",
+  "submitLabel": "Send message",
+  "successMessage": "Thank you. We'll reply within a day.",
+  "layout": "split",
+  "tone": "page"
+}

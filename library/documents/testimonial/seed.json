@@ -1,0 +1,104 @@
+[
+  {
+    "_id": "testimonial-amelia",
+    "_type": "testimonial",
+    "quote": "We came for a weekend and stayed a week. The staff remembered our names, our coffee orders and which beach our kids liked best.",
+    "name": "Amelia Hart",
+    "role": "Stayed in July",
+    "rating": 5,
+    "date": "2026-07-01",
+    "photo": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=800",
+      "alt": "Portrait of Amelia Hart"
+    },
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/reviews"
+    }
+  },
+  {
+    "_id": "testimonial-jonas",
+    "_type": "testimonial",
+    "quote": "Booking our company retreat took one call. Everything from the boat trip to the late dinner just happened, and nobody had to chase anything.",
+    "name": "Jonas Weber",
+    "role": "Head of People",
+    "company": "Northwind",
+    "rating": 5,
+    "date": "2026-05-01",
+    "stats": [
+      {
+        "_key": "s1",
+        "value": "40",
+        "label": "Guests hosted in one weekend"
+      },
+      {
+        "_key": "s2",
+        "value": "4.9",
+        "label": "Average team rating"
+      }
+    ],
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/stories/northwind"
+    },
+    "photo": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=800",
+      "alt": "Portrait of Jonas Weber"
+    }
+  },
+  {
+    "_id": "testimonial-priya",
+    "_type": "testimonial",
+    "quote": "The quietest three nights I have had in years. The spa alone is worth the trip.",
+    "name": "Priya Raman",
+    "role": "Stayed in May",
+    "rating": 5,
+    "date": "2026-05-01",
+    "photo": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=800",
+      "alt": "Portrait of Priya Raman"
+    },
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/reviews"
+    }
+  },
+  {
+    "_id": "testimonial-marco",
+    "_type": "testimonial",
+    "quote": "Since we started sending guests here, our clients have stopped asking for alternatives. It is simply the place we recommend.",
+    "name": "Marco Bellini",
+    "role": "Founder",
+    "company": "Bellini Travel",
+    "rating": 4.5,
+    "date": "2026-04-01",
+    "stats": [
+      {
+        "_key": "s1",
+        "value": "28%",
+        "label": "More repeat bookings"
+      },
+      {
+        "_key": "s2",
+        "value": "3x",
+        "label": "Faster group planning"
+      }
+    ],
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/stories/bellini-travel"
+    },
+    "photo": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=800",
+      "alt": "Portrait of Marco Bellini"
+    }
+  }
+]

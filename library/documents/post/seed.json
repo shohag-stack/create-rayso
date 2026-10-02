@@ -1,0 +1,668 @@
+[
+  {
+    "_id": "post-summer-menu",
+    "_type": "post",
+    "title": "Our summer menu is here: twelve dishes from the kitchen garden",
+    "slug": {
+      "_type": "slug",
+      "current": "summer-menu"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "Our summer menu is here: twelve dishes from the kitchen garden"
+    },
+    "excerpt": "Tomatoes, figs and herbs picked that morning. Here is what our chef is cooking this season and where every ingredient comes from.",
+    "category": "News",
+    "publishedAt": "2026-06-18",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b101",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s101",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b102",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s102",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b103",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s103",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b104",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s104",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b105",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s105",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b106",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s106",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-islands-by-boat",
+    "_type": "post",
+    "title": "A day on the islands: the boat trip our guests book twice",
+    "slug": {
+      "_type": "slug",
+      "current": "islands-by-boat"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "A day on the islands: the boat trip our guests book twice"
+    },
+    "excerpt": "Leave after breakfast, swim in three coves and be back for sunset drinks. Everything you need to know before you go.",
+    "category": "Guides",
+    "publishedAt": "2026-06-11",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b107",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s107",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b108",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s108",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b109",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s109",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b110",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s110",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b111",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s111",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b112",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s112",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-spa-reopens",
+    "_type": "post",
+    "title": "The garden spa reopens with four new treatment rooms",
+    "slug": {
+      "_type": "slug",
+      "current": "spa-reopens"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "The garden spa reopens with four new treatment rooms"
+    },
+    "excerpt": "After a quiet winter of building, the spa is open again with a salt room, a cold pool and treatments made with our own olive oil.",
+    "category": "News",
+    "publishedAt": "2026-06-01",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b113",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s113",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b114",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s114",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b115",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s115",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b116",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s116",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b117",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s117",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b118",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s118",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-slow-weekend",
+    "_type": "post",
+    "title": "How to spend a slow weekend at Meridian",
+    "slug": {
+      "_type": "slug",
+      "current": "slow-weekend"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "How to spend a slow weekend at Meridian"
+    },
+    "excerpt": "No timetable, no alarm. A guide to the best hours for the pool, the quietest corners of the garden and the walks our team loves.",
+    "category": "Guides",
+    "publishedAt": "2026-05-22",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b119",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s119",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b120",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s120",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b121",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s121",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b122",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s122",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b123",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s123",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b124",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s124",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-award-2026",
+    "_type": "post",
+    "title": "Meridian named one of Europe's best small hotels",
+    "slug": {
+      "_type": "slug",
+      "current": "award-2026"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "Meridian named one of Europe's best small hotels"
+    },
+    "excerpt": "The 2026 Travel Awards placed us among the top ten small hotels in Europe for service, food and calm.",
+    "category": "Press release",
+    "publishedAt": "2026-05-20",
+    "author": {
+      "name": "Lena Ortiz",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Lena Ortiz"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b125",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s125",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b126",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s126",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b127",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s127",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b128",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s128",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b129",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s129",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b130",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s130",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "post-electric-transfers",
+    "_type": "post",
+    "title": "All our airport transfers are now electric",
+    "slug": {
+      "_type": "slug",
+      "current": "electric-transfers"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1400",
+      "alt": "All our airport transfers are now electric"
+    },
+    "excerpt": "From this summer every car that collects guests from the airport runs on electricity, charged by the panels on our roof.",
+    "category": "Press release",
+    "publishedAt": "2026-05-02",
+    "author": {
+      "name": "Tomas Berg",
+      "photo": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=200",
+        "alt": "Tomas Berg"
+      }
+    },
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b131",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s131",
+            "text": "Visitors often ask how it started. The short answer is that someone on the team kept saying it, until the rest of us listened. The longer answer is below.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b132",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s132",
+            "text": "Where it began",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b133",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s133",
+            "text": "We tried a small version first, with a handful of guests who were happy to tell us what did not work. Most of the changes since then came from those first conversations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b134",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s134",
+            "text": "The best ideas here come from the people who stay with us, not from a meeting room.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b135",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s135",
+            "text": "What comes next",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b136",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s136",
+            "text": "We will keep adjusting through the season. If you visit, tell us what you think: write to us, or find any of the team on the terrace in the evening.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+]

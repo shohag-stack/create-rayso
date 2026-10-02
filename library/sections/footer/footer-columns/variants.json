@@ -1,0 +1,1000 @@
+{
+  "gradient, faded wordmark": {
+    "tagline": "Rooms, dining and spa,\nall in one quiet place.",
+    "emailCapture": null,
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "heading": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Villas",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/villas"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Offers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/offers"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Gift cards",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/gift-cards"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Experience",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Spa",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/spa"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Dining",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/dining"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Events",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/events"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Weddings",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/weddings"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "About",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Our story",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/our-story"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Sustainability",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/sustainability"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Careers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/careers"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Press",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/press"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Blog",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/blog"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Follow",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Instagram",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/instagram"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "YouTube",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/youtube"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "LinkedIn",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/linkedin"
+            }
+          }
+        ]
+      }
+    ],
+    "headingStyle": "bold",
+    "legalLinks": null,
+    "wordmark": "Meridian",
+    "wordmarkStyle": "faded",
+    "wordmarkPosition": "bottom",
+    "tone": "gradient"
+  },
+  "dark, stacked, newsletter": {
+    "tagline": "A quiet place by the sea, open all year.",
+    "details": "Meridian Hotels Ltd",
+    "emailCapture": {
+      "intro": "Stay up to date. Get our news once a month.",
+      "placeholder": "you@email.com",
+      "buttonLabel": "Subscribe",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    },
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "heading": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Villas",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/villas"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Offers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/offers"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Experience",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Spa",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/spa"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Dining",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/dining"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Events",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/events"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Weddings",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/weddings"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Tours",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/tours"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Resources",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Our story",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/our-story"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Blog",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/blog"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Press",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/press"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "FAQ",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/faq"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Useful links",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Pricing",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/pricing"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Contact us",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/contact-us"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Partners",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/partners"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Careers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/careers"
+            }
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "platform": "instagram",
+        "url": "https://instagram.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "youtube",
+        "url": "https://youtube.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "linkedin",
+        "url": "https://linkedin.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "x",
+        "url": "https://x.com/meridian"
+      }
+    ],
+    "socialPosition": "brand",
+    "socialStyle": "boxed",
+    "layout": "stacked",
+    "headingStyle": "caps",
+    "wordmark": "Meridian",
+    "wordmarkStyle": "faded",
+    "wordmarkPosition": "middle",
+    "centerBottomBar": true,
+    "tone": "dark"
+  },
+  "dark, address, view all": {
+    "tagline": "Seaside rooms, a slow kitchen and a spa that takes its time. Open every day of the year.",
+    "details": "12 Harbour Road,\nPorto Vecchio, Italy",
+    "emailCapture": null,
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "heading": "Rooms",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Garden rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/garden-rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Sea-view rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/sea-view-rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Villas",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/villas"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Family rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/family-rooms"
+            }
+          }
+        ],
+        "viewAll": {
+          "_type": "navLink",
+          "label": "View all rooms",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/view-all-rooms"
+          }
+        }
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Experiences",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Spa",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/spa"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Yoga",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/yoga"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Boat trips",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/boat-trips"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Cooking class",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/cooking-class"
+            }
+          }
+        ],
+        "viewAll": {
+          "_type": "navLink",
+          "label": "View all experiences",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/view-all-experiences"
+          }
+        }
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Company",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "About us",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/about-us"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Careers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/careers"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Press",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/press"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Contact us",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/contact-us"
+            }
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "platform": "linkedin",
+        "url": "https://linkedin.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "youtube",
+        "url": "https://youtube.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "x",
+        "url": "https://x.com/meridian"
+      }
+    ],
+    "socialStyle": "boxed",
+    "headingStyle": "caps",
+    "tone": "dark"
+  },
+  "divided columns, wordmark": {
+    "brandName": null,
+    "tagline": null,
+    "emailCapture": null,
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "heading": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Experience",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Spa",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/spa"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Dining",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/dining"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Events",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/events"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Weddings",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/weddings"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Guides",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Getting here",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/getting-here"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Local walks",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/local-walks"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Beaches",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/beaches"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Restaurants",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/restaurants"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Markets",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/markets"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Seasons",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/seasons"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Legal",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Terms of use",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/terms-of-use"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Privacy policy",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/privacy-policy"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Cookie policy",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/cookie-policy"
+            }
+          }
+        ]
+      }
+    ],
+    "columnStyle": "divided",
+    "headingStyle": "bold",
+    "legalLinks": null,
+    "wordmark": "Meridian",
+    "wordmarkStyle": "solid",
+    "wordmarkPosition": "middle",
+    "centerBottomBar": true,
+    "tone": "gradient"
+  },
+  "columns only, muted headings": {
+    "brandName": null,
+    "tagline": null,
+    "emailCapture": null,
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "heading": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Overview",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/overview"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Book a visit",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book-a-visit"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Experience",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Spa",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/spa"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Dining",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/dining"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Events",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/events"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Weddings",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/weddings"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Boat trips",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/boat-trips"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Places",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Beach",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/beach"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Old town",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/old-town"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Vineyards",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/vineyards"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Resources",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Blog",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/blog"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Guides",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/guides"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Gift cards",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/gift-cards"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Webinars",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/webinars"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "heading": "Company",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "About us",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/about-us"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Community",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/community"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Careers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/careers"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Legal",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/legal"
+            }
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "platform": "linkedin",
+        "url": "https://linkedin.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "x",
+        "url": "https://x.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "youtube",
+        "url": "https://youtube.com/meridian"
+      }
+    ],
+    "headingStyle": "muted",
+    "legalLinks": null,
+    "wordmark": "Meridian",
+    "wordmarkStyle": "faded",
+    "wordmarkPosition": "bottom",
+    "tone": "light"
+  }
+}

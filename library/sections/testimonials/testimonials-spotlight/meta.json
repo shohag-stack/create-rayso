@@ -1,0 +1,12 @@
+{
+  "id": "testimonials-spotlight",
+  "category": "testimonials",
+  "title": "Testimonials, spotlight",
+  "description": "One to four testimonials shown large, each on its own row: a photo or a big result beside a panel with the logo, results, quote, name and a read-more link. Options: alternating sides, framed or tinted panels, heading link.",
+  "tags": ["testimonials", "case-studies", "stats", "quote"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["SectionHeading", "footer/FooterLink", "testimonial/Author", "testimonial/Logo"], "animation": [] },
+  "references": ["testimonial"],
+  "features": []
+}
