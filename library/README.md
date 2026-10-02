@@ -22,7 +22,18 @@ sections/hero/hero-fullscreen-image/
   types.ts        TypeScript data type (_type, _key, fields)
   meta.json       id, category, title, description, tags, niches, uses, ...
   seed.json       demo content, imported into Sanity and shown in the playground
+  variants.json   optional: extra playground previews, { "<name>": { fields that differ, null removes one } }
 ```
+
+## Footers
+
+Sections in `sections/footer/` are not page sections. Editors pick one in
+**Site settings → Footer**, and `app/layout.tsx` renders it under every page
+inside a `<footer>`. The generator seeds Site settings with the first footer
+(or the one passed as `footer`). Shared footer pieces live in the base:
+`components/ui/footer/` (link columns, social links, wordmark, bottom bar),
+the `navLink`, `linkColumn` and `socialLink` objects, and
+`studio/schemaTypes/fields/footer.ts`.
 
 Names come from the folder name (`hero-fullscreen-image`), and
 `npm run check:library` fails if a file doesn't use them:

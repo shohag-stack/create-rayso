@@ -1,0 +1,134 @@
+{
+  "accent, split wordmark on top": {
+    "wordmark": "Casa Meridian",
+    "split": true,
+    "wordmarkPosition": "top",
+    "wordmarkColor": "text",
+    "tagline": null,
+    "topLinks": null,
+    "statement": "Meridian sits on land that fishing families have looked after for generations. We are grateful to share it with our guests and we work to keep it as we found it.",
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Roadmap",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/roadmap"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Terms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/terms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Privacy",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/privacy"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Press",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/press"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Walkthrough",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/walkthrough"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "hello@meridian.example",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/hello-meridian-example"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Instagram",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/instagram"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "LinkedIn",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/linkedin"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "12 Harbour Road",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/12-harbour-road"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Porto Vecchio",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/porto-vecchio"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Italy",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/italy"
+            }
+          }
+        ]
+      }
+    ],
+    "socialLinks": null,
+    "legalLinks": null,
+    "copyright": "© {year} Meridian, all rights reserved",
+    "linkStyle": "caps",
+    "dividers": true,
+    "tone": "accent",
+    "secondaryLinks": null
+  }
+}

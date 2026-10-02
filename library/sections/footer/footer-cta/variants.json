@@ -1,0 +1,201 @@
+{
+  "accent, CTA on the right": {
+    "heading": "Planning something worth celebrating? Let's host it properly.",
+    "headingAccent": null,
+    "body": "Weddings, retreats or a long weekend with friends: tell us what you have in mind and we'll take it from there.",
+    "ctas": [
+      {
+        "_type": "cta",
+        "label": "Get in touch",
+        "style": "light",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    ],
+    "columns": null,
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "platform": "linkedin",
+        "url": "https://linkedin.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "instagram",
+        "url": "https://instagram.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "x",
+        "url": "https://x.com/meridian"
+      }
+    ],
+    "copyright": "© Meridian Hotels Ltd | Company number 0123456",
+    "frame": "plain",
+    "ctaPosition": "right",
+    "tone": "accent",
+    "credit": null
+  },
+  "image card, inline links": {
+    "heading": "Stay a while",
+    "headingAccent": "and leave lighter",
+    "accentStyle": "muted",
+    "inlineLinks": {
+      "label": "Explore",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Rooms",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/rooms"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Spa",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/spa"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Dining",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/dining"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Events",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/events"
+          }
+        }
+      ]
+    },
+    "columns": [
+      {
+        "_type": "linkColumn",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Home",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/home"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Offers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/offers"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Pricing",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/pricing"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Careers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/careers"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "linkColumn",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Privacy policy",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/privacy-policy"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Terms of service",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/terms-of-service"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "FAQ",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/faq"
+            }
+          }
+        ]
+      }
+    ],
+    "ctas": null,
+    "card": {
+      "image": {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+        "alt": "Sunlit pool by the sea"
+      },
+      "text": "Meridian is a small hotel built around long, unhurried days.",
+      "cta": {
+        "_type": "cta",
+        "label": "Book a room",
+        "style": "light",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    },
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "platform": "x",
+        "url": "https://x.com/meridian"
+      },
+      {
+        "_type": "socialLink",
+        "platform": "linkedin",
+        "url": "https://linkedin.com/meridian"
+      }
+    ],
+    "socialStyle": "boxed",
+    "copyright": "Copyright © {year} Meridian Hotels",
+    "credit": "Design by RAYSO.STUDIO",
+    "wordmark": null,
+    "frame": "plain",
+    "ctaPosition": "left",
+    "tone": "light"
+  }
+}

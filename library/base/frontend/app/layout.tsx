@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getSiteSettings } from "@/(core)/fetch/siteSettings";
+import { SectionRenderer } from "@/components/sections/SectionRenderer";
 import { fontVariables } from "./fonts";
 import "./globals.css";
 
@@ -10,11 +12,15 @@ export const metadata: Metadata = {
   description: "A Next.js and Sanity template by RAYSO.STUDIO",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const settings = await getSiteSettings();
   return (
     // Font variables sit on <html> so the theme's --font-heading and --font-body resolve
     <html lang="en" className={fontVariables}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {settings?.footer?.length ? <SectionRenderer sections={settings.footer} as="footer" /> : null}
+      </body>
     </html>
   );
 }

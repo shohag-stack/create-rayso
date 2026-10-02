@@ -1,0 +1,12 @@
+{
+  "id": "footer-cta",
+  "category": "footer",
+  "title": "Footer, call to action",
+  "description": "Closing heading, text and buttons on one side; link columns, a logo mark or a photo card on the other; then copyright, legal links, socials and a credit line. Options: CTA left or right, content on a rounded panel over a wordmark, giant wordmark, four colour tones.",
+  "tags": ["footer", "cta", "wordmark", "image-card", "social"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "footer/BottomBar", "footer/FooterLink", "footer/LinkColumns", "footer/Wordmark"], "animation": [] },
+  "references": [],
+  "features": []
+}

@@ -36,3 +36,24 @@ export interface Seo {
 export interface SanityVideo {
   asset?: { url: string; mimeType?: string };
 }
+
+export interface NavLink {
+  _key?: string;
+  label: string;
+  link?: SanityLink;
+}
+
+export interface LinkColumn {
+  _key?: string;
+  heading?: string;
+  links?: NavLink[];
+  viewAll?: NavLink;
+}
+
+export interface SocialLink {
+  _key?: string;
+  platform: string;
+  url: string;
+}
+
+export type FooterTone = "light" | "dark" | "accent" | "gradient";

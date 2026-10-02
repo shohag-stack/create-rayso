@@ -1,0 +1,12 @@
+{
+  "id": "footer-wordmark",
+  "category": "footer",
+  "title": "Footer, giant wordmark",
+  "description": "Brand name set huge across the page, at the top or under a tagline and link row, with an optional statement paragraph, link columns, social links as text, legal links and copyright. Options: words spread to the edges, accent colour, small-capital links, divider lines.",
+  "tags": ["footer", "wordmark", "editorial", "minimal"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["footer/FooterLink", "footer/LinkColumns", "footer/SocialLinks", "footer/Wordmark"], "animation": [] },
+  "references": [],
+  "features": []
+}

@@ -1,0 +1,107 @@
+import { BlockElementIcon } from "@sanity/icons";
+import { defineArrayMember, defineField, defineType } from "sanity";
+import { anchorField } from "../fields/anchor";
+import { copyrightField, footerToneField, legalLinksField, socialLinksField, wordmarkField } from "../fields/footer";
+
+export const footerCta = defineType({
+  name: "footerCta",
+  title: "Footer, call to action",
+  type: "object",
+  icon: BlockElementIcon,
+  groups: [
+    { name: "content", title: "Call to action", default: true },
+    { name: "links", title: "Links" },
+    { name: "layout", title: "Layout" },
+  ],
+  fields: [
+    defineField({ name: "heading", type: "text", rows: 3, group: "content", description: "Big closing line at the top of the footer.", validation: (rule) => rule.required() }),
+    defineField({ name: "headingAccent", title: "Second line", type: "string", group: "content", description: "Optional line under the heading, shown in italics or a softer colour." }),
+    defineField({
+      name: "accentStyle",
+      title: "Second line style",
+      type: "string",
+      group: "content",
+      options: { list: ["italic", "muted"], layout: "radio", direction: "horizontal" },
+      initialValue: "italic",
+      hidden: ({ parent }) => !parent?.headingAccent,
+    }),
+    defineField({ name: "body", type: "text", rows: 3, group: "content", description: "Optional text under the heading." }),
+    defineField({
+      name: "ctas",
+      title: "Buttons",
+      type: "array",
+      group: "content",
+      of: [defineArrayMember({ type: "cta" })],
+      validation: (rule) => rule.max(2),
+    }),
+    defineField({
+      name: "card",
+      title: "Image card",
+      type: "object",
+      group: "content",
+      description: "Optional photo card beside the text, with a short line and a button over it.",
+      options: { collapsible: true, collapsed: true },
+      fields: [
+        defineField({ name: "image", type: "imageWithAlt", description: "Portrait photo, at least 900 px wide." }),
+        defineField({ name: "text", type: "text", rows: 2, description: "Short line over the bottom of the photo." }),
+        defineField({ name: "cta", title: "Button", type: "cta" }),
+      ],
+    }),
+    defineField({ name: "mark", title: "Logo mark", type: "imageWithAlt", group: "content", description: "Optional small logo or symbol." }),
+    defineField({
+      name: "inlineLinks",
+      title: "Link row",
+      type: "object",
+      group: "links",
+      description: 'Optional row of links under the heading, e.g. "Explore: Rooms, Spa, Dining".',
+      options: { collapsible: true, collapsed: true },
+      fields: [
+        defineField({ name: "label", type: "string", description: "Muted word before the links." }),
+        defineField({ name: "links", type: "array", of: [defineArrayMember({ type: "navLink" })] }),
+      ],
+    }),
+    defineField({
+      name: "columns",
+      title: "Link columns",
+      type: "array",
+      group: "links",
+      of: [defineArrayMember({ type: "linkColumn" })],
+      validation: (rule) => rule.max(5),
+    }),
+    { ...socialLinksField, group: "links" },
+    defineField({
+      name: "socialStyle",
+      title: "Social icon style",
+      type: "string",
+      group: "links",
+      options: { list: ["icons", "boxed"], layout: "radio", direction: "horizontal" },
+      initialValue: "icons",
+    }),
+    { ...legalLinksField, group: "links" },
+    { ...copyrightField, group: "links" },
+    defineField({ name: "credit", type: "string", group: "links", description: 'Optional small line at the very bottom, e.g. "Made in Lisbon".' }),
+    defineField({
+      name: "ctaPosition",
+      title: "Call to action side",
+      type: "string",
+      group: "layout",
+      options: { list: ["left", "right"], layout: "radio", direction: "horizontal" },
+      initialValue: "left",
+    }),
+    defineField({
+      name: "frame",
+      type: "string",
+      group: "layout",
+      description: "Card puts the content on a panel with rounded bottom corners, with the wordmark below it.",
+      options: { list: ["plain", "card"], layout: "radio", direction: "horizontal" },
+      initialValue: "plain",
+    }),
+    { ...wordmarkField, group: "layout" },
+    { ...footerToneField, group: "layout" },
+    anchorField,
+  ],
+  preview: {
+    select: { title: "heading", media: "mark" },
+    prepare: ({ title, media }) => ({ title, subtitle: "Footer, call to action", media }),
+  },
+});

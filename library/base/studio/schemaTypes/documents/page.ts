@@ -1,6 +1,6 @@
 import { DocumentIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { sectionGroups, sectionTypes } from "../sections";
+import { pageSectionTypes, sectionGroups } from "../sections";
 
 export const page = defineType({
   name: "page",
@@ -32,7 +32,7 @@ export const page = defineType({
       name: "sections",
       type: "array",
       description: "The page, top to bottom. Add, remove and drag to reorder.",
-      of: sectionTypes.map((section) => defineArrayMember({ type: section.name })),
+      of: pageSectionTypes.map((section) => defineArrayMember({ type: section.name })),
       options: { insertMenu: { groups: sectionGroups, views: [{ name: "list" }] } },
     }),
     defineField({ name: "seo", title: "SEO", type: "seo" }),

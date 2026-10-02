@@ -1,0 +1,183 @@
+{
+  "brandName": "Meridian",
+  "tagline": "A quiet place by the sea, open all year.",
+  "emailCapture": {
+    "placeholder": "you@email.com",
+    "buttonLabel": "Get 10% off",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/contact"
+    }
+  },
+  "columns": [
+    {
+      "_type": "linkColumn",
+      "heading": "Stay",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Rooms",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/rooms"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Suites",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/suites"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Offers",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/offers"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Gift cards",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/gift-cards"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "linkColumn",
+      "heading": "Experience",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Spa",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/spa"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Dining",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/dining"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Events",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/events"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "linkColumn",
+      "heading": "About",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Our story",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/our-story"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Careers",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/careers"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Press",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/press"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "linkColumn",
+      "heading": "Contact",
+      "links": [
+        {
+          "_type": "navLink",
+          "label": "Directions",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/directions"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Email us",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/email-us"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Instagram",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/instagram"
+          }
+        }
+      ]
+    }
+  ],
+  "copyright": "© {year} Meridian. All rights reserved.",
+  "legalLinks": [
+    {
+      "_type": "navLink",
+      "label": "Privacy policy",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/privacy"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Terms",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/terms"
+      }
+    }
+  ],
+  "layout": "side",
+  "columnStyle": "plain",
+  "headingStyle": "bold",
+  "socialPosition": "bottom",
+  "socialStyle": "icons",
+  "tone": "light"
+}

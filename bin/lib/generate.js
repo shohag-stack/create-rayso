@@ -20,16 +20,25 @@ function sectionTargets(s) {
 // ── Registries ────────────────────────────────────────────────────────────────
 
 function studioSectionsIndex(sections) {
-  const categories = [...new Set(sections.map((s) => s.category))];
+  const page = sections.filter((s) => s.category !== 'footer');
+  const footers = sections.filter((s) => s.category === 'footer');
+  const categories = [...new Set(page.map((s) => s.category))];
+  const list = (items) => items.map((s) => s.typeName).join(', ');
   return `// ${GENERATED}
 ${sections.map((s) => `import { ${s.typeName} } from "./${s.id}";`).join('\n')}
 
-export const sectionTypes = [${sections.map((s) => s.typeName).join(', ')}];
+export const sectionTypes = [${list(sections)}];
+
+// Sections editors can add to a page
+export const pageSectionTypes = [${list(page)}];
+
+// Footer layouts, picked once in Site settings
+export const footerSectionTypes = [${list(footers)}];
 
 // Groups in the "Add item" menu of a page's sections
 export const sectionGroups = [
 ${categories
-  .map((c) => `  { name: "${c}", title: "${titleCase(c)}", of: [${sections.filter((s) => s.category === c).map((s) => `"${s.typeName}"`).join(', ')}] },`)
+  .map((c) => `  { name: "${c}", title: "${titleCase(c)}", of: [${page.filter((s) => s.category === c).map((s) => `"${s.typeName}"`).join(', ')}] },`)
   .join('\n')}
 ];
 `;
@@ -41,10 +50,13 @@ import { siteSettings } from "./documents/siteSettings";
 import { cta } from "./objects/cta";
 import { imageWithAlt } from "./objects/imageWithAlt";
 import { link } from "./objects/link";
+import { linkColumn } from "./objects/linkColumn";
+import { navLink } from "./objects/navLink";
 import { seo } from "./objects/seo";
+import { socialLink } from "./objects/socialLink";
 import { sectionTypes } from "./sections";
 
-export const schemaTypes = [page, siteSettings, imageWithAlt, link, cta, seo, ...sectionTypes];
+export const schemaTypes = [page, siteSettings, imageWithAlt, link, cta, seo, navLink, linkColumn, socialLink, ...sectionTypes];
 `;
 }
 
@@ -55,13 +67,12 @@ import { client } from "@/(core)/sanity/lib/client";
 import type { PageData } from "@/types";
 ${sections.map((s) => `import { ${s.fields} } from "./sections/${s.id}";`).join('\n')}
 
-const sectionsProjection = /* groq */ \`
-  sections[]{
-    _type,
-    _key,
-    "anchor": anchor.current,
-${sections.map((s) => `    _type == "${s.typeName}" => { \${${s.fields}} }`).join(',\n')}
-  }
+// Fields of any section; used for page sections and the Site settings footer
+export const sectionFields = /* groq */ \`
+  _type,
+  _key,
+  "anchor": anchor.current,
+${sections.map((s) => `  _type == "${s.typeName}" => { \${${s.fields}} }`).join(',\n')}
 \`;
 
 const pageFields = /* groq */ \`
@@ -70,7 +81,7 @@ const pageFields = /* groq */ \`
   "slug": slug.current,
   menuColor,
   seo{ title, description, image{ \${imageFields} } },
-  \${sectionsProjection}
+  sections[]{ \${sectionFields} }
 \`;
 
 export function getPage(id: string) {
@@ -114,12 +125,12 @@ ${sections.map((s) => `    case "${s.typeName}":\n      return <${s.component} {
   }
 }
 
-// Each section gets a <section> wrapper whose id is the editor's anchor
-export function SectionRenderer({ sections }: { sections: PageSection[] }) {
+// Each section gets a wrapper whose id is the editor's anchor; the footer uses <footer>
+export function SectionRenderer({ sections, as: Tag = "section" }: { sections: PageSection[]; as?: "section" | "footer" }) {
   return sections.map((section) => (
-    <section key={section._key} id={section.anchor || undefined}>
+    <Tag key={section._key} id={section.anchor || undefined}>
       {renderSection(section)}
-    </section>
+    </Tag>
   ));
 }
 `;
@@ -225,15 +236,19 @@ async function removeGitkeeps(dir) {
  * @param {object} o.theme        loaded theme (loadTheme)
  * @param {{id: string, title: string, slug?: string, menuColor?: string, sections: string[]}[]} o.pages
  * @param {string} o.siteName
+ * @param {string} [o.footer]    footer section id for Site settings (default: the first footer section)
  * @param {boolean} [o.preview]   also write a /library page rendering every section from seed content
  */
-export async function generateTemplate({ targetDir, sections, theme, pages, siteName, preview = false, libraryDir = LIBRARY_DIR }) {
+export async function generateTemplate({ targetDir, sections, theme, pages, siteName, footer: footerId, preview = false, libraryDir = LIBRARY_DIR }) {
   keyCounter = 0;
   const sectionsById = new Map(sections.map((s) => [s.id, s]));
   for (const p of pages) {
     const unknown = p.sections.filter((id) => !sectionsById.has(id));
     if (unknown.length) throw new Error(`Page "${p.id}" uses unknown sections: ${unknown.join(', ')}`);
+    const footers = p.sections.filter((id) => sectionsById.get(id).category === 'footer');
+    if (footers.length) throw new Error(`Page "${p.id}" lists footer sections (${footers.join(', ')}); footers go in Site settings`);
   }
+  if (footerId && sectionsById.get(footerId)?.category !== 'footer') throw new Error(`"${footerId}" is not a footer section`);
 
   // 1. Base template
   await fs.copy(path.join(libraryDir, 'base'), targetDir);
@@ -258,7 +273,14 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   await write('frontend/app/fonts.ts', fontsFile(theme));
 
   // 5. Seed content
-  const docs = [{ _id: 'siteSettings', _type: 'siteSettings', siteName }, ...pageDocuments(pages, sectionsById)];
+  const footer = footerId ? sectionsById.get(footerId) : sections.find((s) => s.category === 'footer');
+  const settings = {
+    _id: 'siteSettings',
+    _type: 'siteSettings',
+    siteName,
+    ...(footer ? { footer: [{ _key: nextKey(), _type: footer.typeName, ...withKeys(footer.seed) }] } : {}),
+  };
+  const docs = [settings, ...pageDocuments(pages, sectionsById)];
   await write('seed/demo-content.ndjson', docs.map((d) => JSON.stringify(d)).join('\n') + '\n');
 
   // 6. CLAUDE.md inventory
@@ -302,7 +324,7 @@ export default function LibraryPage() {
           <p className="sticky top-0 z-50 bg-black px-4 py-2 font-mono text-xs text-white">
             {item.category} / {item.id} · {item.title}
           </p>
-          <SectionRenderer sections={[item.section as PageSection]} />
+          <SectionRenderer sections={[item.section as PageSection]} as={item.category === "footer" ? "footer" : "section"} />
         </div>
       ))}
     </main>

@@ -21,7 +21,8 @@
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "react-hook-form": "^7.74.0",
-    "resend": "^6.12.2"
+    "resend": "^6.12.2",
+    "simple-icons": "^16.33.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.4",

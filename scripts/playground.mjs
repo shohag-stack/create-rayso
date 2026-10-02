@@ -29,7 +29,7 @@ await generateTemplate({
   sections,
   theme: await loadTheme(themeId),
   siteName: 'RAYSO Playground',
-  pages: [{ id: 'home', title: 'Home', sections: sections.map((s) => s.id) }],
+  pages: [{ id: 'home', title: 'Home', sections: sections.filter((s) => s.category !== 'footer').map((s) => s.id) }],
   preview: true,
 });
 
