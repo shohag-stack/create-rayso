@@ -1,0 +1,84 @@
+{
+  "eyebrow": "Membership",
+  "heading": "Included in the Club",
+  "body": "Every membership opens the spa, the gardens and the kitchen garden suppers, all year round.",
+  "cta": {
+    "_type": "cta",
+    "label": "Explore the Club",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/club"
+    }
+  },
+  "plans": [
+    {
+      "_type": "pricingPlan",
+      "name": "Personal",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€89",
+          "period": "once"
+        }
+      ],
+      "badge": "Recommended",
+      "featured": true,
+      "description": "A lifetime pass for one, with every season's events.",
+      "features": [
+        "Spa access, every visit",
+        "Kitchen garden suppers",
+        "Member rates on rooms",
+        "Seasonal events",
+        "Private members' lounge"
+      ],
+      "ctas": [
+        {
+          "_type": "cta",
+          "label": "Get instant access",
+          "style": "primary",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/book"
+          }
+        }
+      ]
+    },
+    {
+      "_type": "pricingPlan",
+      "name": "Business",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€77",
+          "period": "per seat / year",
+          "note": "5 seats / €386 billed annually + tax"
+        }
+      ],
+      "badge": "For teams",
+      "description": "The Club for your whole team, with seats you can pass on.",
+      "features": [
+        "Everything in Personal",
+        "Meeting rooms",
+        "Seat management",
+        "Transferable seats"
+      ],
+      "ctas": [
+        {
+          "_type": "cta",
+          "label": "Get business access",
+          "style": "primary",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/book"
+          }
+        }
+      ]
+    }
+  ],
+  "note": "Already a member? Sign in to your account.",
+  "tone": "dark"
+}

@@ -74,11 +74,13 @@ import { link } from "./objects/link";
 import { linkColumn } from "./objects/linkColumn";
 import { navGroup } from "./objects/navGroup";
 import { navLink } from "./objects/navLink";
+import { planPrice } from "./objects/planPrice";
+import { pricingPlan } from "./objects/pricingPlan";
 import { seo } from "./objects/seo";
 import { socialLink } from "./objects/socialLink";
 import { sectionTypes } from "./sections";
 
-export const schemaTypes = [page, siteSettings, ${documents.map((d) => `${d.typeName}, `).join('')}imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, faqItem, faqGroup, brandLogo, ...sectionTypes];
+export const schemaTypes = [page, siteSettings, ${documents.map((d) => `${d.typeName}, `).join('')}imageWithAlt, link, cta, seo, navLink, navGroup, linkColumn, socialLink, faqItem, faqGroup, brandLogo, planPrice, pricingPlan, ...sectionTypes];
 `;
 }
 

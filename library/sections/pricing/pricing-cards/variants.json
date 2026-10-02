@@ -1,0 +1,568 @@
+{
+  "dark, two plans, currency": {
+    "eyebrow": "Pricing",
+    "heading": "Start free, upgrade when you stay longer",
+    "body": "Weekday visits are free for members. Pay for weekends however suits you.",
+    "align": "center",
+    "priceOptions": [
+      {
+        "_type": "priceOption",
+        "label": "EUR"
+      },
+      {
+        "_type": "priceOption",
+        "label": "GBP"
+      }
+    ],
+    "plans": [
+      {
+        "_type": "pricingPlan",
+        "name": "Free",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€0"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "£0"
+          }
+        ],
+        "description": "Everything you need to try the club.",
+        "features": [
+          "Pools and gardens on weekdays",
+          "Member rates on rooms",
+          "No card needed"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Start free",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Weekend",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€9",
+            "period": "/mo",
+            "note": "or €90/yr"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "£8",
+            "period": "/mo",
+            "note": "or £80/yr"
+          }
+        ],
+        "featured": true,
+        "description": "Weekend access for one flat rate.",
+        "features": [
+          "Pools, gardens and sauna every day",
+          "Unlimited visits",
+          "Bring a friend once a month"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Get started",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      }
+    ],
+    "cardStyle": "filled",
+    "featuredStyle": "outline",
+    "ctaPosition": "bottom",
+    "note": null,
+    "tone": "dark"
+  },
+  "four plans, old prices": {
+    "eyebrow": null,
+    "heading": "Plans & pricing",
+    "body": null,
+    "align": "left",
+    "priceOptions": [
+      {
+        "_type": "priceOption",
+        "label": "Monthly"
+      },
+      {
+        "_type": "priceOption",
+        "label": "Yearly",
+        "badge": "Up to 33% off"
+      }
+    ],
+    "plans": [
+      {
+        "_type": "pricingPlan",
+        "name": "Plus",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€20",
+            "period": "per month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€15",
+            "period": "per month, €180 billed annually",
+            "compareAt": "€20"
+          }
+        ],
+        "badge": "Recommended",
+        "featured": true,
+        "allowance": "2 nights a month",
+        "features": [
+          "Member rates",
+          "Late check-out",
+          "Spa pools",
+          "Breakfast included"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Choose Plus",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Pro",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€60",
+            "period": "per month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€42",
+            "period": "per month, €504 billed annually",
+            "compareAt": "€60"
+          }
+        ],
+        "allowance": "5 nights a month",
+        "features": [
+          "Member rates",
+          "Late check-out",
+          "Spa pools",
+          "Breakfast and dinner",
+          "Airport transfer"
+        ],
+        "featuresNote": "Everything in Plus",
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Choose Pro",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Family",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€30",
+            "period": "per person per month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€20",
+            "period": "per person per month, billed annually",
+            "compareAt": "€30"
+          }
+        ],
+        "allowance": "3 nights per person",
+        "features": [
+          "One booking for everyone",
+          "Family suites",
+          "Kids' club"
+        ],
+        "featuresNote": "Everything in Plus",
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Choose Family",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ],
+        "footnote": "*At least two people"
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Groups",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "Contact us"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "Contact us"
+          }
+        ],
+        "allowance": "Any number of rooms",
+        "features": [
+          "Weddings and retreats",
+          "Private dining",
+          "A dedicated host"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Talk to us",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      }
+    ],
+    "cardStyle": "outlined",
+    "featuredStyle": "outline",
+    "ctaPosition": "top",
+    "note": null
+  },
+  "tinted top": {
+    "eyebrow": null,
+    "heading": "Straightforward pricing\nthat grows with you",
+    "body": null,
+    "align": "center",
+    "priceOptions": null,
+    "plans": [
+      {
+        "_type": "pricingPlan",
+        "name": "Essentials",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€100",
+            "period": "per month",
+            "note": "for up to 10 nights a year"
+          }
+        ],
+        "description": "For guests getting to know us.",
+        "featuresHeading": "What you get:",
+        "features": [
+          "Member rates on rooms",
+          "Breakfast included",
+          "Spa pools",
+          "Late check-out"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Get started",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Premium",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€1,000",
+            "period": "per year"
+          }
+        ],
+        "description": "For regulars who visit every season.",
+        "featuresHeading": "Everything in Essentials, plus:",
+        "features": [
+          "Dinner included",
+          "Treatments every stay",
+          "Airport transfers",
+          "Priority bookings"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Book a call",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Private",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "Let's talk"
+          }
+        ],
+        "description": "For companies and families who book the whole house.",
+        "featuresHeading": "Everything in Premium, plus:",
+        "features": [
+          "Exclusive use",
+          "Private chef",
+          "A dedicated team"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Talk to us",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      }
+    ],
+    "cardStyle": "split",
+    "featuredStyle": "outline",
+    "note": null
+  },
+  "banner and extra plans": {
+    "eyebrow": null,
+    "heading": "From first visit to second home",
+    "body": "Rooms, dining and the spa. All with one membership.",
+    "align": "center",
+    "priceOptions": [
+      {
+        "_type": "priceOption",
+        "label": "Monthly"
+      },
+      {
+        "_type": "priceOption",
+        "label": "Yearly",
+        "badge": "Save 20%"
+      }
+    ],
+    "plans": [
+      {
+        "_type": "pricingPlan",
+        "name": "Plus",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€9.99",
+            "period": "/ month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€99",
+            "period": "/ year"
+          }
+        ],
+        "audience": "For one guest",
+        "features": [
+          "Member rates",
+          "Late check-out",
+          "Spa pools"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Join now",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            },
+            "showArrow": true
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Standard",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€15",
+            "period": "/ person / month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€150",
+            "period": "/ person / year"
+          }
+        ],
+        "audience": "For couples and friends",
+        "badge": "Best value",
+        "featured": true,
+        "features": [
+          "Member rates",
+          "Late check-out",
+          "Spa pools",
+          "Breakfast included",
+          "One treatment a year"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Try a month free",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            },
+            "showArrow": true
+          },
+          {
+            "_type": "cta",
+            "label": "or join now",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/join"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Advanced",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "€24",
+            "period": "/ person / month"
+          },
+          {
+            "_type": "planPrice",
+            "amount": "€240",
+            "period": "/ person / year"
+          }
+        ],
+        "audience": "For families",
+        "features": [
+          "Member rates",
+          "Family suites",
+          "Spa pools",
+          "Breakfast and dinner",
+          "Kids' club"
+        ],
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Try a month free",
+            "style": "primary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            },
+            "showArrow": true
+          },
+          {
+            "_type": "cta",
+            "label": "or join now",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/join"
+            }
+          }
+        ]
+      }
+    ],
+    "extras": [
+      {
+        "_type": "pricingPlan",
+        "name": "Guest",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "Free"
+          }
+        ],
+        "description": "Member rates on rooms and news of our seasonal menus.",
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Join free",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/book"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "pricingPlan",
+        "name": "Groups",
+        "prices": [
+          {
+            "_type": "planPrice",
+            "amount": "Contact us for pricing"
+          }
+        ],
+        "description": "Weddings, retreats and private hire, with a host who plans every detail.",
+        "ctas": [
+          {
+            "_type": "cta",
+            "label": "Contact us",
+            "style": "secondary",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/contact"
+            }
+          }
+        ]
+      }
+    ],
+    "cardStyle": "filled",
+    "featuredStyle": "banner",
+    "ctaPosition": "top",
+    "note": null
+  }
+}

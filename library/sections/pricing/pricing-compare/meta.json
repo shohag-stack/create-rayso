@@ -1,0 +1,12 @@
+{
+  "id": "pricing-compare",
+  "category": "pricing",
+  "title": "Pricing, one price and a comparison",
+  "description": "A boxed label and a bold heading, one large dark price card with an optional picture behind it and a button, a guarantee strip, and a table comparing you with alternatives using ticks and crosses.",
+  "tags": ["pricing", "single plan", "comparison", "table", "guarantee"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

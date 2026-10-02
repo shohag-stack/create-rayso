@@ -96,3 +96,24 @@ export const brandLogoFields = /* groq */ `
   logo{ ${imageFields} },
   link{ ${linkFields} }
 `;
+
+// studio/schemaTypes/objects/pricingPlan.ts and planPrice.ts
+export const pricingPlanFields = /* groq */ `
+  _key,
+  name,
+  audience,
+  badge,
+  featured,
+  description,
+  prices[]{ _key, amount, compareAt, period, note },
+  allowance,
+  featuresHeading,
+  features,
+  featuresNote,
+  ctas[]{ ${ctaFields} },
+  footnote
+`;
+
+export const priceOptionFields = /* groq */ `
+  priceOptions[]{ _key, label, badge }
+`;

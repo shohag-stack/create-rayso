@@ -81,3 +81,37 @@ export const monoLogosField = defineField({
   description: "Draws every logo in the text colour so logos with different colours look like one set.",
   initialValue: true,
 });
+
+// The switch above pricing plans: billing periods or currencies. Plans list one price per option, in order.
+export const priceOptionsField = (group?: string) =>
+  defineField({
+    name: "priceOptions",
+    title: "Price switch",
+    type: "array",
+    group,
+    description: 'Optional. Two or three options, e.g. "Monthly" and "Yearly", or "USD" and "EUR". Leave empty to show each plan\'s first price.',
+    of: [
+      defineArrayMember({
+        name: "priceOption",
+        type: "object",
+        fields: [
+          defineField({ name: "label", type: "string", validation: (rule) => rule.required() }),
+          defineField({ name: "badge", type: "string", description: 'Optional, e.g. "Save 33%".' }),
+        ],
+        preview: { select: { title: "label", subtitle: "badge" } },
+      }),
+    ],
+    validation: (rule) => rule.max(3),
+  });
+
+export const featureIconField = defineField({
+  name: "featureIcon",
+  title: "Feature marks",
+  type: "string",
+  options: {
+    list: [{ title: "Tick", value: "check" }, { title: "Tick in a circle", value: "checkCircle" }, { title: "Plus", value: "plus" }],
+    layout: "radio",
+    direction: "horizontal",
+  },
+  initialValue: "check",
+});

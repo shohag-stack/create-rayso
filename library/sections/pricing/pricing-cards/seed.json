@@ -1,0 +1,135 @@
+{
+  "eyebrow": "Membership",
+  "heading": "The Meridian Club.",
+  "body": "Free to join. Upgrade when you visit more often.",
+  "align": "left",
+  "priceOptions": [
+    {
+      "_type": "priceOption",
+      "label": "Monthly"
+    },
+    {
+      "_type": "priceOption",
+      "label": "Yearly",
+      "badge": "Save 20%"
+    }
+  ],
+  "plans": [
+    {
+      "_type": "pricingPlan",
+      "name": "Guest",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€0",
+          "period": "/ month"
+        },
+        {
+          "_type": "planPrice",
+          "amount": "€0",
+          "period": "/ year"
+        }
+      ],
+      "description": "Everything you need for your first stay.",
+      "features": [
+        "Member rates on rooms",
+        "Late check-out when free",
+        "Spa pools on arrival day"
+      ],
+      "ctas": [
+        {
+          "_type": "cta",
+          "label": "Join free",
+          "style": "primary",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/book"
+          }
+        }
+      ],
+      "footnote": "No card needed to join"
+    },
+    {
+      "_type": "pricingPlan",
+      "name": "Regular",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€15",
+          "period": "/ month"
+        },
+        {
+          "_type": "planPrice",
+          "amount": "€144",
+          "period": "/ year",
+          "note": "€12 a month, billed yearly"
+        }
+      ],
+      "featured": true,
+      "description": "For two or three stays a year.",
+      "features": [
+        "10% off every stay",
+        "Breakfast included",
+        "One spa treatment a year",
+        "Free room upgrades"
+      ],
+      "ctas": [
+        {
+          "_type": "cta",
+          "label": "Join Regular",
+          "style": "secondary",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/book"
+          }
+        }
+      ],
+      "footnote": "Change or cancel anytime"
+    },
+    {
+      "_type": "pricingPlan",
+      "name": "Resident",
+      "prices": [
+        {
+          "_type": "planPrice",
+          "amount": "€45",
+          "period": "/ month"
+        },
+        {
+          "_type": "planPrice",
+          "amount": "€432",
+          "period": "/ year",
+          "note": "€36 a month, billed yearly"
+        }
+      ],
+      "description": "For guests who treat us as a second home.",
+      "features": [
+        "20% off every stay",
+        "Breakfast and dinner",
+        "Unlimited spa access",
+        "A host who knows your name"
+      ],
+      "ctas": [
+        {
+          "_type": "cta",
+          "label": "Join Resident",
+          "style": "primary",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/book"
+          }
+        }
+      ],
+      "footnote": "For our most frequent guests"
+    }
+  ],
+  "cardStyle": "outlined",
+  "featuredStyle": "filled",
+  "ctaPosition": "bottom",
+  "featureIcon": "check",
+  "note": "Free to join · Members save on every stay · Cancel anytime",
+  "tone": "page"
+}

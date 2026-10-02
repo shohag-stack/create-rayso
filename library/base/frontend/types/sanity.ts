@@ -117,3 +117,36 @@ export interface BrandLogo {
 
 // A panel colour from the theme (studio/schemaTypes/fields/section.ts)
 export type Tint = "soft" | "accent" | "alt" | "dark";
+
+export interface PlanPrice {
+  _key?: string;
+  amount: string;
+  compareAt?: string;
+  period?: string;
+  note?: string;
+}
+
+export interface PricingPlan {
+  _key?: string;
+  name: string;
+  audience?: string;
+  badge?: string;
+  featured?: boolean;
+  description?: string;
+  prices?: PlanPrice[];
+  allowance?: string;
+  featuresHeading?: string;
+  features?: string[];
+  featuresNote?: string;
+  ctas?: Cta[];
+  footnote?: string;
+}
+
+// An option of a pricing section's price switch (fields/section.ts priceOptionsField)
+export interface PriceOption {
+  _key?: string;
+  label: string;
+  badge?: string;
+}
+
+export type FeatureIcon = "check" | "checkCircle" | "plus";

@@ -1,0 +1,12 @@
+{
+  "id": "pricing-duo",
+  "category": "pricing",
+  "title": "Pricing, two joined panels",
+  "description": "A label over a line, a bold heading and a small link, then two plans in one outlined frame: numbered, with a large price, plus-marked features and a full-width button. The highlighted plan fills with the accent colour. Dark by default.",
+  "tags": ["pricing", "plans", "two plans", "bold", "dark"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["PlanFeatures", "PriceSwitch"], "animation": [] },
+  "references": [],
+  "features": []
+}

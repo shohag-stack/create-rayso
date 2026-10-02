@@ -63,6 +63,11 @@ links, wordmark, bottom bar), the `navLink`, `navGroup`, `linkColumn` and
 - `tintField` and `components/ui/tint.ts` give editors four panel colours from
   the theme (soft accent, accent, light panel, dark). `iconField` and
   `components/ui/IconByName.tsx` give them a small built-in icon set.
+- Pricing uses the `pricingPlan` and `planPrice` objects and
+  `components/ui/pricing/`. `priceOptionsField` adds a switch (Monthly/Yearly,
+  or currencies); each plan lists one price per option, in the same order, and
+  `PlanPrice` shows the picked one. Sections that use `PlanPrice` wrap
+  themselves in `PriceSwitchProvider`.
 
 Names come from the folder name (`hero-fullscreen-image`), and
 `npm run check:library` fails if a file doesn't use them:
