@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { isDemo } from "@/(core)/demo";
 import { getSiteSettings } from "@/(core)/fetch/siteSettings";
+import { DemoNotice } from "@/components/layout/DemoNotice";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
 import { fontVariables } from "./fonts";
 import "./globals.css";
@@ -20,6 +22,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         {children}
         {settings?.footer?.length ? <SectionRenderer sections={settings.footer} as="footer" /> : null}
+        {isDemo && <DemoNotice />}
       </body>
     </html>
   );

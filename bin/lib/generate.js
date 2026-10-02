@@ -99,7 +99,8 @@ ${documents.map((d) => `  { type: "${d.typeName}", title: "${d.title}", icon: ${
 function pageQuery(sections) {
   return `// ${GENERATED}
 import { imageFields } from "@/(core)/fetch/fragments";
-import { client } from "@/(core)/sanity/lib/client";
+import { demoPage, demoPageBySlug, demoPageSlugs } from "@/(core)/demo";
+import { client, isSanityConfigured } from "@/(core)/sanity/lib/client";
 import type { PageData } from "@/types";
 ${sections.map((s) => `import { ${s.fields} } from "./sections/${s.id}";`).join('\n')}
 
@@ -120,18 +121,22 @@ const pageFields = /* groq */ \`
   sections[]{ \${sectionFields} }
 \`;
 
-export function getPage(id: string) {
+// Until Sanity is connected, pages come from the demo content (see (core)/demo)
+export async function getPage(id: string) {
+  if (!isSanityConfigured) return demoPage(id);
   return client.fetch<PageData | null>(\`*[_type == "page" && _id == $id][0]{ \${pageFields} }\`, { id });
 }
 
-export function getPageBySlug(slug: string) {
+export async function getPageBySlug(slug: string) {
+  if (!isSanityConfigured) return demoPageBySlug(slug);
   return client.fetch<PageData | null>(
     \`*[_type == "page" && _id != "home" && slug.current == $slug][0]{ \${pageFields} }\`,
     { slug }
   );
 }
 
-export function getPageSlugs() {
+export async function getPageSlugs() {
+  if (!isSanityConfigured) return demoPageSlugs();
   return client.fetch<string[]>(\`*[_type == "page" && _id != "home" && defined(slug.current)].slug.current\`);
 }
 `;
@@ -152,6 +157,9 @@ function sectionRenderer(sections) {
   return `// ${GENERATED}
 import type { PageSection } from "@/types";
 ${sections.map((s) => `import { ${s.component} } from "./${s.component}";`).join('\n')}
+
+// Sections that sit under the menu at the top of a page (meta.json isPageTop); other sections get room for it
+export const pageTopTypes: string[] = [${sections.filter((s) => s.isPageTop).map((s) => `"${s.typeName}"`).join(', ')}];
 
 function renderSection(section: PageSection) {
   switch (section._type) {
@@ -215,6 +223,18 @@ function withKeys(value) {
   return value;
 }
 
+// A page, navbar or footer entry: "<section id>" or { id, variant, content }
+const toEntry = (e) => (typeof e === 'string' ? { id: e } : e);
+
+// Seed content, then the variant's changes, then the niche's own content; null removes a field
+function sectionContent(s, entry) {
+  if (entry.variant && !s.variants[entry.variant]) {
+    throw new Error(`"${s.id}" has no variant "${entry.variant}" (has: ${Object.keys(s.variants).join(', ') || 'none'})`);
+  }
+  const merged = { ...s.seed, ...(entry.variant ? s.variants[entry.variant] : {}), ...(entry.content ?? {}) };
+  return Object.fromEntries(Object.entries(merged).filter(([, v]) => v !== null));
+}
+
 function pageDocuments(pages, sectionsById) {
   return pages.map((p) => ({
     _id: p.id,
@@ -222,7 +242,11 @@ function pageDocuments(pages, sectionsById) {
     title: p.title,
     ...(p.id === 'home' ? {} : { slug: { _type: 'slug', current: p.slug ?? p.id } }),
     menuColor: p.menuColor ?? 'light',
-    sections: p.sections.map((id) => ({ _key: nextKey(), _type: sectionsById.get(id).typeName, ...withKeys(sectionsById.get(id).seed) })),
+    ...(p.seo ? { seo: p.seo } : {}),
+    sections: p.sections.map((e) => {
+      const s = sectionsById.get(e.id);
+      return { _key: nextKey(), _type: s.typeName, ...withKeys(sectionContent(s, e)) };
+    }),
   }));
 }
 
@@ -274,21 +298,26 @@ async function removeGitkeeps(dir) {
  * @param {object[]} o.sections   loaded library sections (loadSections)
  * @param {object[]} [o.documents] loaded library document types (loadLibrary); the ones the sections reference are included
  * @param {object} o.theme        loaded theme (loadTheme)
- * @param {{id: string, title: string, slug?: string, menuColor?: string, sections: string[]}[]} o.pages
+ * @param {{id: string, title: string, slug?: string, menuColor?: string, sections: (string | SectionEntry)[]}[]} o.pages
  * @param {string} o.siteName
- * @param {string} [o.navbar]    navbar section id for Site settings (default: the first navbar section)
- * @param {string} [o.footer]    footer section id for Site settings (default: the first footer section)
+ * @param {string | SectionEntry} [o.navbar]  navbar for Site settings (default: the first navbar section)
+ * @param {string | SectionEntry} [o.footer]  footer for Site settings (default: the first footer section)
+ * SectionEntry: { id, variant?: a name from the section's variants.json, content?: fields that replace the seed's }
  * @param {boolean} [o.preview]   also write a /library page rendering every section from seed content
  */
-export async function generateTemplate({ targetDir, sections, documents: allDocuments = [], theme, pages, siteName, navbar: navbarId, footer: footerId, preview = false, libraryDir = LIBRARY_DIR }) {
+export async function generateTemplate({ targetDir, sections, documents: allDocuments = [], theme, pages: pageList, siteName, navbar: navbarEntry, footer: footerEntry, preview = false, libraryDir = LIBRARY_DIR }) {
   keyCounter = 0;
   const sectionsById = new Map(sections.map((s) => [s.id, s]));
+  const pages = pageList.map((p) => ({ ...p, sections: p.sections.map(toEntry) }));
   for (const p of pages) {
-    const unknown = p.sections.filter((id) => !sectionsById.has(id));
+    const ids = p.sections.map((e) => e.id);
+    const unknown = ids.filter((id) => !sectionsById.has(id));
     if (unknown.length) throw new Error(`Page "${p.id}" uses unknown sections: ${unknown.join(', ')}`);
-    const site = p.sections.filter((id) => !isPageSection(sectionsById.get(id)));
+    const site = ids.filter((id) => !isPageSection(sectionsById.get(id)));
     if (site.length) throw new Error(`Page "${p.id}" lists ${site.join(', ')}; menus and footers go in Site settings`);
   }
+  const navbarId = navbarEntry && toEntry(navbarEntry).id;
+  const footerId = footerEntry && toEntry(footerEntry).id;
   if (navbarId && sectionsById.get(navbarId)?.category !== 'navbar') throw new Error(`"${navbarId}" is not a navbar section`);
   if (footerId && sectionsById.get(footerId)?.category !== 'footer') throw new Error(`"${footerId}" is not a footer section`);
 
@@ -324,22 +353,29 @@ export async function generateTemplate({ targetDir, sections, documents: allDocu
   await write('frontend/app/fonts.ts', fontsFile(theme));
 
   // 5. Seed content
-  const pick = (category, id) => (id ? sectionsById.get(id) : sections.find((s) => s.category === category));
-  const siteSection = (s) => (s ? [{ _key: nextKey(), _type: s.typeName, ...withKeys(s.seed) }] : undefined);
-  const navbar = siteSection(pick('navbar', navbarId));
-  const footer = siteSection(pick('footer', footerId));
+  const siteSection = (category, entry) => {
+    const e = entry ? toEntry(entry) : { id: sections.find((s) => s.category === category)?.id };
+    const s = sectionsById.get(e.id);
+    return s ? [{ _key: nextKey(), _type: s.typeName, ...withKeys(sectionContent(s, e)) }] : undefined;
+  };
+  const navbar = siteSection('navbar', navbarEntry);
+  const footer = siteSection('footer', footerEntry);
   const settings = { _id: 'siteSettings', _type: 'siteSettings', siteName, ...(navbar ? { navbar } : {}), ...(footer ? { footer } : {}) };
   const seededDocs = documents.flatMap((d) => d.seed.map(withKeys));
   const docs = [settings, ...seededDocs, ...pageDocuments(pages, sectionsById)];
   await write('seed/demo-content.ndjson', docs.map((d) => JSON.stringify(d)).join('\n') + '\n');
+
+  // The same content in query shape: the site shows it until a Sanity project is connected
+  const slugs = Object.fromEntries(pages.map((p) => [p.id, p.slug ?? p.id]));
+  const docsById = Object.fromEntries(seededDocs.map((d) => [d._id, d]));
+  const demo = { settings: toQueryShape(settings, slugs, docsById), pages: pageDocuments(pages, sectionsById).map((d) => toQueryShape(d, slugs, docsById)) };
+  await write('frontend/(core)/demo/content.json', JSON.stringify(demo, null, 2) + '\n');
 
   // 6. CLAUDE.md inventory
   await writeInventory(targetDir, sections);
 
   // 7. Library preview (playground only)
   if (preview) {
-    const slugs = Object.fromEntries(pages.map((p) => [p.id, p.slug ?? p.id]));
-    const docsById = Object.fromEntries(seededDocs.map((d) => [d._id, d]));
     const withoutNulls = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null));
     const items = sections.flatMap((s) =>
       [['default', s.seed], ...Object.entries(s.variants).map(([name, v]) => [name, withoutNulls({ ...s.seed, ...v })])].map(

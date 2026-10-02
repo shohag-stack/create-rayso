@@ -100,11 +100,33 @@ and `../fields/anchor` in schemas.
 - Images in `seed.json` use `"_sanityAsset": "image@<url>"`, which Sanity's
   importer uploads. Use images that may be redistributed to buyers.
 
+## Niches
+
+A niche file, `niches/<id>.json`, describes one sellable template: `theme`,
+`siteName`, `navbar`, `footer` and `pages` (`id`, `title`, `slug` for every page
+but `home`, `menuColor`, `sections`). Every navbar, footer or page section is a
+section id, or `{ "id", "variant", "content" }`: `variant` is a name from that
+section's `variants.json`, and `content` replaces seed fields (`null` removes
+one). `npm run check:library` validates niche files too.
+
+`npm create rayso@latest <niche>` (`bin/create.js`) builds the template with
+only the sections the niche uses, installs it and starts the site. Until a
+Sanity project is connected the site shows the demo content from
+`frontend/(core)/demo/content.json`, with a small notice. A name with no niche
+file gets a home page with one fitting section per category (by `niches` in
+`meta.json`); `--save-niche` writes it to `niches/`. Options go after `--`:
+`--list`, `--name`, `--author`, `--theme`, `--project-id`, `--zip`,
+`--no-install`, `--no-start`. With no niche the command runs the original
+scaffold (`bin/index.js`).
+
+A page whose first section isn't `isPageTop` starts below the menu.
+
 ## Commands (from the repo root)
 
 | Command | What it does |
 |---|---|
 | `npm run check:library` | Validates every section folder |
+| `node bin/create.js resort --no-start` | Builds `resort-template/` from `niches/resort.json` (what `npm create rayso@latest resort` runs) |
 | `npm run playground` | Generates `playground/` with every section and the resort theme |
 | `cd playground && npm install && npm run dev:frontend` | Shows every section at <http://localhost:3000/library>, no Sanity project needed |
 
@@ -112,4 +134,5 @@ The generator writes the files that list sections (`studio/schemaTypes/sections/
 `frontend/(core)/fetch/page.ts`, `frontend/types/sections.ts`,
 `frontend/components/sections/SectionRenderer.tsx`), the theme
 (`frontend/app/theme.css`, `frontend/app/fonts.ts`), demo content
-(`seed/demo-content.ndjson`) and the section table in `CLAUDE.MD`.
+(`seed/demo-content.ndjson`, and the same in query shape in
+`frontend/(core)/demo/content.json`) and the section table in `CLAUDE.MD`.

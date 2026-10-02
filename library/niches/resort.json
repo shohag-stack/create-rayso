@@ -1,0 +1,67 @@
+{
+  "id": "resort",
+  "title": "Resort and hotel",
+  "description": "A boutique resort: full-screen photo hero, rooms and rates, guest stories, a journal and questions.",
+  "theme": "resort",
+  "siteName": "Meridian",
+  "navbar": {
+    "id": "navbar-floating",
+    "content": {
+      "links": [
+        { "_type": "navLink", "label": "Rooms", "link": { "_type": "link", "kind": "url", "url": "/rooms" } },
+        { "_type": "navLink", "label": "Stories", "link": { "_type": "link", "kind": "url", "url": "/#stories" } },
+        { "_type": "navLink", "label": "Journal", "link": { "_type": "link", "kind": "url", "url": "/journal" } },
+        { "_type": "navLink", "label": "Questions", "link": { "_type": "link", "kind": "url", "url": "/#questions" } }
+      ],
+      "ctas": [{ "_type": "cta", "label": "Book now", "style": "primary", "link": { "_type": "link", "kind": "url", "url": "/rooms" } }]
+    }
+  },
+  "footer": "footer-columns",
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "menuColor": "light",
+      "sections": [
+        "hero-fullscreen-image",
+        "logos-row",
+        "features-columns",
+        { "id": "testimonials-carousel", "content": { "anchor": { "_type": "slug", "current": "stories" } } },
+        { "id": "blog-carousel", "content": { "viewAll": { "_type": "cta", "label": "View all", "style": "secondary", "link": { "_type": "link", "kind": "url", "url": "/journal" } } } },
+        { "id": "faq-split", "content": { "anchor": { "_type": "slug", "current": "questions" } } }
+      ]
+    },
+    {
+      "id": "rooms",
+      "title": "Rooms and rates",
+      "slug": "rooms",
+      "menuColor": "light",
+      "sections": [
+        {
+          "id": "hero-fullscreen-image",
+          "variant": "top, lead text",
+          "content": {
+            "heading": "Rooms and rates",
+            "body": "Garden suites, overwater villas and a club for guests who come back every year.",
+            "ctas": null
+          }
+        },
+        "pricing-cards",
+        { "id": "faq-cards", "variant": "dark" }
+      ]
+    },
+    {
+      "id": "journal",
+      "title": "Journal",
+      "slug": "journal",
+      "menuColor": "dark",
+      "sections": [
+        {
+          "id": "blog-cards",
+          "variant": "dark, full details",
+          "content": { "tone": "page", "heading": "Journal", "cta": null }
+        }
+      ]
+    }
+  ]
+}

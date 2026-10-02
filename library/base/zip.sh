@@ -1,7 +1,8 @@
 #!/bin/bash
 # Builds the buyer zip: <name>-<version>.zip in the repo root.
 # Usage: npm run zip              (exports fresh demo content first)
-#        npm run zip -- --no-export  (reuse seed/demo-content.tar.gz)
+#        npm run zip -- --no-export  (reuse seed/demo-content.tar.gz, or ship the
+#                                     generated seed/demo-content.ndjson)
 set -e
 cd "$(dirname "$0")"
 
@@ -18,6 +19,7 @@ env_value() { # env_value <file> <key>
 PROJECT_ID=$(env_value studio/.env.local SANITY_STUDIO_PROJECT_ID)
 DATASET=$(env_value studio/.env.local SANITY_STUDIO_DATASET)
 DATASET=${DATASET:-production}
+[ "$PROJECT_ID" = "your_project_id" ] && PROJECT_ID=""
 
 # Every buyer zip must carry a filled-in license
 [ -f LICENSE.txt ] || fail "LICENSE.txt is missing"
@@ -30,7 +32,7 @@ if [ "$1" != "--no-export" ]; then
   echo "Exporting $DATASET (documents, images, videos)..."
   (cd studio && npx sanity dataset export "$DATASET" "../$SEED" --overwrite)
 fi
-[ -f "$SEED" ] || fail "$SEED not found (run without --no-export)"
+[ -f "$SEED" ] || [ -f seed/demo-content.ndjson ] || fail "$SEED not found (run without --no-export)"
 
 # 2. Clean copy without seller-only and local files
 STAGE=$(mktemp -d)
