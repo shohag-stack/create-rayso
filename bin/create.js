@@ -26,7 +26,8 @@ ${chalk.bold('npm create rayso@latest <niche> [folder] -- [options]')}
   --zip               Also make the buyer zip
   --no-install        Only write the files
   --no-start          Don't start the preview
-  --save-niche        For a niche with no file, save the picked sections to library/niches/<niche>.json
+  --save-niche        For a niche with no file, also save the picked sections to library/niches/<niche>.json
+                      (every template gets its recipe as niche.json either way)
 `;
 
 const { values: opts, positionals } = parseArgs({
@@ -114,6 +115,8 @@ async function createFromNiche(nicheId, folder) {
       pages: niche.pages,
     });
     await personalise(targetDir, { name, author: opts.author, niche, projectId: opts['project-id'] });
+    // The recipe this template was built from, so it can be edited and rebuilt (not shipped in the zip)
+    await fs.writeJson(path.join(targetDir, 'niche.json'), niche, { spaces: 2 });
     spinner.succeed(`Built ${niche.pages.length} page(s) and ${used.filter((s) => !SITE_CATEGORIES.includes(s.category)).length} section type(s), with the Sanity schema and demo content`);
   } catch (err) {
     spinner.fail('Build failed');

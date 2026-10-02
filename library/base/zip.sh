@@ -41,7 +41,7 @@ rsync -a ./ "$STAGE/$NAME/" \
   --exclude node_modules --exclude .next --exclude .sanity --exclude dist \
   --exclude .git --exclude .turbo --exclude '.env.local' --exclude '.env.*.local' \
   --exclude .DS_Store --exclude '*.log' --exclude '*.tsbuildinfo' --exclude '*.zip' \
-  --exclude /MAINTAINER.md --exclude /zip.sh --exclude /.claude/commands/zip-project.md
+  --exclude /MAINTAINER.md --exclude /niche.json --exclude /zip.sh --exclude /.claude/commands/zip-project.md
 
 # 3. Safety checks on what would ship
 LEAKED=$(find "$STAGE" -name '.env*' ! -name '.env.example')

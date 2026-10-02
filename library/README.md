@@ -114,7 +114,7 @@ only the sections the niche uses, installs it and starts the site. Until a
 Sanity project is connected the site shows the demo content from
 `frontend/(core)/demo/content.json`, with a small notice. A name with no niche
 file gets a home page with one fitting section per category (by `niches` in
-`meta.json`); `--save-niche` writes it to `niches/`. Options go after `--`:
+`meta.json`); Every template gets the recipe it was built from as `niche.json` (left out of the zip); `--save-niche` also writes a drafted one to `niches/`. Options go after `--`:
 `--list`, `--name`, `--author`, `--theme`, `--project-id`, `--zip`,
 `--no-install`, `--no-start`. With no niche the command runs the original
 scaffold (`bin/index.js`).
