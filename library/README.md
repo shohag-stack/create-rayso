@@ -119,6 +119,18 @@ file gets a home page with one fitting section per category (by `niches` in
 `--no-install`, `--no-start`. With no niche the command runs the original
 scaffold (`bin/index.js`).
 
+Every niche must have the standard pages (`REQUIRED_PAGES` in
+`bin/lib/niche.js`): `home`, `about`, `works` (with a works section), `blog`
+(with a blog section) and `contact` (with a contact section). A document type
+with `"route": "<base>"` in `meta.json` and a `page.tsx` gets a page per
+document at `/<base>/<slug>`: `post` → `/blog/<slug>`, `work` → `/works/<slug>`.
+The generator also writes `app/<base>/page.tsx` for the listing page and
+`(core)/routes.ts`. Sections that need a document type list it in
+`references`, which is what brings its route in.
+
+The contact section posts to `app/api/contact/route.ts` (base), which emails
+messages with Resend (`RESEND_API_KEY`, `CONTACT_EMAIL`).
+
 A page whose first section isn't `isPageTop` starts below the menu.
 
 ## Commands (from the repo root)

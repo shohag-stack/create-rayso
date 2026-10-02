@@ -26,7 +26,30 @@ function documentTargets(d) {
     ['schema.ts', `studio/schemaTypes/documents/${d.id}.ts`],
     ['query.ts', `frontend/(core)/fetch/documents/${d.id}.ts`],
     ['types.ts', `frontend/types/documents/${d.id}.ts`],
+    // A document with a route gets its own page: /<route>/<slug>
+    ...(d.route ? [['page.tsx', `frontend/app/${d.route}/[slug]/page.tsx`]] : []),
   ];
+}
+
+// /<route> itself: the page with that slug, e.g. the Blog page made of sections
+function routeListingPage(route) {
+  return `// ${GENERATED}
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getPageBySlug } from "@/(core)/fetch/page";
+import { PageRenderer } from "@/components/layout/PageRenderer";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const page = await getPageBySlug("${route}");
+  return { title: page?.seo?.title ?? page?.title, description: page?.seo?.description };
+}
+
+export default async function Page() {
+  const page = await getPageBySlug("${route}");
+  if (!page) notFound();
+  return <PageRenderer page={page} />;
+}
+`;
 }
 
 // ── Registries ────────────────────────────────────────────────────────────────
@@ -347,6 +370,9 @@ export async function generateTemplate({ targetDir, sections, documents: allDocu
   await write('frontend/(core)/fetch/page.ts', pageQuery(sections));
   await write('frontend/types/sections.ts', sectionTypesFile(sections));
   await write('frontend/components/sections/SectionRenderer.tsx', sectionRenderer(sections));
+  const routes = documents.filter((d) => d.route).map((d) => d.route);
+  for (const route of routes) await write(`frontend/app/${route}/page.tsx`, routeListingPage(route));
+  await write('frontend/(core)/routes.ts', `// ${GENERATED}\n// Pages with their own folder in app/ (e.g. /blog and /blog/<slug>)\nexport const documentRoutes: string[] = [${routes.map((r) => `"${r}"`).join(', ')}];\n`);
 
   // 4. Theme
   await write('frontend/app/theme.css', themeCss(theme));
@@ -368,7 +394,11 @@ export async function generateTemplate({ targetDir, sections, documents: allDocu
   // The same content in query shape: the site shows it until a Sanity project is connected
   const slugs = Object.fromEntries(pages.map((p) => [p.id, p.slug ?? p.id]));
   const docsById = Object.fromEntries(seededDocs.map((d) => [d._id, d]));
-  const demo = { settings: toQueryShape(settings, slugs, docsById), pages: pageDocuments(pages, sectionsById).map((d) => toQueryShape(d, slugs, docsById)) };
+  const demo = {
+    settings: toQueryShape(settings, slugs, docsById),
+    pages: pageDocuments(pages, sectionsById).map((d) => toQueryShape(d, slugs, docsById)),
+    documents: Object.fromEntries(documents.map((d) => [d.typeName, d.seed.map((doc) => toQueryShape(withKeys(doc), slugs, docsById))])),
+  };
   await write('frontend/(core)/demo/content.json', JSON.stringify(demo, null, 2) + '\n');
 
   // 6. CLAUDE.md inventory

@@ -1,7 +1,7 @@
 {
   "id": "starter",
   "title": "Starter",
-  "description": "The built-in starter: home, rooms and rates, and a journal, with the resort theme and demo content.",
+  "description": "The built-in starter: home, about, works, blog, contact and rooms, with the resort theme and demo content.",
   "theme": "resort",
   "siteName": "Meridian",
   "navbar": {
@@ -19,29 +19,38 @@
         },
         {
           "_type": "navLink",
-          "label": "Stories",
+          "label": "About",
           "link": {
             "_type": "link",
             "kind": "url",
-            "url": "/#stories"
+            "url": "/about"
           }
         },
         {
           "_type": "navLink",
-          "label": "Journal",
+          "label": "Works",
           "link": {
             "_type": "link",
             "kind": "url",
-            "url": "/journal"
+            "url": "/works"
           }
         },
         {
           "_type": "navLink",
-          "label": "Questions",
+          "label": "Blog",
           "link": {
             "_type": "link",
             "kind": "url",
-            "url": "/#questions"
+            "url": "/blog"
+          }
+        },
+        {
+          "_type": "navLink",
+          "label": "Contact",
+          "link": {
+            "_type": "link",
+            "kind": "url",
+            "url": "/contact"
           }
         }
       ],
@@ -53,13 +62,115 @@
           "link": {
             "_type": "link",
             "kind": "url",
-            "url": "/rooms"
+            "url": "/contact"
           }
         }
       ]
     }
   },
-  "footer": "footer-columns",
+  "footer": {
+    "id": "footer-columns",
+    "content": {
+      "columns": [
+        {
+          "_type": "linkColumn",
+          "heading": "Stay",
+          "links": [
+            {
+              "_type": "navLink",
+              "label": "Rooms",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/rooms"
+              }
+            },
+            {
+              "_type": "navLink",
+              "label": "Questions",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/#questions"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "linkColumn",
+          "heading": "Explore",
+          "links": [
+            {
+              "_type": "navLink",
+              "label": "Works",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/works"
+              }
+            },
+            {
+              "_type": "navLink",
+              "label": "Blog",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/blog"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "linkColumn",
+          "heading": "About",
+          "links": [
+            {
+              "_type": "navLink",
+              "label": "Our story",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/about"
+              }
+            },
+            {
+              "_type": "navLink",
+              "label": "Guest stories",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/#stories"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "linkColumn",
+          "heading": "Contact",
+          "links": [
+            {
+              "_type": "navLink",
+              "label": "Write to us",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/contact"
+              }
+            },
+            {
+              "_type": "navLink",
+              "label": "Email",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "mailto:stay@meridian.example"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
   "pages": [
     {
       "id": "home",
@@ -69,6 +180,21 @@
         "hero-fullscreen-image",
         "logos-row",
         "features-columns",
+        {
+          "id": "works-grid",
+          "content": {
+            "cta": {
+              "_type": "cta",
+              "label": "All works",
+              "style": "secondary",
+              "link": {
+                "_type": "link",
+                "kind": "url",
+                "url": "/works"
+              }
+            }
+          }
+        },
         {
           "id": "testimonials-carousel",
           "content": {
@@ -88,7 +214,7 @@
               "link": {
                 "_type": "link",
                 "kind": "url",
-                "url": "/journal"
+                "url": "/blog"
               }
             }
           }
@@ -101,6 +227,76 @@
               "current": "questions"
             }
           }
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "slug": "about",
+      "menuColor": "light",
+      "sections": [
+        {
+          "id": "hero-centered-image",
+          "content": {
+            "heading": "A quiet place by the sea,",
+            "headingAccent": "run by people who live here.",
+            "body": "Meridian opened in 2009 with eight rooms and a kitchen garden. It is still owned and run by the same family.",
+            "note": null,
+            "emailCapture": null
+          }
+        },
+        {
+          "id": "features-columns",
+          "variant": "left, no pictures"
+        },
+        "testimonials-spotlight",
+        "logos-row"
+      ]
+    },
+    {
+      "id": "works",
+      "title": "Works",
+      "slug": "works",
+      "menuColor": "dark",
+      "sections": [
+        {
+          "id": "works-grid",
+          "variant": "three columns, all works, dark",
+          "content": {
+            "tone": "page",
+            "heading": "Places we have built"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blog",
+      "title": "Blog",
+      "slug": "blog",
+      "menuColor": "dark",
+      "sections": [
+        {
+          "id": "blog-cards",
+          "variant": "dark, full details",
+          "content": {
+            "tone": "page",
+            "heading": "Blog",
+            "cta": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "slug": "contact",
+      "menuColor": "dark",
+      "sections": [
+        "contact-split",
+        {
+          "id": "faq-cards",
+          "variant": "dark"
         }
       ]
     },
@@ -123,23 +319,6 @@
         {
           "id": "faq-cards",
           "variant": "dark"
-        }
-      ]
-    },
-    {
-      "id": "journal",
-      "title": "Journal",
-      "slug": "journal",
-      "menuColor": "dark",
-      "sections": [
-        {
-          "id": "blog-cards",
-          "variant": "dark, full details",
-          "content": {
-            "tone": "page",
-            "heading": "Journal",
-            "cta": null
-          }
         }
       ]
     }

@@ -1,0 +1,7 @@
+{
+  "id": "work",
+  "title": "Works",
+  "icon": "ProjectsIcon",
+  "description": "A project or case study with a title, cover image, short summary, client, year, services, body text and a gallery. Listed in works sections, with its own page under /works.",
+  "route": "works"
+}

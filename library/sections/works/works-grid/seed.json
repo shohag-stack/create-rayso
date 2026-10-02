@@ -1,0 +1,38 @@
+{
+  "eyebrow": "Selected works",
+  "heading": "Places we have\nbuilt and restored",
+  "works": [
+    {
+      "_type": "reference",
+      "_ref": "work-olive-grove-spa"
+    },
+    {
+      "_type": "reference",
+      "_ref": "work-overwater-villas"
+    },
+    {
+      "_type": "reference",
+      "_ref": "work-harbour-kitchen"
+    },
+    {
+      "_type": "reference",
+      "_ref": "work-garden-suites"
+    }
+  ],
+  "limit": 4,
+  "cta": {
+    "_type": "cta",
+    "label": "All works",
+    "style": "secondary",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/works"
+    }
+  },
+  "align": "left",
+  "columns": 2,
+  "imageShape": "landscape",
+  "showExcerpt": false,
+  "tone": "page"
+}

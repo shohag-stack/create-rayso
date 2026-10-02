@@ -79,6 +79,24 @@ If the Studio says the origin isn't allowed, open
 [sanity.io/manage](https://www.sanity.io/manage) → your project → **API** →
 **CORS origins**, add `http://localhost:3333` and tick **Allow credentials**.
 
+Until you add a project ID the website shows the bundled demo content, so you
+can look around first (`npm run dev:frontend`).
+
+### Contact form
+
+The form on the Contact page emails each message to you with
+[Resend](https://resend.com) (free plan available). Add to `frontend/.env.local`:
+
+```bash
+RESEND_API_KEY=re_...
+CONTACT_EMAIL=you@yourbusiness.com
+# Optional, once your domain is verified in Resend:
+CONTACT_FROM_EMAIL=Website <hello@yourbusiness.com>
+```
+
+Without these, messages are accepted while you run `npm run dev` (they show in
+the terminal) and the live site asks visitors to email you instead.
+
 ## Editing content
 
 Everything on the site is edited in the Studio:
@@ -89,6 +107,11 @@ Everything on the site is edited in the Studio:
 - Content used in several places (projects, posts, FAQs…) has its own list in
   the sidebar; sections pick from it.
 - **Site settings**: the menu, the footer, and other site-wide content.
+
+- Every template has these pages: Home, About, Works, Blog and Contact, plus a
+  page for each project (`/works/<project>`) and each post (`/blog/<post>`).
+  Add projects under **Works** and posts under **Blog posts**; they appear on
+  the Works and Blog pages and get their own page automatically.
 
 <!-- Template-specific: describe this template's document types and special
      sections here (e.g. project pages, background videos). -->

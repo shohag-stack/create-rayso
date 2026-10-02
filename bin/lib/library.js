@@ -121,6 +121,9 @@ export async function loadDocuments(libraryDir = LIBRARY_DIR) {
       ['types.ts', `export interface ${names.dataType} `],
     ];
     for (const [file, needle] of checks) if (!(await read(file)).includes(needle)) errors.push(`${where}/${file}: expected \`${needle}\``);
+    // "route": "blog" gives each document a page at /blog/<slug>, from page.tsx
+    if (meta.route && !/^[a-z0-9-]+$/.test(meta.route)) errors.push(`${where}/meta.json: route "${meta.route}" must be lowercase letters, numbers and hyphens`);
+    if (meta.route && !fs.existsSync(path.join(dir, 'page.tsx'))) errors.push(`${where}: has a route, so it needs page.tsx`);
 
     documents.push({ ...meta, ...names, dir, seed });
   }

@@ -1,0 +1,39 @@
+{
+  "three columns, all works, dark": {
+    "eyebrow": null,
+    "heading": "Works",
+    "works": [
+      {
+        "_type": "reference",
+        "_ref": "work-olive-grove-spa"
+      },
+      {
+        "_type": "reference",
+        "_ref": "work-overwater-villas"
+      },
+      {
+        "_type": "reference",
+        "_ref": "work-harbour-kitchen"
+      },
+      {
+        "_type": "reference",
+        "_ref": "work-garden-suites"
+      },
+      {
+        "_type": "reference",
+        "_ref": "work-sunset-pavilion"
+      },
+      {
+        "_type": "reference",
+        "_ref": "work-island-boathouse"
+      }
+    ],
+    "limit": 6,
+    "cta": null,
+    "align": "center",
+    "columns": 3,
+    "imageShape": "tall",
+    "showExcerpt": true,
+    "tone": "dark"
+  }
+}

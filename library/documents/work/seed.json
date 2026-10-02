@@ -1,0 +1,676 @@
+[
+  {
+    "_id": "work-olive-grove-spa",
+    "_type": "work",
+    "title": "The Olive Grove Spa",
+    "slug": {
+      "_type": "slug",
+      "current": "olive-grove-spa"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "The Olive Grove Spa"
+    },
+    "excerpt": "A spa built into an old olive grove: four treatment rooms, a salt room and a cold pool, with every tree kept in place.",
+    "category": "Architecture",
+    "client": "Meridian",
+    "year": "2026",
+    "services": [
+      "Architecture",
+      "Interiors",
+      "Landscape"
+    ],
+    "orderRank": 1,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b2",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s2",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b3",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s3",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b4",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s4",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b5",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s5",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b6",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s6",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "The Olive Grove Spa, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "The Olive Grove Spa, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "The Olive Grove Spa, at dusk"
+      }
+    ]
+  },
+  {
+    "_id": "work-overwater-villas",
+    "_type": "work",
+    "title": "Overwater Villas",
+    "slug": {
+      "_type": "slug",
+      "current": "overwater-villas"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "Overwater Villas"
+    },
+    "excerpt": "Twelve villas over the lagoon, furnished in teak, linen and stone so nothing competes with the view.",
+    "category": "Interiors",
+    "client": "Meridian",
+    "year": "2025",
+    "services": [
+      "Interiors",
+      "Furniture"
+    ],
+    "orderRank": 2,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b8",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s8",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b9",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s9",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b10",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s10",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b11",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s11",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b12",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s12",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "Overwater Villas, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Overwater Villas, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Overwater Villas, at dusk"
+      }
+    ]
+  },
+  {
+    "_id": "work-harbour-kitchen",
+    "_type": "work",
+    "title": "Harbour Kitchen",
+    "slug": {
+      "_type": "slug",
+      "current": "harbour-kitchen"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "Harbour Kitchen"
+    },
+    "excerpt": "A name, menus and signs for the harbour restaurant, drawn from old fishing boat lettering.",
+    "category": "Branding",
+    "client": "Meridian",
+    "year": "2025",
+    "services": [
+      "Branding",
+      "Menus",
+      "Signage"
+    ],
+    "orderRank": 3,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b14",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s14",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b15",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s15",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b16",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s16",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b17",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s17",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b18",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s18",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "Harbour Kitchen, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Harbour Kitchen, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Harbour Kitchen, at dusk"
+      }
+    ]
+  },
+  {
+    "_id": "work-garden-suites",
+    "_type": "work",
+    "title": "Garden Suites",
+    "slug": {
+      "_type": "slug",
+      "current": "garden-suites"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "Garden Suites"
+    },
+    "excerpt": "Eight suites set low in the garden, each with a private terrace and an outdoor shower.",
+    "category": "Architecture",
+    "client": "Meridian",
+    "year": "2024",
+    "services": [
+      "Architecture",
+      "Landscape"
+    ],
+    "orderRank": 4,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b20",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s20",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b21",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s21",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b22",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s22",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b23",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s23",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b24",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s24",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "Garden Suites, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Garden Suites, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Garden Suites, at dusk"
+      }
+    ]
+  },
+  {
+    "_id": "work-sunset-pavilion",
+    "_type": "work",
+    "title": "Sunset Pavilion",
+    "slug": {
+      "_type": "slug",
+      "current": "sunset-pavilion"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "Sunset Pavilion"
+    },
+    "excerpt": "An open pavilion on the point for weddings and long dinners, lit only by lanterns after dark.",
+    "category": "Events",
+    "client": "Meridian",
+    "year": "2024",
+    "services": [
+      "Architecture",
+      "Lighting"
+    ],
+    "orderRank": 5,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b26",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s26",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b27",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s27",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b28",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s28",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b29",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s29",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b30",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s30",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "Sunset Pavilion, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Sunset Pavilion, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "Sunset Pavilion, at dusk"
+      }
+    ]
+  },
+  {
+    "_id": "work-island-boathouse",
+    "_type": "work",
+    "title": "The Island Boathouse",
+    "slug": {
+      "_type": "slug",
+      "current": "island-boathouse"
+    },
+    "cover": {
+      "_type": "imageWithAlt",
+      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "alt": "The Island Boathouse"
+    },
+    "excerpt": "The old boathouse, restored as the starting point for every boat trip, with a small bar for the way back.",
+    "category": "Interiors",
+    "client": "Meridian",
+    "year": "2023",
+    "services": [
+      "Interiors",
+      "Wayfinding"
+    ],
+    "orderRank": 6,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "b32",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s32",
+            "text": "The brief",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b33",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s33",
+            "text": "Make something that feels like it was always there. We started from the site: the light at different hours, the paths people already walked and the materials the island has used for centuries.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b34",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s34",
+            "text": "Every decision was tested against one question: does this make a guest slow down?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b35",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s35",
+            "text": "The result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "b36",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "s36",
+            "text": "Guests now book it by name. The team says it is the quietest part of the resort, and the easiest to look after.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "alt": "The Island Boathouse, wide view"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "The Island Boathouse, detail"
+      },
+      {
+        "_type": "imageWithAlt",
+        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "alt": "The Island Boathouse, at dusk"
+      }
+    ]
+  }
+]
