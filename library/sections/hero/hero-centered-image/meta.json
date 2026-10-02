@@ -1,0 +1,12 @@
+{
+  "id": "hero-centered-image",
+  "category": "hero",
+  "title": "Hero, centred on image",
+  "description": "Centred heading over a full-screen or inset-framed photo or video. Options: small logo mark, italic accent line, status note, buttons, email sign-up bar.",
+  "tags": ["image", "video", "centered", "email-capture", "inset"],
+  "niches": ["*"],
+  "isPageTop": true,
+  "uses": { "ui": ["BackgroundMedia", "CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

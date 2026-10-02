@@ -1,0 +1,18 @@
+{
+  "heading": "Showcase your designs\nin motion.",
+  "body": "Pick a template, drop in your images or videos, tweak the settings and export an MP4, all in your browser.",
+  "ctas": [
+    { "_type": "cta", "label": "Try it free", "style": "primary", "link": { "_type": "link", "kind": "url", "url": "/contact" } }
+  ],
+  "productImage": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "The editor with a project open"
+  },
+  "backdrop": {
+    "_type": "imageWithAlt",
+    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "alt": "Green hills at night"
+  },
+  "tone": "dark"
+}

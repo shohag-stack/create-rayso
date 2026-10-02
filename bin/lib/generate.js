@@ -267,12 +267,17 @@ export async function generateTemplate({ targetDir, sections, theme, pages, site
   // 7. Library preview (playground only)
   if (preview) {
     const slugs = Object.fromEntries(pages.map((p) => [p.id, p.slug ?? p.id]));
-    const items = sections.map((s) => ({
-      id: s.id,
-      category: s.category,
-      title: s.title,
-      section: toQueryShape({ _key: s.id, _type: s.typeName, ...withKeys(s.seed) }, slugs),
-    }));
+    const withoutNulls = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null));
+    const items = sections.flatMap((s) =>
+      [['default', s.seed], ...Object.entries(s.variants).map(([name, v]) => [name, withoutNulls({ ...s.seed, ...v })])].map(
+        ([variant, content]) => ({
+          id: variant === 'default' ? s.id : `${s.id}--${variant.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`,
+          category: s.category,
+          title: variant === 'default' ? s.title : `${s.title} (${variant})`,
+          section: toQueryShape({ _key: `${s.id}-${variant}`, _type: s.typeName, ...withKeys(content) }, slugs),
+        })
+      )
+    );
     await write('frontend/library-preview.json', JSON.stringify(items, null, 2) + '\n');
     await write('frontend/app/library/page.tsx', libraryPage());
   }

@@ -1,0 +1,33 @@
+{
+  "top, status cards": {
+    "eyebrow": null,
+    "heading": "Run your whole studio\nfrom one calm place",
+    "headingSize": "medium",
+    "uppercaseHeading": false,
+    "body": "Plan the roadmap, then hand off design, sales, marketing and admin to a team that never sleeps.",
+    "contentPosition": "top",
+    "overlay": "none",
+    "showScrollHint": false,
+    "ctas": [
+      { "_type": "cta", "label": "Get started", "style": "light", "link": { "_type": "link", "kind": "url", "url": "/contact" } },
+      { "_type": "cta", "label": "See how it works", "style": "glass", "link": { "_type": "link", "kind": "url", "url": "/#how-it-works" } }
+    ],
+    "highlights": [
+      { "label": "Task completed", "text": "Search optimisation" },
+      { "label": "Task completed", "text": "Marketing campaign" },
+      { "label": "Task completed", "text": "New landing page" }
+    ]
+  },
+  "top, lead text": {
+    "eyebrow": null,
+    "heading": "Turn your brand\ninto a force for\ngrowth.",
+    "uppercaseHeading": false,
+    "body": "The best brands aren't built on the promises they make. They're built on the promises they keep.",
+    "bodySize": "large",
+    "contentPosition": "top",
+    "overlay": "light",
+    "ctas": [
+      { "_type": "cta", "label": "Get started", "style": "light", "showArrow": true, "link": { "_type": "link", "kind": "url", "url": "/contact" } }
+    ]
+  }
+}

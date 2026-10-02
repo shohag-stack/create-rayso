@@ -20,6 +20,7 @@ submission, email, auth, or integrations. Leave `// TODO(dev):` markers there.
 - Use the semantic tokens only: `bg-surface`, `bg-surface-alt`,
   `bg-surface-inverse`, `text-fg`, `text-fg-muted`, `text-fg-inverse`,
   `bg-accent`, `hover:bg-accent-hover`, `text-accent-fg`, `border-border`,
+  `text-on-media` (text over photos and videos),
   `font-heading`, `font-body`, `rounded-card`, `rounded-button`. Spacing uses
   Tailwind's 4px scale (`gap-38`, `max-w-106` are fine).
 - Fonts are loaded in `app/fonts.ts` and exposed as `--font-heading` and

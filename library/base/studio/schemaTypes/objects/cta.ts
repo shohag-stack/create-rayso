@@ -11,10 +11,11 @@ export const cta = defineType({
     defineField({
       name: "style",
       type: "string",
-      description: "Primary is filled with the accent colour; secondary is outlined.",
-      options: { list: ["primary", "secondary"], layout: "radio", direction: "horizontal" },
+      description: "Primary: accent colour. Secondary: outlined. Light: white, for photos. Glass: see-through, for photos.",
+      options: { list: ["primary", "secondary", "light", "glass"], layout: "radio", direction: "horizontal" },
       initialValue: "primary",
     }),
+    defineField({ name: "showArrow", title: "Show arrow", type: "boolean", description: "Adds → after the text.", initialValue: false }),
     defineField({ name: "link", type: "link", validation: (rule) => rule.required() }),
   ],
   preview: { select: { title: "label", subtitle: "style" } },

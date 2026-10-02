@@ -22,7 +22,8 @@ export interface SanityLink {
 export interface Cta {
   _key?: string;
   label: string;
-  style?: "primary" | "secondary";
+  style?: "primary" | "secondary" | "light" | "glass";
+  showArrow?: boolean;
   link?: SanityLink;
 }
 
@@ -30,4 +31,8 @@ export interface Seo {
   title?: string;
   description?: string;
   image?: SanityImage;
+}
+
+export interface SanityVideo {
+  asset?: { url: string; mimeType?: string };
 }

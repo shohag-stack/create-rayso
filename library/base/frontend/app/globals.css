@@ -5,6 +5,10 @@
 /* Tokens that are the same in every theme */
 @theme {
   --spacing-navbar: 90px;
+  /* Text and buttons over photos and videos */
+  --color-on-media: #ffffff;
+  --color-on-media-fg: #0a0a0a;
+  --color-status-good: #4ade80;
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out-soft: cubic-bezier(0, 0, 0.2, 1);
   --animate-scroll-line: scroll-line 1.8s ease-in-out infinite;
@@ -45,4 +49,13 @@
 @utility btn-secondary {
   @apply border-current bg-transparent;
   &:hover { @apply -translate-y-0.5; }
+}
+/* For buttons over photos and videos */
+@utility btn-light {
+  @apply bg-on-media text-on-media-fg;
+  &:hover { @apply -translate-y-0.5 bg-on-media/90; }
+}
+@utility btn-glass {
+  @apply border-on-media/20 bg-on-media/15 text-on-media backdrop-blur-md;
+  &:hover { @apply -translate-y-0.5 bg-on-media/25; }
 }

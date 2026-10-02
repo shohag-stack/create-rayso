@@ -1,0 +1,12 @@
+{
+  "id": "hero-centered-product",
+  "category": "hero",
+  "title": "Hero, centred with product shot",
+  "description": "Centred heading, text and buttons on a plain dark or light background, with a large framed product screenshot below and an optional backdrop image behind it.",
+  "tags": ["product", "saas", "centered", "dark", "screenshot"],
+  "niches": ["saas", "app", "startup"],
+  "isPageTop": true,
+  "uses": { "ui": ["CtaButton"], "animation": [] },
+  "references": [],
+  "features": []
+}

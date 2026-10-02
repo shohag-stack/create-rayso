@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 export const LIBRARY_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'library');
 
-// Every section folder holds exactly these files (preview.png is optional until the playground screenshots exist)
+// Every section folder holds these files; variants.json (extra previews) and preview.png are optional
 export const SECTION_FILES = ['component.tsx', 'schema.ts', 'query.ts', 'types.ts', 'meta.json', 'seed.json'];
 
 const META_KEYS = ['id', 'category', 'title', 'description', 'tags', 'niches', 'isPageTop', 'uses', 'references', 'features'];
@@ -47,6 +47,9 @@ export async function loadSections(libraryDir = LIBRARY_DIR) {
 
       const meta = await fs.readJson(path.join(dir, 'meta.json'));
       const seed = await fs.readJson(path.join(dir, 'seed.json'));
+      // Optional extra previews: { "<name>": { ...fields that differ from seed.json, null removes one } }
+      const variantsFile = path.join(dir, 'variants.json');
+      const variants = fs.existsSync(variantsFile) ? await fs.readJson(variantsFile) : {};
       const names = sectionNames(id);
 
       for (const key of META_KEYS) if (!(key in meta)) errors.push(`${where}/meta.json: missing "${key}"`);
@@ -69,7 +72,7 @@ export async function loadSections(libraryDir = LIBRARY_DIR) {
         if (!(await read(file)).includes(needle)) errors.push(`${where}/${file}: expected \`${needle.replace('\n', '\\n')}\``);
       }
 
-      sections.push({ ...meta, ...names, dir, seed });
+      sections.push({ ...meta, ...names, dir, seed, variants });
     }
   }
 

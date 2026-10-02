@@ -19,5 +19,10 @@ export const ctaFields = /* groq */ `
   _key,
   label,
   style,
+  showArrow,
   link{ ${linkFields} }
+`;
+
+export const videoFields = /* groq */ `
+  asset->{ url, mimeType }
 `;

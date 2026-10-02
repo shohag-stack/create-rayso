@@ -3,7 +3,16 @@
   "heading": "Where stillness\nmeets the sea.",
   "body": "Private villas, overwater bungalows, and curated experiences for those who seek something beyond ordinary.",
   "ctas": [
-    { "_type": "cta", "label": "Explore rooms", "style": "primary", "link": { "_type": "link", "kind": "url", "url": "/rooms" } }
+    {
+      "_type": "cta",
+      "label": "Explore rooms",
+      "style": "primary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/rooms"
+      }
+    }
   ],
   "image": {
     "_type": "imageWithAlt",
@@ -11,5 +20,8 @@
     "alt": "Overwater villas at sunset"
   },
   "overlay": "medium",
-  "showScrollHint": true
+  "showScrollHint": true,
+  "uppercaseHeading": true,
+  "headingSize": "large",
+  "contentPosition": "bottom"
 }
