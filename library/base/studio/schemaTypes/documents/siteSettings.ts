@@ -1,6 +1,6 @@
 import { CogIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { footerSectionTypes } from "../sections";
+import { footerSectionTypes, navbarSectionTypes } from "../sections";
 
 export const siteSettings = defineType({
   name: "siteSettings",
@@ -8,15 +8,19 @@ export const siteSettings = defineType({
   type: "document",
   icon: CogIcon,
   fields: [
-    defineField({ name: "siteName", type: "string", description: "Used in the menu when there is no logo, and in browser tabs.", validation: (rule) => rule.required() }),
-    defineField({ name: "logo", type: "imageWithAlt", description: "Shown in the menu and footer." }),
-    defineField({
-      name: "menu",
-      type: "array",
-      description: "Links in the top menu, left to right.",
-      of: [defineArrayMember({ type: "navLink" })],
-    }),
-    defineField({ name: "menuCta", title: "Menu button", type: "cta", description: "Optional button at the right of the menu." }),
+    defineField({ name: "siteName", type: "string", description: "Used in browser tabs and as the default for the menu and footer.", validation: (rule) => rule.required() }),
+    ...(navbarSectionTypes.length
+      ? [
+          defineField({
+            name: "navbar",
+            title: "Menu",
+            type: "array",
+            description: "The menu at the top of every page. Pick one menu layout.",
+            of: navbarSectionTypes.map((section) => defineArrayMember({ type: section.name })),
+            validation: (rule) => rule.max(1),
+          }),
+        ]
+      : []),
     ...(footerSectionTypes.length
       ? [
           defineField({

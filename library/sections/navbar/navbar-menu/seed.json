@@ -1,0 +1,96 @@
+{
+  "brandName": "Meridian",
+  "label": "Rooms by the sea",
+  "links": [
+    {
+      "_type": "navLink",
+      "label": "Rooms",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/rooms"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Spa and wellness",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/spa-and-wellness"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "About us",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/about-us"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Careers",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/careers"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Contact",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "ctas": [
+    {
+      "_type": "cta",
+      "label": "Our brochure",
+      "style": "secondary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/brochure"
+      }
+    },
+    {
+      "_type": "cta",
+      "label": "Call us",
+      "style": "light",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    },
+    {
+      "_type": "cta",
+      "label": "Book a stay",
+      "style": "light",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "barCta": {
+    "_type": "cta",
+    "label": "Get in touch",
+    "style": "glass",
+    "link": {
+      "_type": "link",
+      "kind": "url",
+      "url": "/contact"
+    }
+  },
+  "layout": "centered",
+  "tone": "dark",
+  "position": "fixed"
+}

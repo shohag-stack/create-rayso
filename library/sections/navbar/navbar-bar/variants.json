@@ -1,0 +1,143 @@
+{
+  "pills, link group": {
+    "badge": null,
+    "links": [
+      {
+        "_type": "navGroup",
+        "label": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Villas",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/villas"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Offers",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/offers"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "navLink",
+        "label": "Spa",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/spa"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Journal",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/journal"
+        }
+      }
+    ],
+    "ctas": [
+      {
+        "_type": "cta",
+        "label": "Book a stay",
+        "style": "light",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    ],
+    "linkAlign": "right",
+    "linkStyle": "pills"
+  },
+  "dark text, dropdown, note": {
+    "menuColor": "dark",
+    "badge": null,
+    "spacedBrandName": true,
+    "brandName": "Meridian Bay",
+    "note": "Free breakfast on stays of three nights or more",
+    "links": [
+      {
+        "_type": "navGroup",
+        "label": "Stay",
+        "links": [
+          {
+            "_type": "navLink",
+            "label": "Rooms",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/rooms"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Suites",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/suites"
+            }
+          },
+          {
+            "_type": "navLink",
+            "label": "Villas",
+            "link": {
+              "_type": "link",
+              "kind": "url",
+              "url": "/villas"
+            }
+          }
+        ]
+      },
+      {
+        "_type": "navLink",
+        "label": "Spa",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/spa"
+        }
+      },
+      {
+        "_type": "navLink",
+        "label": "Contact",
+        "link": {
+          "_type": "link",
+          "kind": "url",
+          "url": "/contact"
+        }
+      }
+    ],
+    "ctas": null,
+    "linkAlign": "right"
+  }
+}

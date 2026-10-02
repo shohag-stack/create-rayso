@@ -25,15 +25,18 @@ sections/hero/hero-fullscreen-image/
   variants.json   optional: extra playground previews, { "<name>": { fields that differ, null removes one } }
 ```
 
-## Footers
+## Menus and footers
 
-Sections in `sections/footer/` are not page sections. Editors pick one in
-**Site settings → Footer**, and `app/layout.tsx` renders it under every page
-inside a `<footer>`. The generator seeds Site settings with the first footer
-(or the one passed as `footer`). Shared footer pieces live in the base:
-`components/ui/footer/` (link columns, social links, wordmark, bottom bar),
-the `navLink`, `linkColumn` and `socialLink` objects, and
-`studio/schemaTypes/fields/footer.ts`.
+Sections in `sections/navbar/` and `sections/footer/` are not page sections.
+Editors pick one of each in **Site settings** (Menu, Footer). `PageRenderer`
+renders the menu inside a `<header>`, with the page's menu text colour passed
+in as `menuColor`; `app/layout.tsx` renders the footer inside a `<footer>`. The
+generator seeds Site settings with the first of each (or the ids passed as
+`navbar` and `footer`). Shared pieces live in the base:
+`components/ui/nav/` (brand, links and dropdowns, mobile menu, open-and-close
+panel, scroll-aware shell), `components/ui/footer/` (link columns, social
+links, wordmark, bottom bar), the `navLink`, `navGroup`, `linkColumn` and
+`socialLink` objects, and `studio/schemaTypes/fields/navbar.ts` and `footer.ts`.
 
 Names come from the folder name (`hero-fullscreen-image`), and
 `npm run check:library` fails if a file doesn't use them:

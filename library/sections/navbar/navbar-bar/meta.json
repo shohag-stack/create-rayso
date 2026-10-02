@@ -1,0 +1,12 @@
+{
+  "id": "navbar-bar",
+  "category": "navbar",
+  "title": "Menu, full-width bar",
+  "description": "Logo (with an optional tag) at the left, links centred or at the right as plain text or frosted pills, an optional note and up to two buttons. Link groups open dropdowns. Sits over the hero and turns solid when it scrolls.",
+  "tags": ["navbar", "transparent", "pills", "dropdown", "mobile-menu"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "nav/Brand", "nav/MobileMenu", "nav/NavLinks", "nav/NavShell"], "animation": [] },
+  "references": [],
+  "features": []
+}

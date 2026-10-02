@@ -1,0 +1,12 @@
+{
+  "id": "navbar-floating",
+  "category": "navbar",
+  "title": "Menu, floating panel",
+  "description": "Menu in a floating pill or card with its own colours: logo at the left or centred between two sets of links, plus buttons. Options: compact or full width, light, dark or accent, small-capital links.",
+  "tags": ["navbar", "floating", "pill", "centered-logo", "mobile-menu"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "nav/Brand", "nav/MobileMenu", "nav/NavLinks", "nav/NavShell"], "animation": [] },
+  "references": [],
+  "features": []
+}

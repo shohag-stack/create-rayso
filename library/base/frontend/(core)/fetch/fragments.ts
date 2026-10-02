@@ -54,3 +54,12 @@ export const footerSharedFields = /* groq */ `
   wordmark,
   tone
 `;
+
+// Menu links and link groups (studio/schemaTypes/fields/navbar.ts)
+export const navItemFields = /* groq */ `
+  _type,
+  _key,
+  label,
+  link{ ${linkFields} },
+  links[]{ ${navLinkFields} }
+`;

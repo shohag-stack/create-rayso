@@ -1,0 +1,67 @@
+{
+  "brandName": "Meridian",
+  "links": [
+    {
+      "_type": "navLink",
+      "label": "Rooms",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/rooms"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Spa",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/spa"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Dining",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/dining"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "About",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/about"
+      }
+    },
+    {
+      "_type": "navLink",
+      "label": "Journal",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/journal"
+      }
+    }
+  ],
+  "ctas": [
+    {
+      "_type": "cta",
+      "label": "Book now",
+      "style": "primary",
+      "link": {
+        "_type": "link",
+        "kind": "url",
+        "url": "/contact"
+      }
+    }
+  ],
+  "layout": "logo-left",
+  "width": "compact",
+  "tone": "dark",
+  "shape": "pill",
+  "position": "fixed"
+}

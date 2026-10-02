@@ -3,7 +3,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { generateTemplate } from '../bin/lib/generate.js';
+import { SITE_CATEGORIES, generateTemplate } from '../bin/lib/generate.js';
 import { loadSections, loadTheme } from '../bin/lib/library.js';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -29,7 +29,7 @@ await generateTemplate({
   sections,
   theme: await loadTheme(themeId),
   siteName: 'RAYSO Playground',
-  pages: [{ id: 'home', title: 'Home', sections: sections.filter((s) => s.category !== 'footer').map((s) => s.id) }],
+  pages: [{ id: 'home', title: 'Home', sections: sections.filter((s) => !SITE_CATEGORIES.includes(s.category)).map((s) => s.id) }],
   preview: true,
 });
 

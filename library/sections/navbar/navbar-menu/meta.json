@@ -1,0 +1,12 @@
+{
+  "id": "navbar-menu",
+  "category": "navbar",
+  "title": "Menu, open-and-close panel",
+  "description": "Compact bar whose menu button opens a panel of big links with dividers and up to three buttons. Options: a centred panel with a slogan, or a full-width bar with a note, quick links (Cart, Book) and a text or icon menu button; light or dark panel; extra button outside the panel.",
+  "tags": ["navbar", "menu-panel", "overlay", "editorial", "mobile-menu"],
+  "niches": ["*"],
+  "isPageTop": false,
+  "uses": { "ui": ["CtaButton", "footer/FooterLink", "nav/Brand", "nav/MenuPanel", "nav/NavShell"], "animation": [] },
+  "references": [],
+  "features": []
+}

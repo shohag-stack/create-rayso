@@ -57,3 +57,16 @@ export interface SocialLink {
 }
 
 export type FooterTone = "light" | "dark" | "accent" | "gradient";
+
+export interface NavGroup {
+  _key?: string;
+  _type: "navGroup";
+  label: string;
+  links?: NavLink[];
+}
+
+// A menu item: a link, or a labelled group of links
+export type NavItem = (NavLink & { _type?: "navLink" }) | NavGroup;
+
+// Set by the page (its "Menu text colour"), not by the menu itself
+export type MenuColor = "light" | "dark";

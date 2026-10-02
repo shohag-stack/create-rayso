@@ -94,13 +94,14 @@ page (document)          → title, slug, menuColor, sections[]
   in the Studio sidebar (`studio/structure.ts`). Other pages sit under
   "Other pages".
 - Each page picks its **Menu text colour** (`menuColor`: "light" = white text
-  over a dark hero, "dark" = black). Pages render `<SiteHeader menuColor>`;
-  the footer stays in `app/layout.tsx`.
+  over a dark hero, "dark" = black). `PageRenderer` renders the menu picked
+  in Site settings and passes it the page's `menuColor`; the footer is
+  rendered in `app/layout.tsx`.
 - Inner pages start with a page-title section, which is their h1. The hero is
   the h1 on the home page.
 - Site-wide content lives in the **Site settings** singleton (`_id: "siteSettings"`),
-  not in page sections: the navbar menu, the footer, and sections shown under
-  every document page (e.g. an FAQ under each blog post).
+  not in page sections: the menu (`navbar`, one menu section), the footer
+  (`footer`, one footer section), and sections shown under every document page (e.g. an FAQ under each blog post).
 - Menu links use page paths (`/about`) or `/<page>#anchor` (e.g.
   `/about#awards`) so they work from every page.
 - Every section schema must be editor-friendly: a `title` users recognize
