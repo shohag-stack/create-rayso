@@ -1,7 +1,7 @@
 // Reads niche files (library/niches/<id>.json): which theme, menu, footer and page sections a template uses
 import fs from 'fs-extra';
 import path from 'path';
-import { LIBRARY_DIR } from './library.js';
+import { LIBRARY_DIR, seedMediaErrors } from './library.js';
 
 // Pages every template has. /works/<slug> and /blog/<slug> come with the works and blog
 // sections (their documents have a route), so those pages must hold one.
@@ -65,6 +65,7 @@ export function nicheErrors(niche, sections, themeIds) {
     if (p.id !== 'home' && !p.slug) errors.push(`${where}: page "${p.id}" needs a "slug"`);
     for (const e of p.sections ?? []) checkEntry(e, null, `page "${p.id}" section`);
   }
+  errors.push(...seedMediaErrors(niche, where));
   return errors;
 }
 

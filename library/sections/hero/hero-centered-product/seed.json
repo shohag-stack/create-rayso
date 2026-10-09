@@ -6,13 +6,13 @@
   ],
   "productImage": {
     "_type": "imageWithAlt",
-    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
-    "alt": "The editor with a project open"
+    "_sanityAsset": "image@https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1500",
+    "alt": "A laptop with a dashboard open"
   },
   "backdrop": {
     "_type": "imageWithAlt",
-    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
-    "alt": "Green hills at night"
+    "_sanityAsset": "image@https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500",
+    "alt": "Mountains under a starry sky"
   },
   "tone": "dark"
 }

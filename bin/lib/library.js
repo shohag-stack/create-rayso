@@ -25,6 +25,21 @@ export function sectionNames(id) {
   };
 }
 
+// Seed content ships to buyers, so its images and files must come from a host we may redistribute
+export const SEED_MEDIA_HOSTS = ['images.unsplash.com'];
+
+export function seedMediaErrors(value, where) {
+  const errors = [];
+  const walk = (v) => {
+    if (typeof v === 'string') {
+      const m = v.match(/^(?:image|file)@https?:\/\/([^/]+)/);
+      if (m && !SEED_MEDIA_HOSTS.includes(m[1])) errors.push(`${where}: media from ${m[1]} can't ship to buyers; use ${SEED_MEDIA_HOSTS.join(', ')}`);
+    } else if (v && typeof v === 'object') Object.values(v).forEach(walk);
+  };
+  walk(value);
+  return [...new Set(errors)];
+}
+
 export async function loadSections(libraryDir = LIBRARY_DIR) {
   const sectionsDir = path.join(libraryDir, 'sections');
   const errors = [];
@@ -71,6 +86,8 @@ export async function loadSections(libraryDir = LIBRARY_DIR) {
       for (const [file, needle] of checks) {
         if (!(await read(file)).includes(needle)) errors.push(`${where}/${file}: expected \`${needle.replace('\n', '\\n')}\``);
       }
+
+      errors.push(...seedMediaErrors(seed, `${where}/seed.json`), ...seedMediaErrors(variants, `${where}/variants.json`));
 
       sections.push({ ...meta, ...names, dir, seed, variants });
     }
@@ -124,6 +141,8 @@ export async function loadDocuments(libraryDir = LIBRARY_DIR) {
     // "route": "blog" gives each document a page at /blog/<slug>, from page.tsx
     if (meta.route && !/^[a-z0-9-]+$/.test(meta.route)) errors.push(`${where}/meta.json: route "${meta.route}" must be lowercase letters, numbers and hyphens`);
     if (meta.route && !fs.existsSync(path.join(dir, 'page.tsx'))) errors.push(`${where}: has a route, so it needs page.tsx`);
+
+    errors.push(...seedMediaErrors(seed, `${where}/seed.json`));
 
     documents.push({ ...meta, ...names, dir, seed });
   }

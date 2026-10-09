@@ -9,7 +9,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=2000",
       "alt": "The Olive Grove Spa"
     },
     "excerpt": "A spa built into an old olive grove: four treatment rooms, a salt room and a cold pool, with every tree kept in place.",
@@ -97,17 +97,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600",
         "alt": "The Olive Grove Spa, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200",
         "alt": "The Olive Grove Spa, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200",
         "alt": "The Olive Grove Spa, at dusk"
       }
     ]
@@ -122,7 +122,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=2000",
       "alt": "Overwater Villas"
     },
     "excerpt": "Twelve villas over the lagoon, furnished in teak, linen and stone so nothing competes with the view.",
@@ -209,17 +209,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600",
         "alt": "Overwater Villas, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200",
         "alt": "Overwater Villas, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200",
         "alt": "Overwater Villas, at dusk"
       }
     ]
@@ -234,7 +234,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000",
       "alt": "Harbour Kitchen"
     },
     "excerpt": "A name, menus and signs for the harbour restaurant, drawn from old fishing boat lettering.",
@@ -322,17 +322,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600",
         "alt": "Harbour Kitchen, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200",
         "alt": "Harbour Kitchen, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200",
         "alt": "Harbour Kitchen, at dusk"
       }
     ]
@@ -347,7 +347,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000",
       "alt": "Garden Suites"
     },
     "excerpt": "Eight suites set low in the garden, each with a private terrace and an outdoor shower.",
@@ -434,17 +434,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600",
         "alt": "Garden Suites, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200",
         "alt": "Garden Suites, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200",
         "alt": "Garden Suites, at dusk"
       }
     ]
@@ -459,7 +459,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=2000",
       "alt": "Sunset Pavilion"
     },
     "excerpt": "An open pavilion on the point for weddings and long dinners, lit only by lanterns after dark.",
@@ -546,17 +546,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600",
         "alt": "Sunset Pavilion, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200",
         "alt": "Sunset Pavilion, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200",
         "alt": "Sunset Pavilion, at dusk"
       }
     ]
@@ -571,7 +571,7 @@
     },
     "cover": {
       "_type": "imageWithAlt",
-      "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=2000",
+      "_sanityAsset": "image@https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000",
       "alt": "The Island Boathouse"
     },
     "excerpt": "The old boathouse, restored as the starting point for every boat trip, with a small bar for the way back.",
@@ -658,17 +658,17 @@
     "gallery": [
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1600",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1600",
         "alt": "The Island Boathouse, wide view"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200",
         "alt": "The Island Boathouse, detail"
       },
       {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200",
         "alt": "The Island Boathouse, at dusk"
       }
     ]

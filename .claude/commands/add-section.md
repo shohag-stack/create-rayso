@@ -8,7 +8,9 @@ Add a section to the library from: $ARGUMENTS (a Figma link, or an image file)
    instead of adding a near-duplicate.
 4. Pick `<category>/<id>` (kebab-case, e.g. `features/features-icon-grid`) and
    write all six files: component.tsx, schema.ts, query.ts, types.ts,
-   meta.json, seed.json (demo content from the design).
+   meta.json, seed.json (demo text from the design; images from Unsplash only,
+   since the seed ships to buyers. Design images are for the live preview and
+   go in the demo Sanity project, never in seed.json).
 5. Semantic tokens only; mobile-first with all breakpoints; content from props.
 6. Run `npm run check:library`, then `npm run playground` and the checks under
    "Done means" in CLAUDE.md. Fix every failure.

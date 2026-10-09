@@ -144,7 +144,7 @@ async function createFromNiche(nicheId, folder) {
     else {
       const zip = ora('Making the buyer zip...').start();
       try {
-        const { stdout } = await execa('bash', ['zip.sh', ...(opts['project-id'] ? [] : ['--no-export'])], { cwd: targetDir });
+        const { stdout } = await execa('bash', ['zip.sh'], { cwd: targetDir });
         zip.succeed(stdout.split('\n').pop().replace(/^✅ /, 'Zip ready: '));
       } catch (err) {
         zip.fail(`Zip failed: ${(err.stderr || err.message).trim()}`);

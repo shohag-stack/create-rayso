@@ -23,6 +23,19 @@ npm create rayso@latest my-template
 5. Copies `.env.example` → `.env.local` in both frontend and studio
 6. Runs `npm install` automatically
 
+## Demo images and licensing
+
+The live preview of a template is for showcasing only: it may use the
+design's own images, which are not for sale or redistribution and are never
+part of the download. Templates generated from the library ship with demo
+content whose images are free [Unsplash](https://unsplash.com/license) photos,
+loaded by URL when the buyer runs `npm run seed`.
+
+This is enforced: `npm run check:library` rejects seed images from any host
+but Unsplash, and the template's `npm run zip` never exports the preview
+dataset and refuses to build if preview assets, other image hosts or bundled
+media would ship.
+
 ## After scaffolding
 
 ```bash

@@ -42,9 +42,14 @@ For each additional End Product, you need another license.
 
 4. DEMO CONTENT AND THIRD-PARTY ASSETS
 
-The demo text, images and videos are included so you can see how the Template
-works. Replace them with your own before you launch, unless the store page
-says a particular asset may be reused.
+The demo text and images are included so you can see how the Template works.
+Replace them with your own before you launch. Demo images are loaded from
+Unsplash and are covered by the Unsplash License (unsplash.com/license), not
+by this license.
+
+The images in the live preview are for showcasing the Template only. They are
+not part of the Template and are not licensed to you: you may not download,
+reuse, sell or redistribute them.
 
 Fonts, icons, libraries and other third-party packages are covered by their
 own licenses, not by this one (see each package's license in node_modules or

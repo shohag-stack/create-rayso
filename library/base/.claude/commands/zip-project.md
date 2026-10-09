@@ -8,8 +8,9 @@ Follow "Releasing" in MAINTAINER.md step by step:
 2. Run the checks listed in MAINTAINER.md (lint + typecheck, `npm run build`).
    Fix failures before going on.
 3. Check the shipped docs are buyer-safe and README still matches the code.
-4. Run `npm run zip` (it exports fresh demo content first; pass `-- --no-export`
-   only if I say the content hasn't changed).
+4. Run `npm run zip`. It ships the generated Unsplash demo content, never the
+   preview dataset. If it fails on a media check, report it; don't loosen the
+   check without asking.
 5. Verify the zip contents as listed in MAINTAINER.md.
 6. Report the zip name and size, the checks that ran, and anything from
    "Before selling" in MAINTAINER.md that's still open.

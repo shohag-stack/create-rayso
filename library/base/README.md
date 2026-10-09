@@ -9,7 +9,7 @@ remove and reorder, with no code needed.
 ```
 frontend/   the website (Next.js)
 studio/     the content editor (Sanity Studio)
-seed/       demo content: pages, projects, posts, images and videos
+seed/       demo content: pages, projects and posts, with Unsplash images
 ```
 
 ## What you need
@@ -63,8 +63,13 @@ NEXT_PUBLIC_SANITY_DATASET=production
 npm run seed
 ```
 
-This imports every page, project, blog post, image and video from the demo.
-It takes a minute or two.
+This imports every page, project and blog post, with placeholder images
+downloaded from [Unsplash](https://unsplash.com). It takes a minute or two.
+
+> **About the live preview:** the preview on the store page is for showcase
+> only. Its images are not part of the download and may not be reused,
+> sold or redistributed. The download ships with free Unsplash placeholder
+> images instead, so the layout looks the same with different photos.
 
 ## 5. Run it
 
@@ -161,3 +166,7 @@ npm run deploy:studio
 This template is sold under a commercial license: one purchase covers one
 website, for you or for one client. You can't resell or share the source
 code. Full terms are in `LICENSE.txt`.
+
+Demo images are from [Unsplash](https://unsplash.com) and covered by the
+[Unsplash License](https://unsplash.com/license), not by `LICENSE.txt`.
+Replace them with your own before you launch.

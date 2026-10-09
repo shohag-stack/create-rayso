@@ -8,7 +8,7 @@
       "title": "Wake",
       "body": "Breakfast on the terrace until noon, with bread baked in our own oven.",
       "tint": "soft",
-      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Breakfast table in the sun" }
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200", "alt": "Breakfast table in the sun" }
     },
     {
       "_type": "feature",
@@ -16,7 +16,7 @@
       "title": "Swim",
       "body": "Heated pools, a quiet cove and boats to the islands every afternoon.",
       "tint": "alt",
-      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Pool by the sea" }
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200", "alt": "Pool by the sea" }
     },
     {
       "_type": "feature",
@@ -24,7 +24,7 @@
       "title": "Unwind",
       "body": "Treatments in the garden spa, then dinner under the olive trees.",
       "tint": "accent",
-      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1200", "alt": "Spa room with candles" }
+      "image": { "_type": "imageWithAlt", "_sanityAsset": "image@https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200", "alt": "Massage in the spa" }
     }
   ],
   "align": "center",

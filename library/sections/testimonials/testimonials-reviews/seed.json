@@ -31,7 +31,7 @@
   "readMoreLabel": "Read all",
   "image": {
     "_type": "imageWithAlt",
-    "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+    "_sanityAsset": "image@https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1500",
     "alt": "Sunlit terrace by the sea"
   }
 }

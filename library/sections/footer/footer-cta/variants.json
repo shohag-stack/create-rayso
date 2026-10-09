@@ -163,7 +163,7 @@
     "card": {
       "image": {
         "_type": "imageWithAlt",
-        "_sanityAsset": "image@https://assets.lummi.ai/assets/QmVYR4iGjd71gxXKjJUFbD54ZuzEjyRYg4NUmyQnz7rQgU?auto=format&w=1500",
+        "_sanityAsset": "image@https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1500",
         "alt": "Sunlit pool by the sea"
       },
       "text": "Meridian is a small hotel built around long, unhurried days.",

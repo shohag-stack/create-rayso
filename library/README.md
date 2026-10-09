@@ -98,7 +98,11 @@ and `../fields/anchor` in schemas.
 - Variants that differ only by an option (image left or right) are one section
   with a field, not two folders.
 - Images in `seed.json` use `"_sanityAsset": "image@<url>"`, which Sanity's
-  importer uploads. Use images that may be redistributed to buyers.
+  importer uploads. Use Unsplash URLs only
+  (`https://images.unsplash.com/photo-<id>?auto=format&fit=crop&w=<width>`):
+  the seed ships to buyers, and the template's `zip.sh` refuses any other
+  host. Design images from Figma are for the live preview only: put them in the
+  demo Sanity project, never in `seed.json`.
 
 ## Niches
 
